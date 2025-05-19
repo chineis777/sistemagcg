@@ -1,79 +1,59 @@
-
+from flask import Flask
 import psycopg2
 import os
 
-def create_tables(conn):
-    with conn.cursor() as cur:
-        # Criação automática das tabelas principais
+app = Flask(__name__)
+
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+def criar_tabelas(conexao):
+    with conexao.cursor() as cur:
         cur.execute("""
-        CREATE TABLE IF NOT EXISTS users (
-            id SERIAL PRIMARY KEY,
-            email VARCHAR(255) UNIQUE NOT NULL,
-            password_hash VARCHAR(255) NOT NULL,
-            name VARCHAR(255) NOT NULL,
-            user_type VARCHAR(50) NOT NULL,
-            document VARCHAR(20),
-            phone VARCHAR(20),
-            address TEXT,
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            active BOOLEAN DEFAULT TRUE
-        );
-
-        CREATE TABLE IF NOT EXISTS products (
-            id SERIAL PRIMARY KEY,
-            code VARCHAR(50) UNIQUE NOT NULL,
-            name VARCHAR(255) NOT NULL,
-            description TEXT,
-            manufacturer VARCHAR(100),
-            category VARCHAR(100),
-            cost_price DECIMAL(10, 2),
-            selling_price DECIMAL(10, 2),
-            stock_quantity INT DEFAULT 0,
-            min_stock_quantity INT DEFAULT 5,
-            image_url TEXT,
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            active BOOLEAN DEFAULT TRUE
-        );
-
-        CREATE TABLE IF NOT EXISTS vehicles (
-            id SERIAL PRIMARY KEY,
-            brand VARCHAR(100),
-            model VARCHAR(100),
-            year INT,
-            version VARCHAR(100),
-            engine VARCHAR(50),
-            transmission VARCHAR(50),
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        );
-
-        CREATE TABLE IF NOT EXISTS product_applications (
-            id SERIAL PRIMARY KEY,
-            product_id INT REFERENCES products(id),
-            vehicle_id INT REFERENCES vehicles(id),
-            notes TEXT,
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            UNIQUE (product_id, vehicle_id)
-        );
+            CREATE TABLE IF NOT EXISTS usuarios (
+                id SERIAL PRIMARY KEY,
+                email VARCHAR(255) UNIQUE NOT NULL,
+                password_hash VARCHAR(255) NOT NULL,
+                nome VARCHAR(255) NOT NULL,
+                user_type VARCHAR(50) NOT NULL,
+                documento VARCHAR(30),
+                telefone VARCHAR(20),
+                endereco TEXT,
+                criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                atualizado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                ativo BOOLEAN DEFAULT TRUE
+            );
         """)
-        conn.commit()
-        print("✅ Tabelas criadas com sucesso.")
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS produtos (
+                id SERIAL PRIMARY KEY,
+                codigo VARCHAR(50) UNIQUE NOT NULL,
+                nome VARCHAR(255) NOT NULL,
+                descricao TEXT,
+                fabricante VARCHAR(100),
+                grupo VARCHAR(100),
+                custo_preco DECIMAL(10, 2),
+                preco_de_venda DECIMAL(10, 2),
+                estoque INT DEFAULT 0,
+                min_stock_quantity INT DEFAULT 5,
+                criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                atualizado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
+        """)
+        conexao.commit()
 
-def ai_greeting():
-    print("🤖 ChinaBot v1: Olá! Estou pronto pra ajudar você com qualquer peça ou orçamento.")
+@app.route('/')
+def index():
+    return "✅ API de IA Luxnox rodando!"
 
-def main():
-    print("🚀 Iniciando Luxnox com IA e banco automático...")
-    db_url = os.getenv("DATABASE_URL")
-    if not db_url:
-        raise ValueError("⚠️ DATABASE_URL não encontrada nas variáveis de ambiente.")
+@app.route('/inicializar-banco')
+def init_db():
+    try:
+        conn = psycopg2.connect(DATABASE_URL)
+        criar_tabelas(conn)
+        conn.close()
+        return "🧠 Banco inicializado com sucesso!"
+    except Exception as e:
+        return f"❌ Erro: {str(e)}"
 
-    conn = psycopg2.connect(db_url)
-    create_tables(conn)
-    ai_greeting()
-    conn.close()
-
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=10000)
