@@ -1,0 +1,75 @@
+{
+  "aplicacoes_veiculos": [
+    {
+      "codigo_filtro": "FAR4150",
+      "fabricante": "AUTHOMIX",
+      "tipo": "Filtro de Ar",
+      "aplicacoes": [
+        {
+          "marca": "FIAT",
+          "modelos": [
+            {
+              "nome": "IDEA",
+              "versoes": ["1.4 8V ATTRACTIVE", "1.4 8V ELX FIRE FLEX", "1.8 8V ELX FLEX"],
+              "anos": "2005-2015"
+            },
+            {
+              "nome": "PALIO",
+              "versoes": ["1.0 8V EL", "1.0 8V ELX", "TODOS OS MOTORES"],
+              "anos": "TODOS"
+            },
+            {
+              "nome": "SIENA",
+              "versoes": ["TODOS OS MOTORES"],
+              "anos": "TODOS"
+            },
+            {
+              "nome": "STRADA",
+              "versoes": ["CE TREK RST III FIRE 1.4 L 8V SOHC L4"],
+              "anos": "2008-ATUAL"
+            }
+          ]
+        }
+      ],
+      "fonte": "Mercado Livre, PitStop, Autorama, Santana Auto Peças"
+    },
+    {
+      "codigo_filtro": "FAR4152",
+      "fabricante": "AUTHOMIX",
+      "tipo": "Filtro de Ar",
+      "aplicacoes": [
+        {
+          "marca": "FIAT",
+          "modelos": [
+            {
+              "nome": "MOBI",
+              "versoes": ["TODOS OS MOTORES"],
+              "anos": "TODOS"
+            },
+            {
+              "nome": "PALIO",
+              "versoes": ["TODOS OS MOTORES"],
+              "anos": "TODOS"
+            },
+            {
+              "nome": "STRADA",
+              "versoes": ["TODOS OS MOTORES"],
+              "anos": "TODOS"
+            },
+            {
+              "nome": "UNO",
+              "versoes": ["TODOS OS MOTORES"],
+              "anos": "TODOS"
+            },
+            {
+              "nome": "FIORINO",
+              "versoes": ["FURGÃO 1.4 L 8V SOHC L4", "HARD WORKING 1.4 L"],
+              "anos": "2016-2021"
+            }
+          ]
+        }
+      ],
+      "fonte": "PitStop, Autorama"
+    }
+  ]
+}

@@ -1,0 +1,7462 @@
+[
+  {
+    "codigo": "RHO3334",
+    "descricao": "RHO3334 INTERRUPTOR DA PRESSAO 3RHO",
+    "fabricante_id": "093",
+    "fabricante_nome": "3RHO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RHO3372",
+    "descricao": "RHO3372 INTERRUPTOR DA PRESSAO 3RHO",
+    "fabricante_id": "093",
+    "fabricante_nome": "3RHO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "087073 AJE",
+    "descricao": "ANTI CHAMA 087073",
+    "fabricante_id": "118",
+    "fabricante_nome": "AJE",
+    "estoque": "0",
+    "custo": "18,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "087132",
+    "descricao": "TAMPA DE OLEO 087132",
+    "fabricante_id": "118",
+    "fabricante_nome": "AJE",
+    "estoque": "0",
+    "custo": "25,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "087206",
+    "descricao": "SENSOR DE TEMPERATURA 087206",
+    "fabricante_id": "118",
+    "fabricante_nome": "AJE",
+    "estoque": "0",
+    "custo": "85,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "L21805041",
+    "descricao": "MANETE FREIO DISCO CROMADA",
+    "fabricante_id": "098",
+    "fabricante_nome": "ALPHA",
+    "estoque": "0",
+    "custo": "37,45",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "L21805131",
+    "descricao": "MANETE EMBREAGEM PRETA L21805131 ALPHA",
+    "fabricante_id": "098",
+    "fabricante_nome": "ALPHA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "L21805135",
+    "descricao": "MANETE EMBREAGE PRETO L21805135 ALPHA",
+    "fabricante_id": "098",
+    "fabricante_nome": "ALPHA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "L21805143",
+    "descricao": "MANETE FREIO DISCO PRETO L21805143",
+    "fabricante_id": "098",
+    "fabricante_nome": "ALPHA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "AC1107",
+    "descricao": "PISCA ATEC AC1107",
+    "fabricante_id": "078",
+    "fabricante_nome": "ATEC",
+    "estoque": "0",
+    "custo": "30,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "AC509",
+    "descricao": "PASTILHA DE FREIO AC509",
+    "fabricante_id": "078",
+    "fabricante_nome": "ATEC",
+    "estoque": "0",
+    "custo": "18,72",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "AC612",
+    "descricao": "AC612 PAINEL ATEC DIGITAL",
+    "fabricante_id": "078",
+    "fabricante_nome": "ATEC",
+    "estoque": "0",
+    "custo": "535,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BX11324",
+    "descricao": "BUCHA DA BANDEJA BX11324",
+    "fabricante_id": "157",
+    "fabricante_nome": "AUTHOMIX",
+    "estoque": "0",
+    "custo": "19,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BX212220",
+    "descricao": "BUCHA TRASEIRA DA BANDEJA",
+    "fabricante_id": "157",
+    "fabricante_nome": "AUTHOMIX",
+    "estoque": "0",
+    "custo": "40,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BX212222",
+    "descricao": "BBUCHA DIANTEIRA DA BANDEJA",
+    "fabricante_id": "157",
+    "fabricante_nome": "AUTHOMIX",
+    "estoque": "0",
+    "custo": "32,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BX41460",
+    "descricao": "BUCHA DE BANDEJA DIANTEIRA",
+    "fabricante_id": "157",
+    "fabricante_nome": "AUTHOMIX",
+    "estoque": "0",
+    "custo": "25,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CL1350",
+    "descricao": "CILINDRO DE RODA TRASEIRO CL1350 AUTHOMIX",
+    "fabricante_id": "157",
+    "fabricante_nome": "AUTHOMIX",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FAR4150",
+    "descricao": "FILTRO DE AR FAR4150",
+    "fabricante_id": "157",
+    "fabricante_nome": "AUTHOMIX",
+    "estoque": "0",
+    "custo": "19,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FAR4152",
+    "descricao": "FILTRO DE AR FAR4152",
+    "fabricante_id": "157",
+    "fabricante_nome": "AUTHOMIX",
+    "estoque": "0",
+    "custo": "31,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FCO0086",
+    "descricao": "FILTRO DE COMBUSTIVEL CARBURADOAUTHOMIX",
+    "fabricante_id": "157",
+    "fabricante_nome": "AUTHOMIX",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FCO1068",
+    "descricao": "FILTRO DE COMBUSTIVEL CARBURADOAUTHOMIX",
+    "fabricante_id": "157",
+    "fabricante_nome": "AUTHOMIX",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "KX22331",
+    "descricao": "COXIM CAMBIO KX22331",
+    "fabricante_id": "157",
+    "fabricante_nome": "AUTHOMIX",
+    "estoque": "0",
+    "custo": "53,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "KX41434DE",
+    "descricao": "COXIM MOTOR DIR/ESQ KX41434DE",
+    "fabricante_id": "157",
+    "fabricante_nome": "AUTHOMIX",
+    "estoque": "0",
+    "custo": "84,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RO4140",
+    "descricao": "TENSOR CORREIA DENTADA RO4140 AUTHOMIX",
+    "fabricante_id": "157",
+    "fabricante_nome": "AUTHOMIX",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "0087",
+    "descricao": "MANOPLA",
+    "fabricante_id": "141",
+    "fabricante_nome": "AWA",
+    "estoque": "0",
+    "custo": "17,29",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1138",
+    "descricao": "BARRA TRAVESSA DE GUIDAO PRETA AWA",
+    "fabricante_id": "141",
+    "fabricante_nome": "AWA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1512",
+    "descricao": "ESPELHO RETROVISOR",
+    "fabricante_id": "141",
+    "fabricante_nome": "AWA",
+    "estoque": "0",
+    "custo": "47,11",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "502",
+    "descricao": "ESPELHO RETROVISOR",
+    "fabricante_id": "141",
+    "fabricante_nome": "AWA",
+    "estoque": "0",
+    "custo": "26,18",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "503",
+    "descricao": "ESPELHO RETROVISOR",
+    "fabricante_id": "141",
+    "fabricante_nome": "AWA",
+    "estoque": "0",
+    "custo": "47,33",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "577",
+    "descricao": "ESPELHO RETROVISOR MINI 577",
+    "fabricante_id": "141",
+    "fabricante_nome": "AWA",
+    "estoque": "0",
+    "custo": "30,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "649",
+    "descricao": "ESPELHO RETROVISOR FIXO HASTE AWA",
+    "fabricante_id": "141",
+    "fabricante_nome": "AWA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "141",
+    "fabricante_nome": "AWA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "676",
+    "descricao": "ESPELHO RETROVISOR MINI PRETO 676AWA",
+    "fabricante_id": "141",
+    "fabricante_nome": "AWA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "0110502",
+    "descricao": "BUCHA DA BANDEJA - AXIOS 0110502 AXIOS",
+    "fabricante_id": "004",
+    "fabricante_nome": "AXIOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "0112416",
+    "descricao": "BUCHA DIANTEIRA BANDEJA DIANTEIRAAXIOS",
+    "fabricante_id": "004",
+    "fabricante_nome": "AXIOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "0112417",
+    "descricao": "BUCHA TRASEIRA BANDEJA DIANTEIRAAXIOS",
+    "fabricante_id": "004",
+    "fabricante_nome": "AXIOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "0120399",
+    "descricao": "0120399 BUCHA DA BANDEJA",
+    "fabricante_id": "004",
+    "fabricante_nome": "AXIOS",
+    "estoque": "0",
+    "custo": "22,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "0210582",
+    "descricao": "COXIM DO CAMBIO 0210582",
+    "fabricante_id": "004",
+    "fabricante_nome": "AXIOS",
+    "estoque": "0",
+    "custo": "75,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "0221587",
+    "descricao": "0221587 COXIM DO AMORTECEDOR",
+    "fabricante_id": "004",
+    "fabricante_nome": "AXIOS",
+    "estoque": "0",
+    "custo": "54,59",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "5312143",
+    "descricao": "5312143 BIELETA AXIOS",
+    "fabricante_id": "004",
+    "fabricante_nome": "AXIOS",
+    "estoque": "0",
+    "custo": "64,20",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "LT90160",
+    "descricao": "KIT COIFA LADO RODA LT90160",
+    "fabricante_id": "004",
+    "fabricante_nome": "AXIOS",
+    "estoque": "0",
+    "custo": "50,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "111525ML",
+    "descricao": "JUNTA DE CABECOTE METALICA -",
+    "fabricante_id": "025",
+    "fabricante_nome": "BASTOS",
+    "estoque": "0",
+    "custo": "100,18",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "111761BNL",
+    "descricao": "JUNTA DA TAMPA DE VALVULA",
+    "fabricante_id": "025",
+    "fabricante_nome": "BASTOS",
+    "estoque": "0",
+    "custo": "63,58",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "131213PK",
+    "descricao": "JOGO DE JUNTAS SUPERIOR S/RET",
+    "fabricante_id": "025",
+    "fabricante_nome": "BASTOS",
+    "estoque": "0",
+    "custo": "129,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "141749BN",
+    "descricao": "JUNTA DA TAMPA DE VALVULA -",
+    "fabricante_id": "025",
+    "fabricante_nome": "BASTOS",
+    "estoque": "0",
+    "custo": "23,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "141785BN",
+    "descricao": "JUNTA DA TAMPA DE VALVULA ( TAMPABASTOS",
+    "fabricante_id": "025",
+    "fabricante_nome": "BASTOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "142102",
+    "descricao": "JUNTA COLETOR DE ADMISS\u00c3O 142102BASTOS",
+    "fabricante_id": "025",
+    "fabricante_nome": "BASTOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "144110",
+    "descricao": "JUNTA VALVULA TERMOSTATICA 144110BASTOS",
+    "fabricante_id": "025",
+    "fabricante_nome": "BASTOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "15129603ML",
+    "descricao": "JOGO DE JUNTAS SUPERIOR S/RET",
+    "fabricante_id": "025",
+    "fabricante_nome": "BASTOS",
+    "estoque": "0",
+    "custo": "343,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BA8037",
+    "descricao": "AXIAL DE DIRECAO (D. HIDRAULICO)",
+    "fabricante_id": "113",
+    "fabricante_nome": "BORTEC",
+    "estoque": "0",
+    "custo": "55,88",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "0204032343",
+    "descricao": "FLUIDO DE FREIOS DOT3 500ML - BOSCH",
+    "fabricante_id": "059",
+    "fabricante_nome": "BOSCH",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "0986B00002",
+    "descricao": "FILTRO DE OLEO 0986B00002",
+    "fabricante_id": "059",
+    "fabricante_nome": "BOSCH",
+    "estoque": "0",
+    "custo": "45,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "0986B00042",
+    "descricao": "FILTRO DE OLEO 0986B00042",
+    "fabricante_id": "059",
+    "fabricante_nome": "BOSCH",
+    "estoque": "0",
+    "custo": "32,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "0986B00045",
+    "descricao": "FILTRO DE OLEO 0986B00045",
+    "fabricante_id": "059",
+    "fabricante_nome": "BOSCH",
+    "estoque": "0",
+    "custo": "26,50",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1234332215",
+    "descricao": "ROTOR 215 1234332215",
+    "fabricante_id": "059",
+    "fabricante_nome": "BOSCH",
+    "estoque": "0",
+    "custo": "48,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1987302206",
+    "descricao": "1987302206 LAMPADA 12V BOSCH W5 BOSCH",
+    "fabricante_id": "059",
+    "fabricante_nome": "BOSCH",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "F000KE0P10",
+    "descricao": "VELA IGNICAO F000KE0P10",
+    "fabricante_id": "059",
+    "fabricante_nome": "BOSCH",
+    "estoque": "0",
+    "custo": "32,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "F000KE0P32",
+    "descricao": "VELA DE IGNICAO F000KE0P32",
+    "fabricante_id": "059",
+    "fabricante_nome": "BOSCH",
+    "estoque": "0",
+    "custo": "24,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "H1 BOSCH",
+    "descricao": "LAMPADA 12V - BOSCH H1",
+    "fabricante_id": "059",
+    "fabricante_nome": "BOSCH",
+    "estoque": "0",
+    "custo": "26,75",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "216510",
+    "descricao": "BOMBA DE COMBUSTIVEL 216510",
+    "fabricante_id": "143",
+    "fabricante_nome": "BROSOL",
+    "estoque": "0",
+    "custo": "131,68",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "143",
+    "fabricante_nome": "BROSOL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CAR80ANTICHIO SPRAY ANTI CHIO PASTILHA CAR80",
+    "descricao": "CAR80",
+    "fabricante_id": "033",
+    "fabricante_nome": "CAR80",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CARLUB",
+    "descricao": "DESENGRIPANTE CARLUB",
+    "fabricante_id": "033",
+    "fabricante_nome": "CAR80",
+    "estoque": "0",
+    "custo": "17,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TC3060",
+    "descricao": "TAMPA RESERVATORIO TC3060",
+    "fabricante_id": "013",
+    "fabricante_nome": "CLICK",
+    "estoque": "0",
+    "custo": "17,73",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TC3062",
+    "descricao": "TAMPA RESERVATORIO TC3062",
+    "fabricante_id": "013",
+    "fabricante_nome": "CLICK",
+    "estoque": "0",
+    "custo": "45,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TC3063",
+    "descricao": "TAMPA RESERVATORIO TC3063",
+    "fabricante_id": "013",
+    "fabricante_nome": "CLICK",
+    "estoque": "0",
+    "custo": "47,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TC4050",
+    "descricao": "TAMPA OLEO TC4050",
+    "fabricante_id": "013",
+    "fabricante_nome": "CLICK",
+    "estoque": "0",
+    "custo": "36,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TC4052",
+    "descricao": "TAMPA OLEO TC4052",
+    "fabricante_id": "013",
+    "fabricante_nome": "CLICK",
+    "estoque": "0",
+    "custo": "27,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TC4054",
+    "descricao": "TAMPA DO RESERVATORIO TC4054",
+    "fabricante_id": "013",
+    "fabricante_nome": "CLICK",
+    "estoque": "0",
+    "custo": "56,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TC6500",
+    "descricao": "TAMPA RESERVATORIO TC6500",
+    "fabricante_id": "013",
+    "fabricante_nome": "CLICK",
+    "estoque": "0",
+    "custo": "22,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TC6550",
+    "descricao": "TAMPA RESERVATORIO TC6550",
+    "fabricante_id": "013",
+    "fabricante_nome": "CLICK",
+    "estoque": "0",
+    "custo": "42,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TC7075F",
+    "descricao": "TAMPA RADIADOR FERRO TC7075F",
+    "fabricante_id": "013",
+    "fabricante_nome": "CLICK",
+    "estoque": "0",
+    "custo": "35,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TC7093",
+    "descricao": "TAMPA DO RADIADOR TC7093",
+    "fabricante_id": "013",
+    "fabricante_nome": "CLICK",
+    "estoque": "0",
+    "custo": "40,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TC7094",
+    "descricao": "TAMPA RADIADOR TC7094",
+    "fabricante_id": "013",
+    "fabricante_nome": "CLICK",
+    "estoque": "0",
+    "custo": "42,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "0003DIS COBREQDISCO DE FREIO TRASEIRO SOLIDO",
+    "descricao": "COBREQ",
+    "fabricante_id": "002",
+    "fabricante_nome": "COBREQ",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "0005 COBREQ",
+    "descricao": "0005CABO CABO DE VELOCIMETRO",
+    "fabricante_id": "002",
+    "fabricante_nome": "COBREQ",
+    "estoque": "0",
+    "custo": "22,10",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "0017KR",
+    "descricao": "KIT RELACAO 0017KR",
+    "fabricante_id": "002",
+    "fabricante_nome": "COBREQ",
+    "estoque": "0",
+    "custo": "238,90",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "011DIS",
+    "descricao": "DISCO DE FREIO DIANTEIRO SOLIDO COBREQ",
+    "fabricante_id": "002",
+    "fabricante_nome": "COBREQ",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "N1834",
+    "descricao": "PASTILHA DE FREIO DIANTEIRO N1834 COBREQ",
+    "fabricante_id": "002",
+    "fabricante_nome": "COBREQ",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "N1840",
+    "descricao": "PASTILHA DE FREIO TRASEIRO N1840 COBREQ",
+    "fabricante_id": "002",
+    "fabricante_nome": "COBREQ",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "N532",
+    "descricao": "PASTILHA DE FREIO N532",
+    "fabricante_id": "002",
+    "fabricante_nome": "COBREQ",
+    "estoque": "0",
+    "custo": "65,11",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "N917 COBREQ PASTILHA DE FREIO DIANTEIRA N917 COBREQ",
+    "descricao": "1,00",
+    "fabricante_id": "002",
+    "fabricante_nome": "COBREQ",
+    "estoque": "20,78",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "N942",
+    "descricao": "PASTILHA DE FREIO DIANTEIRA N942 COBREQ",
+    "fabricante_id": "002",
+    "fabricante_nome": "COBREQ",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "N949",
+    "descricao": "PASTILHA DE FREIO DIANTEIRA N949 COBREQ",
+    "fabricante_id": "002",
+    "fabricante_nome": "COBREQ",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BTC03104",
+    "descricao": "BTC03104 BIELETA",
+    "fabricante_id": "001",
+    "fabricante_nome": "COFAP",
+    "estoque": "0",
+    "custo": "31,94",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BTC04104",
+    "descricao": "BTC04104 BIELETA COFAP",
+    "fabricante_id": "001",
+    "fabricante_nome": "COFAP",
+    "estoque": "0",
+    "custo": "53,50",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BUC03101",
+    "descricao": "BUCHA DO BRA\u00c7O TENSOR (",
+    "fabricante_id": "001",
+    "fabricante_nome": "COFAP",
+    "estoque": "0",
+    "custo": "17,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "GB47886",
+    "descricao": "GB47886 AMORTECEDOR",
+    "fabricante_id": "001",
+    "fabricante_nome": "COFAP",
+    "estoque": "0",
+    "custo": "298,94",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "GP30100",
+    "descricao": "GP30100 AMORTECEDOR",
+    "fabricante_id": "001",
+    "fabricante_nome": "COFAP",
+    "estoque": "0",
+    "custo": "534,46",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "GP30101",
+    "descricao": "GP30101 AMORTECEDOR",
+    "fabricante_id": "001",
+    "fabricante_nome": "COFAP",
+    "estoque": "0",
+    "custo": "545,75",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "KSC32203S",
+    "descricao": "KIT AMORTECEDOR TRASEIRO",
+    "fabricante_id": "001",
+    "fabricante_nome": "COFAP",
+    "estoque": "0",
+    "custo": "62,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "001",
+    "fabricante_nome": "COFAP",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "STC04128M",
+    "descricao": "TENSOR LADO DIREITO",
+    "fabricante_id": "001",
+    "fabricante_nome": "COFAP",
+    "estoque": "0",
+    "custo": "130,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "390190",
+    "descricao": "390190 MANICOTO FREIO COMETA",
+    "fabricante_id": "099",
+    "fabricante_nome": "COMETA",
+    "estoque": "0",
+    "custo": "22,47",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "390235",
+    "descricao": "390235 MANICOTO EMBREAGE COMETACOMETA",
+    "fabricante_id": "099",
+    "fabricante_nome": "COMETA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "4PK675",
+    "descricao": "CORREIA ALTERNADOR (ALTERNADOR)CONTINEN",
+    "fabricante_id": "009",
+    "fabricante_nome": "CONTINENTAL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "6PK1200 ELAST CORREIA ALTERNADOR E DIRE\u00c7\u00c3O",
+    "descricao": "CONTINEN",
+    "fabricante_id": "009",
+    "fabricante_nome": "CONTINENTAL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "D16106",
+    "descricao": "INTERRUPTOR DE OLEO D16106",
+    "fabricante_id": "009",
+    "fabricante_nome": "CONTINENTAL",
+    "estoque": "0",
+    "custo": "39,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "D22131",
+    "descricao": "INTERRUPTOR OLEO D22131",
+    "fabricante_id": "009",
+    "fabricante_nome": "CONTINENTAL",
+    "estoque": "0",
+    "custo": "41,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "D22153",
+    "descricao": "INTERRUPTOR DE OLEO D22153",
+    "fabricante_id": "009",
+    "fabricante_nome": "CONTINENTAL",
+    "estoque": "0",
+    "custo": "37,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "D34056",
+    "descricao": "INTERRUPTOR DE OLEO D34056",
+    "fabricante_id": "009",
+    "fabricante_nome": "CONTINENTAL",
+    "estoque": "0",
+    "custo": "65,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CT686",
+    "descricao": "CORREIA DENTADA CT686",
+    "fabricante_id": "031",
+    "fabricante_nome": "CONTITECH",
+    "estoque": "0",
+    "custo": "49,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "C3472",
+    "descricao": "CILINDRO DE RODA TRAS - C3472",
+    "fabricante_id": "050",
+    "fabricante_nome": "CONTROIL",
+    "estoque": "0",
+    "custo": "56,53",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "2702V",
+    "descricao": "RETENTOR DO VOLANTE 2702V",
+    "fabricante_id": "092",
+    "fabricante_nome": "CORTECO",
+    "estoque": "0",
+    "custo": "86,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "7684N",
+    "descricao": "7684N RETENTOR DE BENGALA",
+    "fabricante_id": "092",
+    "fabricante_nome": "CORTECO",
+    "estoque": "0",
+    "custo": "31,10",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10X925 DAYCO CORREIA ALTERNADOR 10X925 DAYCODAYCO",
+    "descricao": "1,00",
+    "fabricante_id": "039",
+    "fabricante_nome": "DAYCO",
+    "estoque": "16,97",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "131SHPN170H",
+    "descricao": "CORREIA DENTADA 131SHPN170H",
+    "fabricante_id": "039",
+    "fabricante_nome": "DAYCO",
+    "estoque": "0",
+    "custo": "73,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "3PK905 DAYCO CORREIA ALTERNADOR ( DIRE\u00c7\u00c3O",
+    "descricao": "DAYCO",
+    "fabricante_id": "039",
+    "fabricante_nome": "DAYCO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "4PK673 DAYCO CORREIA ALTERNADOR ( ALTERNADOR)",
+    "descricao": "DAYCO",
+    "fabricante_id": "039",
+    "fabricante_nome": "DAYCO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "5PK1030 DAYCO CORREIA ALTERNADOR 5PK1030 DAYCO",
+    "descricao": "DAYCO",
+    "fabricante_id": "039",
+    "fabricante_nome": "DAYCO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "6PK2475 DAYCO CORREIA ALTERNADOR 6PK2475",
+    "descricao": "DAYCO",
+    "fabricante_id": "039",
+    "fabricante_nome": "DAYCO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "D111SP170H",
+    "descricao": "CORREIA DENTADA D111SP170H",
+    "fabricante_id": "039",
+    "fabricante_nome": "DAYCO",
+    "estoque": "0",
+    "custo": "73,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "D116SP160HT",
+    "descricao": "CORREIA DENTADA (BANHADA OLEO) DAYCO",
+    "fabricante_id": "039",
+    "fabricante_nome": "DAYCO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "D163SP7M200HT D163SP7M200HT CORREIA DENTADA DAYCO",
+    "descricao": "2,00",
+    "fabricante_id": "039",
+    "fabricante_nome": "DAYCO",
+    "estoque": "106,16",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FE20120",
+    "descricao": "BOMBA DE INJE\u00c7\u00c3O FLEX - DELPHI",
+    "fabricante_id": "022",
+    "fabricante_nome": "DELPHI",
+    "estoque": "0",
+    "custo": "250,40",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "GS30677",
+    "descricao": "ROTOR GS30677",
+    "fabricante_id": "022",
+    "fabricante_nome": "DELPHI",
+    "estoque": "0",
+    "custo": "28,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "XS10001",
+    "descricao": "XS10001 JOGO DE CABOS DE VELAS",
+    "fabricante_id": "022",
+    "fabricante_nome": "DELPHI",
+    "estoque": "0",
+    "custo": "86,10",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "XS10056",
+    "descricao": "CABO DE VELA S/PINO XS10056",
+    "fabricante_id": "022",
+    "fabricante_nome": "DELPHI",
+    "estoque": "0",
+    "custo": "69,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "XS10076",
+    "descricao": "CABO DE VELA XS10076",
+    "fabricante_id": "022",
+    "fabricante_nome": "DELPHI",
+    "estoque": "0",
+    "custo": "111,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "022",
+    "fabricante_nome": "DELPHI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "XS10554",
+    "descricao": "XS10554 JOGO DE CABOS DE VELAS",
+    "fabricante_id": "022",
+    "fabricante_nome": "DELPHI",
+    "estoque": "0",
+    "custo": "116,62",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "XS10563",
+    "descricao": "CABO DE VELA XS10563",
+    "fabricante_id": "022",
+    "fabricante_nome": "DELPHI",
+    "estoque": "0",
+    "custo": "66,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "XS10571",
+    "descricao": "CABO DE VELA XS10571",
+    "fabricante_id": "022",
+    "fabricante_nome": "DELPHI",
+    "estoque": "0",
+    "custo": "142,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10660",
+    "descricao": "PASTILHA DE FREIO 10660",
+    "fabricante_id": "072",
+    "fabricante_nome": "DIAFRAG",
+    "estoque": "0",
+    "custo": "19,85",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "DFP20800",
+    "descricao": "PASTILHA DE FREIO ALLEN 81890",
+    "fabricante_id": "072",
+    "fabricante_nome": "DIAFRAG",
+    "estoque": "0",
+    "custo": "28,09",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "0015107",
+    "descricao": "REDE CAPACETE 35X35 VERMELHA",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "21,76",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "00264",
+    "descricao": "00264 LENTE PISCA",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "6,94",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "00265",
+    "descricao": "00265 LENTE PISCA AMARELA",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "15,92",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "00436",
+    "descricao": "00436 AMORTECEDOR TRASEIRO MOLADIVERSOS",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "01184",
+    "descricao": "01184 CAPA DE BANCO",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "43,14",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "01931",
+    "descricao": "01931 RABETA AZUL 332705",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "116,50",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "02104",
+    "descricao": "REDE CAPACETE 45X45 PRETA 02104 DIVERSOS",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "02973",
+    "descricao": "02973 LAMPADA FREIO 12V BRANCA",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "32,63",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "03005",
+    "descricao": "03005 LAMPADA PISCA 12V BRANCA",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "29,94",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "03812",
+    "descricao": "SUPORTE PARALAMA DIANTEIRO 03812DIVERSOS",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "04043",
+    "descricao": "04043 BUCHA QUADRO ELASTICO",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "22,19",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "06259",
+    "descricao": "PROTETOR ESCAPAMENTO 06269",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "112,33",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "07412",
+    "descricao": "PASTILHA DE FREIO 07412",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "20,02",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "07886",
+    "descricao": "07886 LAMPADA FAROL H7 55W",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "23,44",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "08192",
+    "descricao": "08192 RABETA PRETO BRILHANTE",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "132,67",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "08200",
+    "descricao": "08200 ENTRADA DE AR PRETO",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "262,37",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "08235",
+    "descricao": "08235 LENTE PISCA TITAN 150 2014",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "13,15",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "08238",
+    "descricao": "08238 LENTE PISCA CRISTAL DE/TD",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "13,15",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "100206701",
+    "descricao": "BAGAGEIRO",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "233,11",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10979",
+    "descricao": "PASTILHA DE FREIO 10979",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "18,54",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "12030",
+    "descricao": "12030 BUCHA COROA",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "18,37",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "121195",
+    "descricao": "121195 FILTRO AR",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "19,66",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "13280",
+    "descricao": "LAMPADA H4 FAROL MOTO - 13280",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "20,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "14186",
+    "descricao": "14186 CADEADO DO GUIDAO",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "35,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1736CRL",
+    "descricao": "1736 CRL VISEIRA LIGHT POLIVISOR LS2DIVERSOS",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1736IRL",
+    "descricao": "1736IRL VISEIRA LIGHT POLIVISOR LS2 DIVERSOS",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "18900",
+    "descricao": "18900 ADESIVO PAULINHO ASINHA",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "40,12",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "19729",
+    "descricao": "SUPORTE CELULAR - CAPACETE AZUL DIVERSOS",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1C0000102",
+    "descricao": "1C0000102 ESTRIBO MACICO GALPAO DIVERSOS",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "2011",
+    "descricao": "VISEIRA GT INJETADA 2,5MM CRISTAL DIVERSOS",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "20325",
+    "descricao": "KIT DESCOMBINAR FREIO 20325",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "140,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "30021",
+    "descricao": "RAIO DIANTEIRO",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "77,22",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "315105",
+    "descricao": "REDE CAPACETE 35X35 PRETO 315105 DIVERSOS",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "3250001",
+    "descricao": "VISEIRA GTX CAMALEAO",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "85,57",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "4X6ST",
+    "descricao": "REBITES P/ LONAS DE FREIOS 4X6ST DIVERSOS",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "51964",
+    "descricao": "AGULHA CARBURADOR",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "56,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "6104800",
+    "descricao": "RETROVISOR MINI 160 6104800",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "31,41",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "72094",
+    "descricao": "72094 ANEL ESCAPAMENTO NIKKI GOLDDIVERSOS",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "7X8ST",
+    "descricao": "REBITES PARA LONAS DE FREIOS 7X8ST",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "9020830005",
+    "descricao": "CABO DE ACELERADOR 9020830005",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "20,42",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "9020830014",
+    "descricao": "CABO DE VELOCIMETRO CONTROLFLEX",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "28,06",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "9020830022",
+    "descricao": "CABO DE EMBREAGEM CONTROLFLEX DIVERSOS",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "90214100",
+    "descricao": "90214100 INTERRUPTOR DA LUZ DE",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "10,06",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "90250710",
+    "descricao": "CACHIMBO DE VELA 90250710",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "22,74",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CA12195",
+    "descricao": "FILTRO DE AR CA12195",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "67,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "G4196",
+    "descricao": "FILTRO DE COMBUSTIVEL FRAM G4196 DIVERSOS",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "KBPBOM",
+    "descricao": "CADEADO ASPIRAL ARTICULADO COM DIVERSOS",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "L21805155",
+    "descricao": "MANETE FREIO DISCO PRETA L21805155",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "M730902002030",
+    "descricao": "M730902002030 RETENTOR DO GARFO DIVERSOS",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MANGUEIRA7",
+    "descricao": "MANGUEIRA CRISTAL 7MM",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "6,42",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MANGUITOPTO",
+    "descricao": "MANGUITO PRETO GG",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "18,70",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MMB3005",
+    "descricao": "SUPORTE PLACA MEGA MOTO MMB3005",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "22,06",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PT006",
+    "descricao": "LONA FREIO INCOL PT006",
+    "fabricante_id": "048",
+    "fabricante_nome": "DIVERSOS",
+    "estoque": "0",
+    "custo": "16,83",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "D48",
+    "descricao": "DISCO DE FREIO VENTILADO D48",
+    "fabricante_id": "085",
+    "fabricante_nome": "DS",
+    "estoque": "0",
+    "custo": "207,89",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "DS1611",
+    "descricao": "ATUADOR DE MARCHA LENTA DS1611 DS",
+    "fabricante_id": "085",
+    "fabricante_nome": "DS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "30407S4",
+    "descricao": "KIT AMORTECEDOR DIANTEIRO 30407S4",
+    "fabricante_id": "037",
+    "fabricante_nome": "DURAKIT",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "9900015",
+    "descricao": "COXIM DA COROA DURAKIT 990015",
+    "fabricante_id": "037",
+    "fabricante_nome": "DURAKIT",
+    "estoque": "0",
+    "custo": "27,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "26994",
+    "descricao": "CAPACETE ABERTO SPARK JET SOLID EBF",
+    "fabricante_id": "140",
+    "fabricante_nome": "EBF",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "27267",
+    "descricao": "CAPACETE ABERTO SPARK JET",
+    "fabricante_id": "140",
+    "fabricante_nome": "EBF",
+    "estoque": "0",
+    "custo": "280,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "28673",
+    "descricao": "CAPACETE ABERTO SPARK JET",
+    "fabricante_id": "140",
+    "fabricante_nome": "EBF",
+    "estoque": "0",
+    "custo": "200,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10059E",
+    "descricao": "CARCACA DO PAINEL INTERMEDIARIA EMBUS",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10485E",
+    "descricao": "RETENTOR DE BENGALA",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "6,56",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10534E",
+    "descricao": "PASTILHA DE FREIO DIANTEIRA",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "17,56",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10545E",
+    "descricao": "PASTILHA DE FREIO DIANTEIRA",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "28,51",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10768E",
+    "descricao": "PASTILHA DE FREIO DIANTEIRA",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "24,11",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "11072E",
+    "descricao": "CARCACA DO PAINEL INTERMEDIARIA EMBUS",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "14675E",
+    "descricao": "PISCA LED CB 250 TWISTER 19/20 COM EMBUS",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "15419E",
+    "descricao": "PISCA LED CB 300F TWISTER 23-24",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "65,93",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "15420E",
+    "descricao": "PISCA LED CB 300F TWISTER 23-24",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "65,93",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "4780E",
+    "descricao": "CARCACA DO FAROL",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "20,94",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "4781E",
+    "descricao": "CARCACA DO FAROL",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "20,94",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "5241E",
+    "descricao": "CARCACA DO PAINEL INFERIOR",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "17,94",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "5245E",
+    "descricao": "CARCACA DO PAINEL",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "20,52",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "5272E",
+    "descricao": "GUIDAO MODELO ORIGINAL",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "66,22",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "674",
+    "descricao": "ESPELHO RETROVISOR",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "105,51",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "9549",
+    "descricao": "ESPELHO RETROVISOR",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "143,75",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "9786",
+    "descricao": "9786 CHAVE DE LUZ ILLION",
+    "fabricante_id": "070",
+    "fabricante_nome": "EMBUS",
+    "estoque": "0",
+    "custo": "93,60",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "08516",
+    "descricao": "08516 PATIM FREIO",
+    "fabricante_id": "073",
+    "fabricante_nome": "FABREK",
+    "estoque": "0",
+    "custo": "26,39",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "5244",
+    "descricao": "LONA DE FREIO FABRECK 5244",
+    "fabricante_id": "073",
+    "fabricante_nome": "FABREK",
+    "estoque": "0",
+    "custo": "33,70",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "29092",
+    "descricao": "LAMPADA DO FREIO 12V 21/W",
+    "fabricante_id": "172",
+    "fabricante_nome": "FABRICANTE",
+    "estoque": "0",
+    "custo": "4,86",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "61438",
+    "descricao": "CABO EMBREAGEM 61438",
+    "fabricante_id": "169",
+    "fabricante_nome": "FANIA",
+    "estoque": "0",
+    "custo": "74,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "11401",
+    "descricao": "RESERVATORIO AGUA 11401 FLORIO FLORIO",
+    "fabricante_id": "114",
+    "fabricante_nome": "FLORIO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "13412",
+    "descricao": "RESERVATORIO AGUA 1 P\u00c9 13412",
+    "fabricante_id": "114",
+    "fabricante_nome": "FLORIO",
+    "estoque": "0",
+    "custo": "108,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "14498",
+    "descricao": "RESERVATORIO AGUA 3 SAIDAS 14498 FLORIO",
+    "fabricante_id": "114",
+    "fabricante_nome": "FLORIO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "F754",
+    "descricao": "TAMPA DO RESERVATORIO F754",
+    "fabricante_id": "114",
+    "fabricante_nome": "FLORIO",
+    "estoque": "0",
+    "custo": "39,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "F84",
+    "descricao": "TAMPA DO RADIADOR F84",
+    "fabricante_id": "114",
+    "fabricante_nome": "FLORIO",
+    "estoque": "0",
+    "custo": "43,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "F89",
+    "descricao": "TAMPA DO RESERVATORIO F89",
+    "fabricante_id": "114",
+    "fabricante_nome": "FLORIO",
+    "estoque": "0",
+    "custo": "35,93",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "24464",
+    "descricao": "CAPA PARA CELULAR A PROVA DAGUA FORKS",
+    "fabricante_id": "180",
+    "fabricante_nome": "FORKS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "26219",
+    "descricao": "BALACLAVA FORKS UV",
+    "fabricante_id": "180",
+    "fabricante_nome": "FORKS",
+    "estoque": "0",
+    "custo": "47,25",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "26227",
+    "descricao": "CAMISETA SEGUNDA PELE UV GG",
+    "fabricante_id": "180",
+    "fabricante_nome": "FORKS",
+    "estoque": "0",
+    "custo": "82,62",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CB49",
+    "descricao": "LONAS DE FREIO",
+    "fabricante_id": "016",
+    "fabricante_nome": "FRASLE",
+    "estoque": "0",
+    "custo": "60,66",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CB49X",
+    "descricao": "LONAS DE FREIO CB49X",
+    "fabricante_id": "016",
+    "fabricante_nome": "FRASLE",
+    "estoque": "0",
+    "custo": "68,94",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PD54",
+    "descricao": "PASTILHA FREIO PD54",
+    "fabricante_id": "016",
+    "fabricante_nome": "FRASLE",
+    "estoque": "0",
+    "custo": "95,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VW274",
+    "descricao": "LONA DE FREIO FINA VW274",
+    "fabricante_id": "016",
+    "fabricante_nome": "FRASLE",
+    "estoque": "0",
+    "custo": "44,31",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "016",
+    "fabricante_nome": "FRASLE",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VW276X",
+    "descricao": "LONA DE FREIO GROSSA VW276X",
+    "fabricante_id": "016",
+    "fabricante_nome": "FRASLE",
+    "estoque": "0",
+    "custo": "59,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BD0178",
+    "descricao": "DISCO FREIO VENTILADO BD0178",
+    "fabricante_id": "155",
+    "fabricante_nome": "FREEMAX",
+    "estoque": "0",
+    "custo": "129,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BD1240",
+    "descricao": "DISCO FREIO SOLIDO BD1240",
+    "fabricante_id": "155",
+    "fabricante_nome": "FREEMAX",
+    "estoque": "0",
+    "custo": "121,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BD1650",
+    "descricao": "DISCO DE FREIO VENTILADO BD1650",
+    "fabricante_id": "155",
+    "fabricante_nome": "FREEMAX",
+    "estoque": "0",
+    "custo": "202,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BD3975",
+    "descricao": "DISCO FREIO VENTILADO BD3975",
+    "fabricante_id": "155",
+    "fabricante_nome": "FREEMAX",
+    "estoque": "0",
+    "custo": "128,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "17160",
+    "descricao": "17160 RELACAO 43X16 FURIOUS",
+    "fabricante_id": "103",
+    "fabricante_nome": "FURIOS",
+    "estoque": "0",
+    "custo": "93,52",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10X1013 G7402 CORREIA ALTERNADOR 10X1013 G-7402GATES",
+    "descricao": "2,00",
+    "fabricante_id": "006",
+    "fabricante_nome": "GATES",
+    "estoque": "22,97",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10X950 GATES CORREIA ALTERNADOR 10X950",
+    "descricao": "GATES",
+    "fabricante_id": "006",
+    "fabricante_nome": "GATES",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "22340 GATES",
+    "descricao": "MANGUEIRA DO RESERVATORIO DE GATES",
+    "fabricante_id": "006",
+    "fabricante_nome": "GATES",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "40859X22XS",
+    "descricao": "CORREIA DENTADA 40859X22XS",
+    "fabricante_id": "006",
+    "fabricante_nome": "GATES",
+    "estoque": "0",
+    "custo": "89,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "41121X18",
+    "descricao": "CORREIA DENTADA 41121X18",
+    "fabricante_id": "006",
+    "fabricante_nome": "GATES",
+    "estoque": "0",
+    "custo": "52,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "8368",
+    "descricao": "MANGUEIRA DO RADIADOR 8368",
+    "fabricante_id": "006",
+    "fabricante_nome": "GATES",
+    "estoque": "0",
+    "custo": "211,86",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CT453",
+    "descricao": "CT453 CORREIA DENTADA",
+    "fabricante_id": "006",
+    "fabricante_nome": "GATES",
+    "estoque": "0",
+    "custo": "91,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "D121SX180H",
+    "descricao": "D121SX180H CORREIA DENTADA",
+    "fabricante_id": "006",
+    "fabricante_nome": "GATES",
+    "estoque": "0",
+    "custo": "82,39",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "D124P8S220H",
+    "descricao": "CORREIA DENTADA D124P8S220H",
+    "fabricante_id": "006",
+    "fabricante_nome": "GATES",
+    "estoque": "0",
+    "custo": "93,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "G1001",
+    "descricao": "RESERVATORIO DE AGUA G1001",
+    "fabricante_id": "005",
+    "fabricante_nome": "GONEL",
+    "estoque": "0",
+    "custo": "59,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "G1006",
+    "descricao": "G1006 RESERVATORIO DE AGUA",
+    "fabricante_id": "005",
+    "fabricante_nome": "GONEL",
+    "estoque": "0",
+    "custo": "80,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "G1108",
+    "descricao": "RESERVATORIO AGUA 3 SAIDAS G1108 GONEL",
+    "fabricante_id": "005",
+    "fabricante_nome": "GONEL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "G1205",
+    "descricao": "RESERVATORIO AGUA 2 SAIDAS G1205 GONEL",
+    "fabricante_id": "005",
+    "fabricante_nome": "GONEL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "G1306",
+    "descricao": "RESERVATORIO AGUA 1 P\u00c9 G1306",
+    "fabricante_id": "005",
+    "fabricante_nome": "GONEL",
+    "estoque": "0",
+    "custo": "78,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "G1307",
+    "descricao": "RESERVATORIO DE AGUA 2 PERNAS GONEL",
+    "fabricante_id": "005",
+    "fabricante_nome": "GONEL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "4854",
+    "descricao": "RETROVISOR GVS 4854",
+    "fabricante_id": "091",
+    "fabricante_nome": "GVS",
+    "estoque": "0",
+    "custo": "74,88",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "6502",
+    "descricao": "6502 PISCA GVS",
+    "fabricante_id": "091",
+    "fabricante_nome": "GVS",
+    "estoque": "0",
+    "custo": "29,96",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "6848",
+    "descricao": "6848 PISCA GVS",
+    "fabricante_id": "091",
+    "fabricante_nome": "GVS",
+    "estoque": "0",
+    "custo": "29,96",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "6849",
+    "descricao": "6849 PISCA GVS",
+    "fabricante_id": "091",
+    "fabricante_nome": "GVS",
+    "estoque": "0",
+    "custo": "29,96",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "8033",
+    "descricao": "8033 PISCA GVS",
+    "fabricante_id": "091",
+    "fabricante_nome": "GVS",
+    "estoque": "0",
+    "custo": "29,96",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "HELIAR6A",
+    "descricao": "BATERIA 6A HELIAR MOTO",
+    "fabricante_id": "127",
+    "fabricante_nome": "HELIAR",
+    "estoque": "0",
+    "custo": "278,20",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "057",
+    "fabricante_nome": "HIPPER FREIOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "HF01",
+    "descricao": "DISCO FREIO SOLIDO HF01",
+    "fabricante_id": "057",
+    "fabricante_nome": "HIPPER FREIOS",
+    "estoque": "0",
+    "custo": "88,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "HF10A",
+    "descricao": "DISCO FREIO VENTILADO HF10A",
+    "fabricante_id": "057",
+    "fabricante_nome": "HIPPER FREIOS",
+    "estoque": "0",
+    "custo": "147,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "HF31",
+    "descricao": "DISCO FREIO SOLIDO HF31",
+    "fabricante_id": "057",
+    "fabricante_nome": "HIPPER FREIOS",
+    "estoque": "0",
+    "custo": "105,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "HFCD30",
+    "descricao": "HFCD30 CUBO DE RODA",
+    "fabricante_id": "057",
+    "fabricante_nome": "HIPPER FREIOS",
+    "estoque": "0",
+    "custo": "132,86",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PESOPCX",
+    "descricao": "PESOPCX PESO DE GUID\u00c3O PCX",
+    "fabricante_id": "083",
+    "fabricante_nome": "HONO",
+    "estoque": "0",
+    "custo": "89,90",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "4291 IKS",
+    "descricao": "CABO FREIO 1335MM 4291 IKS",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "156,41",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS1110",
+    "descricao": "CABO DE ACELERADOR IKS1110",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "28,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS1113",
+    "descricao": "CABO ACELERADOR IKS1113",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "32,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS1215",
+    "descricao": "CABO FREIO DE MAO IKS1215",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "80,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS1238",
+    "descricao": "CABO FREIO DE MAO IKS1238",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "83,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS1303",
+    "descricao": "CABO EMBREAGEM IKS1303",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "50,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS1314",
+    "descricao": "CABO EMBREAGEM IKS1314",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "27,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS1324",
+    "descricao": "CABO DE EMBREAGEM IKS1324",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "69,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS2103",
+    "descricao": "CABO ACELERADOR IKS2103",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "32,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS2309",
+    "descricao": "CABO EMBREAGEM IKS2309",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "54,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS3106",
+    "descricao": "CABO ACELERADOR IKS3106",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "39,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS3235",
+    "descricao": "CABO DE FREIO ( INTERI\u00c7O )",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "142,43",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS3311",
+    "descricao": "CABO EMBREAGEM IKS3311",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "65,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS3312",
+    "descricao": "CABO EMBREAGEM IKS3312",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "73,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS3317",
+    "descricao": "CABO EMBREAGEM IKS3317",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "81,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS3334",
+    "descricao": "CABO DE EMBREAGEM IKS3334",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "96,18",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS4135",
+    "descricao": "CABO ACELERADOR IKS4135",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "55,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IKS4326",
+    "descricao": "CABO EMBREAGEM CAPA DUPLA",
+    "fabricante_id": "063",
+    "fabricante_nome": "IKS",
+    "estoque": "0",
+    "custo": "53,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "AL610",
+    "descricao": "CUBO DE RODA DIANTEIRO",
+    "fabricante_id": "104",
+    "fabricante_nome": "IMA",
+    "estoque": "0",
+    "custo": "152,57",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "ALK4528",
+    "descricao": "KIT ROLAMENTO RODA TRASEIRA ALK- IMA",
+    "fabricante_id": "104",
+    "fabricante_nome": "IMA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "ALK4544",
+    "descricao": "KIT ROLAMENTO TRASEIRO ALK4544 IMA",
+    "fabricante_id": "104",
+    "fabricante_nome": "IMA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "ALR633531",
+    "descricao": "ROLAMENTO RODA DIANTEIRO",
+    "fabricante_id": "104",
+    "fabricante_nome": "IMA",
+    "estoque": "0",
+    "custo": "126,60",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "ALR633967",
+    "descricao": "ROLAMENTO DE RODA DIANTEIRO",
+    "fabricante_id": "104",
+    "fabricante_nome": "IMA",
+    "estoque": "0",
+    "custo": "116,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "07262",
+    "descricao": "SENSOR TEMPERATURA 07262",
+    "fabricante_id": "117",
+    "fabricante_nome": "IMPORTADO",
+    "estoque": "0",
+    "custo": "168,52",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "315037",
+    "descricao": "REDE DE CAPACETE AZUL 35X35 -",
+    "fabricante_id": "117",
+    "fabricante_nome": "IMPORTADO",
+    "estoque": "0",
+    "custo": "20,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "117",
+    "fabricante_nome": "IMPORTADO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "6053635",
+    "descricao": "ANEL DA BOBINA 6053635",
+    "fabricante_id": "117",
+    "fabricante_nome": "IMPORTADO",
+    "estoque": "0",
+    "custo": "10,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "25129 INDISA",
+    "descricao": "BOMBA DE OLEO 25129",
+    "fabricante_id": "040",
+    "fabricante_nome": "INDISA",
+    "estoque": "0",
+    "custo": "228,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "252003INDISA",
+    "descricao": "BOMBA DE AGUA - INDISA 252003",
+    "fabricante_id": "040",
+    "fabricante_nome": "INDISA",
+    "estoque": "0",
+    "custo": "105,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "252005",
+    "descricao": "BOMBA DE AGUA 252005",
+    "fabricante_id": "040",
+    "fabricante_nome": "INDISA",
+    "estoque": "0",
+    "custo": "140,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "252008",
+    "descricao": "BOMBA DE AGUA INDISA 252008",
+    "fabricante_id": "040",
+    "fabricante_nome": "INDISA",
+    "estoque": "0",
+    "custo": "110,65",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "252010 INDISA BOMBA DE AGUA 252010 INDISA",
+    "descricao": "INDISA",
+    "fabricante_id": "040",
+    "fabricante_nome": "INDISA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "35188",
+    "descricao": "BOMBA DE OLEO 35188",
+    "fabricante_id": "040",
+    "fabricante_nome": "INDISA",
+    "estoque": "0",
+    "custo": "418,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "354009 INDISA BOMBA DE AGUA INDISA 354009",
+    "descricao": "INDISA",
+    "fabricante_id": "040",
+    "fabricante_nome": "INDISA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "354013 INDISA BOMBA DE AGUA 354013",
+    "descricao": "INDISA",
+    "fabricante_id": "040",
+    "fabricante_nome": "INDISA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "452007 INDISA BOMBA DE AGUA 452007",
+    "descricao": "INDISA",
+    "fabricante_id": "040",
+    "fabricante_nome": "INDISA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "452009",
+    "descricao": "BOMBA DE AGUA - INDISA 452009",
+    "fabricante_id": "040",
+    "fabricante_nome": "INDISA",
+    "estoque": "0",
+    "custo": "117,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "854513",
+    "descricao": "BOMBA DE AGUA - INDISA 854513",
+    "fabricante_id": "040",
+    "fabricante_nome": "INDISA",
+    "estoque": "0",
+    "custo": "233,26",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "T457736",
+    "descricao": "TENSOR DA CORREIA DENTADA -",
+    "fabricante_id": "040",
+    "fabricante_nome": "INDISA",
+    "estoque": "0",
+    "custo": "94,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "IR18622",
+    "descricao": "ROLAMENTO DIANTEIRO IR18622",
+    "fabricante_id": "101",
+    "fabricante_nome": "IRB",
+    "estoque": "0",
+    "custo": "78,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10083",
+    "descricao": "KIT ALAVANCA FREIO DE MAO 10083 KIT E CIA",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10127",
+    "descricao": "KIT COIFA HOMOCINETICA LADO",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "29,91",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10135",
+    "descricao": "KIT COIFA CAIXA DIRECAO MEC LD",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "21,89",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10153 KIT E CIA KIT FEIXE MOLA",
+    "descricao": "KIT E CIA",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10386 KIT E CIA KIT TRAMBULADOR ALAVANCA CAMBIOKIT E CIA",
+    "descricao": "1,00",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "47,93",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10435 KITECIA KIT COIFA HOMOCINETICA LADO RODA KIT E CIA",
+    "descricao": "3,00",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "10,94",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10476 KIT E CIA KIT AMORTECEDOR DIANTEIRO - 10.476KIT E CIA",
+    "descricao": "2,00",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "8,49",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10477",
+    "descricao": "KIT DO AMORTECEDOR TRASEIRO 10477 KIT E CIA",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "20442",
+    "descricao": "KIT KIT ALAVANCA CAMBIO COM TUBO KIT E CIA",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "20494 KIT E CIA DEDAL ( TAMPAO )",
+    "descricao": "KIT E CIA",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "30074 KIT E CIA KIT TRAMBULADOR C/LIAME",
+    "descricao": "KIT E CIA",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "30080 KIT E CIA KIT COIFA LADO CAMBIO 30080",
+    "descricao": "KIT E CIA",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "30114 KIT E CIA KIT DO TRAMBULADOR 30114",
+    "descricao": "KIT E CIA",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "30350",
+    "descricao": "KIT COIFA HOMOCINETICA LADO RODA KIT E CIA",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "30386 KIT E CIA DEDAL ( TAMPAO )",
+    "descricao": "KIT E CIA",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "30393",
+    "descricao": "PRATO DA MOLA DIANTEIRO C/ROL",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "80,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "30419 KIT E CIA KIT TRAMBULADOR C/LIAME 30419",
+    "descricao": "KIT E CIA",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "40018",
+    "descricao": "KIT ALAVANCA FREIO DE MAO 40018 KIT E CIA",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "40046 KIT E CIA KIT COXIM ESCAPAMENTO (FECHADO) KIT E CIA",
+    "descricao": "2,00",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "6,27",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "40086 KIT E CIA KIT BARRA ESTABILIZADORA EXTERNOKIT ( E CIA",
+    "descricao": "4,00",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "5,34",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "40098 KIT E CIA KIT BARRA ESTABILIZADORA INTERNO KIT E CIA",
+    "descricao": "2,00",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "5,23",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "40114",
+    "descricao": "KIT ALAVANCA FREIO MAO COMPLETA KIT E CIA",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "40301 KIT E CIA KIT COIFA HOMOCINETICA LADO",
+    "descricao": "KIT E CIA",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "40503 KIT E CIA KIT VEDA\u00c7\u00c3O ANEL ORING 40503",
+    "descricao": "KIT E CIA",
+    "fabricante_id": "054",
+    "fabricante_nome": "KIT E CIA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "80468",
+    "descricao": "80468 KMC GOLD KIT RELACAO",
+    "fabricante_id": "067",
+    "fabricante_nome": "KMC GOLD",
+    "estoque": "0",
+    "custo": "411,95",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "81600",
+    "descricao": "81600 KMC PRO KIT RELACAO",
+    "fabricante_id": "068",
+    "fabricante_nome": "KMC PRO",
+    "estoque": "0",
+    "custo": "159,16",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "77848610025",
+    "descricao": "BRONZINA DE MANCAL 0,25 77848610025",
+    "fabricante_id": "131",
+    "fabricante_nome": "KS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "800064440000",
+    "descricao": "JG ANEL DO MOTOR STD 800064440000 KS",
+    "fabricante_id": "131",
+    "fabricante_nome": "KS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "2569820",
+    "descricao": "DESCARBONIZANTE LOCTITE 2569820 LOCTITE",
+    "fabricante_id": "028",
+    "fabricante_nome": "LOCTITE",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "2597432",
+    "descricao": "SILICONE PRETO LOCTITE 2597432",
+    "fabricante_id": "028",
+    "fabricante_nome": "LOCTITE",
+    "estoque": "0",
+    "custo": "29,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "P25",
+    "descricao": "PASTILHA DE FREIO DIANTEIRA P25",
+    "fabricante_id": "043",
+    "fabricante_nome": "LONAFLEX",
+    "estoque": "0",
+    "custo": "63,61",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PD90",
+    "descricao": "PASTILHA DE FREIO PD90",
+    "fabricante_id": "043",
+    "fabricante_nome": "LONAFLEX",
+    "estoque": "0",
+    "custo": "98,67",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "15W40 LUBRAX OLEO DE MOTOR 15W40 500ML LUBRAXLUBRAX",
+    "descricao": "4,00",
+    "fabricante_id": "163",
+    "fabricante_nome": "LUBRAX",
+    "estoque": "16,17",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "410000910",
+    "descricao": "ROLAMENTO EIXO PILOTO 410000910",
+    "fabricante_id": "049",
+    "fabricante_nome": "LUK",
+    "estoque": "0",
+    "custo": "25,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "6193015000",
+    "descricao": "KIT DE EMBREAGEM LUK 6193015000",
+    "fabricante_id": "049",
+    "fabricante_nome": "LUK",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "6233043000",
+    "descricao": "6233043000 KIT DE EMBREAGEM LUK",
+    "fabricante_id": "049",
+    "fabricante_nome": "LUK",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CVMF0202",
+    "descricao": "CVMF0202 JOGO DE CABOS DE VELAS MAGNETI",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CVMF3002",
+    "descricao": "JOGO DE CABOS DE VELAS CVMF3002 MAGNETI",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CVMG7202",
+    "descricao": "CABOS DE VELA CVMG7202",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "128,54",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CVMT0602",
+    "descricao": "CABO DE VELA S/PINO CVMT0602",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "71,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CVMT0902",
+    "descricao": "JOGO DE CABOS DE VELAS - MAGNETI MAGNETI",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CVMV1702",
+    "descricao": "CABO DE VELA CVMV1702",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "134,54",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "E5TCMM",
+    "descricao": "VELA DE IGNICAO E5TCMM",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "20,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "F5RFMM",
+    "descricao": "VELA DE IGNICAO RESISTIVA F5RFMM MAGNETI",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "F5RTJYMM",
+    "descricao": "VELA DE IGNICAO F5RTJYMM",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "25,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "F6RFMM",
+    "descricao": "F6RFMM VELA DE IGNICAO RESISTIVA MAGNETI",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "F7RCMM",
+    "descricao": "VELA IGNI\u00c7\u00c3O F7RCMM",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "20,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "F7RFMM",
+    "descricao": "VELA DE IGNICAO RESISTIVA - MAGNETIMAGNETI",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "F8RCMM",
+    "descricao": "VELA DE IGNICAO F8RCMM",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "20,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "H1",
+    "descricao": "LAMPADA 12V - MAGNETI MARELLI H1 MAGNETI",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "H3",
+    "descricao": "LAMPADA 12V - MAGNETI MARELLI H3 MAGNETI",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "H4",
+    "descricao": "LAMPADA H4 - MAGNETI MARELLI",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "30,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "H7",
+    "descricao": "LAMPADA 12V MAGNETI MARELLI H7 MAGNETI",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "K5RF2MM",
+    "descricao": "VELA DE IGNICAO RESISTIVA - MAGNETIMAGNETI",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "K6RFMM",
+    "descricao": "VELA DE IGNICAO RESISTIVA - K6RFMMMAGNETI",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "K7RTCMM",
+    "descricao": "VELA DE IGNICAO RESISTIVA -",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "25,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "QH7RFMM10",
+    "descricao": "VELA DE IGNICAO RESISTIVA - MAGNETIMAGNETI",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "WB011A",
+    "descricao": "BOMBA DE INJE\u00c7\u00c3O GASOLINA -",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "127,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "WB022A",
+    "descricao": "WB022 BOMBA DE INJE\u00c7\u00c3O FLEX",
+    "fabricante_id": "011",
+    "fabricante_nome": "MAGNETI MARELLI",
+    "estoque": "0",
+    "custo": "200,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "3053",
+    "descricao": "3053 BORRACHA DO ESTRIBO MAJOR MAJOR",
+    "fabricante_id": "075",
+    "fabricante_nome": "MAJOR",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "3055 MAJOR",
+    "descricao": "3055 MAJOR PAR MANOPLA VAZADA MAJOR",
+    "fabricante_id": "075",
+    "fabricante_nome": "MAJOR",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "C1016",
+    "descricao": "FILTRO DE AR C1016 MOTO",
+    "fabricante_id": "044",
+    "fabricante_nome": "MANN HUMMEL",
+    "estoque": "0",
+    "custo": "32,07",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "C1944",
+    "descricao": "FILTRO AR C1944",
+    "fabricante_id": "044",
+    "fabricante_nome": "MANN HUMMEL",
+    "estoque": "0",
+    "custo": "18,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "C2496",
+    "descricao": "FILTRO DE AR C2496",
+    "fabricante_id": "044",
+    "fabricante_nome": "MANN HUMMEL",
+    "estoque": "0",
+    "custo": "22,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "C26111",
+    "descricao": "FILTRO DE AR C26611",
+    "fabricante_id": "044",
+    "fabricante_nome": "MANN HUMMEL",
+    "estoque": "0",
+    "custo": "33,12",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "C29003",
+    "descricao": "FILTRO DE AR C29003",
+    "fabricante_id": "044",
+    "fabricante_nome": "MANN HUMMEL",
+    "estoque": "0",
+    "custo": "35,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "HU711 51X",
+    "descricao": "FILTRO DE OLEO REFIL HU711 51X",
+    "fabricante_id": "044",
+    "fabricante_nome": "MANN HUMMEL",
+    "estoque": "0",
+    "custo": "31,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "20W50 MAXON OLEO DE MOTOR 20W50 MAXON",
+    "descricao": "MAXON",
+    "fabricante_id": "138",
+    "fabricante_nome": "MAXON",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "5W30 MAXON",
+    "descricao": "OLEO DE MOTOR 5W30 MAXON",
+    "fabricante_id": "138",
+    "fabricante_nome": "MAXON",
+    "estoque": "0",
+    "custo": "38,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "80 MAXON",
+    "descricao": "OLEO DE CAMBIO 80 MAXON",
+    "fabricante_id": "138",
+    "fabricante_nome": "MAXON",
+    "estoque": "0",
+    "custo": "37,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CD31",
+    "descricao": "CD31 CUBO DE RODA DIANTEIRO",
+    "fabricante_id": "014",
+    "fabricante_nome": "MDS",
+    "estoque": "0",
+    "custo": "117,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "D099C",
+    "descricao": "DISCO DE FREIO VENTILADO D099C",
+    "fabricante_id": "014",
+    "fabricante_nome": "MDS",
+    "estoque": "0",
+    "custo": "195,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "D31A",
+    "descricao": "DISCO DE FREIO VENTILADO MDS D31AMDS",
+    "fabricante_id": "014",
+    "fabricante_nome": "MDS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "KL582",
+    "descricao": "KL582 FILTRO DE COMBUSTIVEL",
+    "fabricante_id": "030",
+    "fabricante_nome": "METAL LEVE",
+    "estoque": "0",
+    "custo": "21,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "KL740",
+    "descricao": "KL740 FILTRO DE COMBUSTIVEL",
+    "fabricante_id": "030",
+    "fabricante_nome": "METAL LEVE",
+    "estoque": "0",
+    "custo": "13,42",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "LX3115",
+    "descricao": "FILTRO AR LX3115",
+    "fabricante_id": "030",
+    "fabricante_nome": "METAL LEVE",
+    "estoque": "0",
+    "custo": "39,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "LX903",
+    "descricao": "FILTRO DE AR - METAL LEVE LX903 1-",
+    "fabricante_id": "030",
+    "fabricante_nome": "METAL LEVE",
+    "estoque": "0",
+    "custo": "30,61",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "030",
+    "fabricante_nome": "METAL LEVE",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "OC259",
+    "descricao": "FILTRO DE OLEO LUBRIFICANTE -",
+    "fabricante_id": "030",
+    "fabricante_nome": "METAL LEVE",
+    "estoque": "0",
+    "custo": "21,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "OC506",
+    "descricao": "FILTRO DE OLEO OC506",
+    "fabricante_id": "030",
+    "fabricante_nome": "METAL LEVE",
+    "estoque": "0",
+    "custo": "22,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "OC90",
+    "descricao": "OC90-FILTRO DE OLEO LUBRIFICANTE -METAL",
+    "fabricante_id": "030",
+    "fabricante_nome": "METAL LEVE",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "OX410",
+    "descricao": "OX410 D FILTRO DE OLEO",
+    "fabricante_id": "030",
+    "fabricante_nome": "METAL LEVE",
+    "estoque": "0",
+    "custo": "23,02",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SCA6771STD",
+    "descricao": "SCA6771STD ANEIS DO MOTOR",
+    "fabricante_id": "030",
+    "fabricante_nome": "METAL LEVE",
+    "estoque": "0",
+    "custo": "356,29",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SNA6983STD",
+    "descricao": "SNA6983STD ANEL DO MOTOR",
+    "fabricante_id": "030",
+    "fabricante_nome": "METAL LEVE",
+    "estoque": "0",
+    "custo": "326,35",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TI33592D",
+    "descricao": "TI33592D VALVULA TERMOSTATICA",
+    "fabricante_id": "030",
+    "fabricante_nome": "METAL LEVE",
+    "estoque": "0",
+    "custo": "82,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TI33989D",
+    "descricao": "VALVULA TERMOSTATICA TI33989D",
+    "fabricante_id": "030",
+    "fabricante_nome": "METAL LEVE",
+    "estoque": "0",
+    "custo": "71,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TI35087D",
+    "descricao": "CARCACA DA VALVULA TERMOSTATICAMETAL",
+    "fabricante_id": "030",
+    "fabricante_nome": "METAL LEVE",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TX42980D",
+    "descricao": "VALVULA TERMOSTATICA - METAL",
+    "fabricante_id": "030",
+    "fabricante_nome": "METAL LEVE",
+    "estoque": "0",
+    "custo": "50,68",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TX43987D",
+    "descricao": "VALVULA TERMOSTATICA TX43987D",
+    "fabricante_id": "030",
+    "fabricante_nome": "METAL LEVE",
+    "estoque": "0",
+    "custo": "75,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "13X19",
+    "descricao": "ABRA\u00c7ADEIRA 13X19",
+    "fabricante_id": "116",
+    "fabricante_nome": "METALMATRIX",
+    "estoque": "0",
+    "custo": "5,35",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "14X22",
+    "descricao": "ABRA\u00c7ADEIRA 14X22",
+    "fabricante_id": "116",
+    "fabricante_nome": "METALMATRIX",
+    "estoque": "0",
+    "custo": "5,35",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "19X27",
+    "descricao": "ABRA\u00c7ADEIRA 19X27",
+    "fabricante_id": "116",
+    "fabricante_nome": "METALMATRIX",
+    "estoque": "0",
+    "custo": "5,35",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "22X32",
+    "descricao": "ABRA\u00c7ADEIRA 22X32",
+    "fabricante_id": "116",
+    "fabricante_nome": "METALMATRIX",
+    "estoque": "0",
+    "custo": "5,35",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "25X38",
+    "descricao": "ABRA\u00c7ADEIRA 25X38",
+    "fabricante_id": "116",
+    "fabricante_nome": "METALMATRIX",
+    "estoque": "0",
+    "custo": "5,35",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "32X44",
+    "descricao": "ABRA\u00c7ADEIRA 32X44",
+    "fabricante_id": "116",
+    "fabricante_nome": "METALMATRIX",
+    "estoque": "0",
+    "custo": "5,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "38X51",
+    "descricao": "ABRA\u00c7ADEIRA 38X51",
+    "fabricante_id": "116",
+    "fabricante_nome": "METALMATRIX",
+    "estoque": "0",
+    "custo": "5,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "9X13",
+    "descricao": "ABRA\u00c7ADEIRA 9X13",
+    "fabricante_id": "116",
+    "fabricante_nome": "METALMATRIX",
+    "estoque": "0",
+    "custo": "5,35",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDAS001",
+    "descricao": "SILICONE PRETO MIDE PARTS MDAS001MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDCH009",
+    "descricao": "KIT COIFA LADO RODA MDCH009",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "24,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDCH011",
+    "descricao": "KIT COIFA LADO CAMBIO 1",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "15,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDCR001",
+    "descricao": "CILINDRO DE RODA TRASEIRO MDCR001MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT005",
+    "descricao": "KIT AMORTECEDOR DIANTEIRO",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "19,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT007",
+    "descricao": "KIT AMORTECEDOR TRASEIRO MDKT007 MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT009",
+    "descricao": "KIT AMORTECEDOR TRASEIRO MDKT009 MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT011",
+    "descricao": "KIT AMORTECEDOR TRASEIRO MDKT011 MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT013",
+    "descricao": "KIT AMORTECEDOR DIANTEIRO MDKT013MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT017",
+    "descricao": "KIT AMORTECEDOR TRASEIRO MDKT017 MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT018",
+    "descricao": "KIT AMORTECEDOR TRASEIRO MDKT018 MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT020",
+    "descricao": "KIT AMORTECEDOR DIANTEIRO MDKT020MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT021",
+    "descricao": "KIT AMORTECEDOR TRASEIRO MDKT021 MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT024",
+    "descricao": "KIT AMORTECEDOR DIANTEIRO",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "21,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT027",
+    "descricao": "KIT AMORTECEDOR TRASEIRO",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "34,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT030",
+    "descricao": "KIT AMORTECEDOR TRASEIRO MDKT030 MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT034",
+    "descricao": "KIT AMORTECEDOR TRASEIRO MDKT034 MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT035",
+    "descricao": "KIT AMORTECEDOR DIANTEIRO MDKT035MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT048",
+    "descricao": "KIT AMORTECEDOR DIANTEIRA MDKT048MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT053",
+    "descricao": "KIT AMORTECEDOR DIANTEIRO MDKT053MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKT055",
+    "descricao": "KIT AMORTECEDOR DIANTEIRO MDKT055MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKTC002",
+    "descricao": "KIT AMORTECEDOR DIANTEIRO C/COXIN",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKTC021",
+    "descricao": "KIT AMORT DIANTEIRO C/COXIN",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "114,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDKTC044",
+    "descricao": "KIT AMORTECEDOR TRASEIRO C/COXINMIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDPO002",
+    "descricao": "POLIA DO ALTERNADOR MDPO002",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "41,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDPO003",
+    "descricao": "POLIA DO ALTERNADOR MDPO003",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "57,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDRP002",
+    "descricao": "MDRP002 KIT BUCHA CAIXA DIRECAO MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDRP004",
+    "descricao": "KIT BARRA ESTABILIZADORA EXTERNOMIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDRP026",
+    "descricao": "KIT TRAMBULADOR COM LIAME",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "27,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDSB001",
+    "descricao": "TENSOR LADO DIREITO",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "86,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDSB002",
+    "descricao": "TENSOR LADO ESQUERDO",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "86,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDSB003",
+    "descricao": "TENSOR LADO ESQUERDO",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "95,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDTA001",
+    "descricao": "TUBO DE REFRIGERA\u00c7\u00c3O MTA001",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "22,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDTA002",
+    "descricao": "TUBO DE REFRIGERA\u00c7\u00c3O MDTA002",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "30,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDTA003",
+    "descricao": "TUBO DE REFRIGERA\u00c7\u00c3O",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "26,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDTA005",
+    "descricao": "TUBO DE REFRIGERA\u00c7\u00c3O C/AR",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "30,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDTA009",
+    "descricao": "TUBO DE REFRIGERA\u00c7\u00c3O MDTA009",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "22,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDTE001",
+    "descricao": "TENSOR CORREIA DENTADA MDTE001 MIDE",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MDVA001",
+    "descricao": "ANTI CHAMA MDVA001",
+    "fabricante_id": "165",
+    "fabricante_nome": "MIDE PARTS",
+    "estoque": "0",
+    "custo": "31,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "4878 SAMPEL",
+    "descricao": "4878 COXIM DO MOTOR",
+    "fabricante_id": "036",
+    "fabricante_nome": "MOBENSANI",
+    "estoque": "0",
+    "custo": "121,66",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MB2222",
+    "descricao": "BUCHA DIANTEIRA DA BANDEJA",
+    "fabricante_id": "036",
+    "fabricante_nome": "MOBENSANI",
+    "estoque": "0",
+    "custo": "32,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MB374A",
+    "descricao": "BUCHA DO QUADRO DO MOTOR",
+    "fabricante_id": "036",
+    "fabricante_nome": "MOBENSANI",
+    "estoque": "0",
+    "custo": "31,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MB4400",
+    "descricao": "COXIM INFERIOR DO MOTOR LADO",
+    "fabricante_id": "036",
+    "fabricante_nome": "MOBENSANI",
+    "estoque": "0",
+    "custo": "93,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MB4413",
+    "descricao": "BUCHA DIANTEIRA DO FEIXE DE MOLA MOBENSA",
+    "fabricante_id": "036",
+    "fabricante_nome": "MOBENSANI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MB454",
+    "descricao": "BUCHA DA BARRA ESTABILIZADORA",
+    "fabricante_id": "036",
+    "fabricante_nome": "MOBENSANI",
+    "estoque": "0",
+    "custo": "22,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MB460",
+    "descricao": "BUCHA DE BANDEJA DIANTEIRA",
+    "fabricante_id": "036",
+    "fabricante_nome": "MOBENSANI",
+    "estoque": "0",
+    "custo": "28,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "20W50 MONTANAOLEO DE MOTOR 20W50 MONTANA",
+    "descricao": "MONTANA",
+    "fabricante_id": "135",
+    "fabricante_nome": "MONTANA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MOURA5A",
+    "descricao": "BATERIA 5A MOURA MOTO",
+    "fabricante_id": "126",
+    "fabricante_nome": "MOURA",
+    "estoque": "0",
+    "custo": "220,42",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "3018 MTE",
+    "descricao": "SENSOR TEMPERATURA 3018 MTE",
+    "fabricante_id": "108",
+    "fabricante_nome": "MTE",
+    "estoque": "0",
+    "custo": "60,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "4050 MTE",
+    "descricao": "SENSOR TEMPERATURA PRETO 4050 MTE",
+    "fabricante_id": "108",
+    "fabricante_nome": "MTE",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "4051 MTE",
+    "descricao": "SENSOR TEMPERATURA 4051 MTE",
+    "fabricante_id": "108",
+    "fabricante_nome": "MTE",
+    "estoque": "0",
+    "custo": "59,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "4053 MTE",
+    "descricao": "SENSOR DE TEMPERATURA 4053",
+    "fabricante_id": "108",
+    "fabricante_nome": "MTE",
+    "estoque": "0",
+    "custo": "60,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "70323 MTE",
+    "descricao": "SENSOR DE ROTA\u00c7\u00c3O 70323",
+    "fabricante_id": "108",
+    "fabricante_nome": "MTE",
+    "estoque": "0",
+    "custo": "120,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "7033",
+    "descricao": "SENSOR ROTA\u00c7\u00c3O 3 FIOS 7033 MTE MTE",
+    "fabricante_id": "108",
+    "fabricante_nome": "MTE",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "70401 MTE",
+    "descricao": "SENSOR DE ROTA\u00c7\u00c3O 70401",
+    "fabricante_id": "108",
+    "fabricante_nome": "MTE",
+    "estoque": "0",
+    "custo": "85,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "108",
+    "fabricante_nome": "MTE",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "NB12000",
+    "descricao": "BUCHA DIANTEIRA DA BANDEJA",
+    "fabricante_id": "035",
+    "fabricante_nome": "NAKATA",
+    "estoque": "0",
+    "custo": "42,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "NB14001",
+    "descricao": "BUCHA DO BRA\u00c7O TENSOR (",
+    "fabricante_id": "035",
+    "fabricante_nome": "NAKATA",
+    "estoque": "0",
+    "custo": "12,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "NK0900",
+    "descricao": "KIT AMORTECEDOR TRASEIRO NK0900 NAKATA",
+    "fabricante_id": "035",
+    "fabricante_nome": "NAKATA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BKR5EGP",
+    "descricao": "VELA DE IGNICAO RESISTIVA BKR5EGPNGK",
+    "fabricante_id": "017",
+    "fabricante_nome": "NGK",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BKUR6ET10",
+    "descricao": "VELA DE IGNICAO RESISTIVA NGK",
+    "fabricante_id": "017",
+    "fabricante_nome": "NGK",
+    "estoque": "0",
+    "custo": "38,18",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BP5HS",
+    "descricao": "VELA DE IGNICAO BP5HS",
+    "fabricante_id": "017",
+    "fabricante_nome": "NGK",
+    "estoque": "0",
+    "custo": "28,50",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BPR6EYZ",
+    "descricao": "VELA DE IGNICAO RESISTIVA BPR6EYZ NGK",
+    "fabricante_id": "017",
+    "fabricante_nome": "NGK",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BR7ESD",
+    "descricao": "VELA DE IGNICAO BR7ESD",
+    "fabricante_id": "017",
+    "fabricante_nome": "NGK",
+    "estoque": "0",
+    "custo": "24,61",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BUR5ETB10",
+    "descricao": "VELA DE IGNICAO MULTIPLOS",
+    "fabricante_id": "017",
+    "fabricante_nome": "NGK",
+    "estoque": "0",
+    "custo": "37,78",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CPR8EA9",
+    "descricao": "VELA DE IGNICAO CPR8EA9",
+    "fabricante_id": "017",
+    "fabricante_nome": "NGK",
+    "estoque": "0",
+    "custo": "48,68",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CRC2A007",
+    "descricao": "SENSOR DE ROTA\u00c7\u00c3O CRC2A007",
+    "fabricante_id": "017",
+    "fabricante_nome": "NGK",
+    "estoque": "0",
+    "custo": "145,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "KR8B10D",
+    "descricao": "KR8B10D VELA DE IGNICAO RESISTIVA NGK",
+    "fabricante_id": "017",
+    "fabricante_nome": "NGK",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "LTR7A10",
+    "descricao": "LTR7A10 VELA DE IGNICAO RESISTIVA NGK",
+    "fabricante_id": "017",
+    "fabricante_nome": "NGK",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "LZKR7BDE",
+    "descricao": "LZKR7BDE VELA DE IGNICAO RESISTIVANGK",
+    "fabricante_id": "017",
+    "fabricante_nome": "NGK",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SCN08",
+    "descricao": "JOGO DE CABOS DE VELAS SCN08",
+    "fabricante_id": "017",
+    "fabricante_nome": "NGK",
+    "estoque": "0",
+    "custo": "356,47",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "U3001",
+    "descricao": "BOBINA PLASTICA INJE\u00c7AO",
+    "fabricante_id": "017",
+    "fabricante_nome": "NGK",
+    "estoque": "0",
+    "custo": "137,11",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "N2003",
+    "descricao": "FLEXIVEL DE FREIO DIANTEIRO",
+    "fabricante_id": "100",
+    "fabricante_nome": "NORFLEX",
+    "estoque": "0",
+    "custo": "28,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "N2004",
+    "descricao": "FLEXIVEL DE FREIO TRASEIRO-",
+    "fabricante_id": "100",
+    "fabricante_nome": "NORFLEX",
+    "estoque": "0",
+    "custo": "24,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "N3090",
+    "descricao": "FLEXIVEL DE FREIO N3090",
+    "fabricante_id": "100",
+    "fabricante_nome": "NORFLEX",
+    "estoque": "0",
+    "custo": "60,99",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "N7008",
+    "descricao": "FLEXIVEL DE FREIO TRASEIRO N7008 NORFLEX",
+    "fabricante_id": "100",
+    "fabricante_nome": "NORFLEX",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "N7018",
+    "descricao": "FLEXIVEL DE FREIO DIANTEIRO N7018 NORFLEX",
+    "fabricante_id": "100",
+    "fabricante_nome": "NORFLEX",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "N7022",
+    "descricao": "FLEXIVEL DE FREIO DIANTEIRO N7022 NORFLEX",
+    "fabricante_id": "100",
+    "fabricante_nome": "NORFLEX",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "N7023",
+    "descricao": "FLEXIVEL DE FREIO TRASEIRO",
+    "fabricante_id": "100",
+    "fabricante_nome": "NORFLEX",
+    "estoque": "0",
+    "custo": "26,75",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "KIT9008",
+    "descricao": "KIT CORREIA DENTADA E TENOR KIT9008",
+    "fabricante_id": "007",
+    "fabricante_nome": "NYTRON",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "NY1139",
+    "descricao": "POLIA DO ALTERNADOR NY1139",
+    "fabricante_id": "007",
+    "fabricante_nome": "NYTRON",
+    "estoque": "0",
+    "custo": "68,48",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "NY1143",
+    "descricao": "POLIA DO ALTERNADOR NY1143",
+    "fabricante_id": "007",
+    "fabricante_nome": "NYTRON",
+    "estoque": "0",
+    "custo": "50,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "NY1152",
+    "descricao": "POLIA DO ALTERNADOR NY1152",
+    "fabricante_id": "007",
+    "fabricante_nome": "NYTRON",
+    "estoque": "0",
+    "custo": "54,57",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "NY7704",
+    "descricao": "TENSOR DA CORREIA DENTADA NY7704NYTRON",
+    "fabricante_id": "007",
+    "fabricante_nome": "NYTRON",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "13028 OLIMPIC INTERRUPTOR OLEO 13028 OLIMPIC",
+    "descricao": "OLIMPIC",
+    "fabricante_id": "062",
+    "fabricante_nome": "OLIMPIC",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "062",
+    "fabricante_nome": "OLIMPIC",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "AMD0714",
+    "descricao": "AMORTECEDOR TRASEIRO AMD0714 PERFECT",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BRA2153",
+    "descricao": "TENSOR LADO ESQUERDO",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "90,15",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BRA3029",
+    "descricao": "BRA\u00c7O OSCILANTE DIANTEIRO BRA3029 PERFECT",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BRD4529",
+    "descricao": "AXIAL DE DIRE\u00c7\u00c3O BRD4529",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "46,44",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BRD4538",
+    "descricao": "BARRA AXIAL DE DIRECAO - PERFECT PERFECT",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BRD6408",
+    "descricao": "AXIAL DE DIRECAO BRD6408",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "53,61",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "KBT4067",
+    "descricao": "BIELETA DIANTEIRA KBT4067",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "45,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "KJH0240",
+    "descricao": "HOMOCINETICA LADO RODA 22 DENTESPERFECT",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PVI1003",
+    "descricao": "PIVO LD/LE RETO PONTA FINA",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "78,59",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PVI1032",
+    "descricao": "PIVO DE SUSPENSAO PVI1032",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "42,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PVI1039",
+    "descricao": "PIVO DE SUSPENSAO - PERFECT",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "69,89",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PVI1047",
+    "descricao": "PVI1047 PIVO DE SUSPENSAO",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "81,54",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PVI3395",
+    "descricao": "PVI3395 PIVO DE SUSPENSAO",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "82,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TDI1001",
+    "descricao": "TERMINAL DA BARRA DE DIRE\u00c7\u00c3O -",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "61,39",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TDI1002",
+    "descricao": "TERMINAL DE DIRE\u00c7\u00c3O TDI1002",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "58,45",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TDI1003",
+    "descricao": "TERMINAL DE DIRECAO DIREITO TDI1003",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TDI1104",
+    "descricao": "TERMINAL DE DIRECAO TDI1104",
+    "fabricante_id": "021",
+    "fabricante_nome": "PERFECT",
+    "estoque": "0",
+    "custo": "125,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MNP0207",
+    "descricao": "MOCHILA NYLLON 45 BIG PRETA",
+    "fabricante_id": "181",
+    "fabricante_nome": "PIRACAPAS",
+    "estoque": "0",
+    "custo": "174,98",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MNP0211",
+    "descricao": "MOCHILA NYLON PIZZA 45L BIG PRETA PIRACAPA",
+    "fabricante_id": "181",
+    "fabricante_nome": "PIRACAPAS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "MNP11111",
+    "descricao": "MOCHILA NYLON PIZZA 45L BIG PRETA PIRACAPA",
+    "fabricante_id": "181",
+    "fabricante_nome": "PIRACAPAS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CPL0003",
+    "descricao": "CAPA DE CHUVA PRC LIGHT G",
+    "fabricante_id": "175",
+    "fabricante_nome": "PIRAVAL",
+    "estoque": "0",
+    "custo": "175,98",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "16904",
+    "descricao": "16904 LENTE CRISTAL PLASMOTO",
+    "fabricante_id": "076",
+    "fabricante_nome": "PLASMOTO",
+    "estoque": "0",
+    "custo": "31,81",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "19008",
+    "descricao": "19008 PLASMOTO CAPA CORRENTE",
+    "fabricante_id": "076",
+    "fabricante_nome": "PLASMOTO",
+    "estoque": "0",
+    "custo": "22,45",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "200305",
+    "descricao": "200305 CARENAGEM LATERAL DO",
+    "fabricante_id": "076",
+    "fabricante_nome": "PLASMOTO",
+    "estoque": "0",
+    "custo": "84,26",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "7093",
+    "descricao": "7093 CARCACA PAINEL PLASMOTO",
+    "fabricante_id": "076",
+    "fabricante_nome": "PLASMOTO",
+    "estoque": "0",
+    "custo": "51,36",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "100302001",
+    "descricao": "100302001 ALCA ORIGINAL POLIMET",
+    "fabricante_id": "087",
+    "fabricante_nome": "POLIMET",
+    "estoque": "0",
+    "custo": "102,99",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "9724",
+    "descricao": "CAPA DE BANCO PROTERCAPAS 9724 PROTERC",
+    "fabricante_id": "088",
+    "fabricante_nome": "PROTERCAPA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "088",
+    "fabricante_nome": "PROTERCAPA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "9725",
+    "descricao": "CAPA DE BANCO PROTERCAPAS 9725 PROTERC",
+    "fabricante_id": "088",
+    "fabricante_nome": "PROTERCAPA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "100173",
+    "descricao": "PEDAL DE FREIO 100173 QUALLYMOTOS",
+    "fabricante_id": "080",
+    "fabricante_nome": "QUALLYMOTO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RQ301136",
+    "descricao": "RADNAQ VEDA ESCAPE 100GR",
+    "fabricante_id": "026",
+    "fabricante_nome": "RADNAQ",
+    "estoque": "0",
+    "custo": "11,27",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RQ402724",
+    "descricao": "AROMATIZANTE RADNAQ RQ402724",
+    "fabricante_id": "026",
+    "fabricante_nome": "RADNAQ",
+    "estoque": "0",
+    "custo": "9,27",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RQ601712",
+    "descricao": "LIMPA AR CONDICIONADO LAVANDA",
+    "fabricante_id": "026",
+    "fabricante_nome": "RADNAQ",
+    "estoque": "0",
+    "custo": "43,98",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RQ601912",
+    "descricao": "LIMPA AR CONDICIONADO CLASSIC",
+    "fabricante_id": "026",
+    "fabricante_nome": "RADNAQ",
+    "estoque": "0",
+    "custo": "31,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RQ602312",
+    "descricao": "LIMPA AR CONDICIONADO CARRO",
+    "fabricante_id": "026",
+    "fabricante_nome": "RADNAQ",
+    "estoque": "0",
+    "custo": "27,26",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RQ605812S",
+    "descricao": "LIMPA AR CONDICIONADO CITRICO",
+    "fabricante_id": "026",
+    "fabricante_nome": "RADNAQ",
+    "estoque": "0",
+    "custo": "25,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RQ904112",
+    "descricao": "ADITIVO ROSA RADNAQ RQ904112",
+    "fabricante_id": "026",
+    "fabricante_nome": "RADNAQ",
+    "estoque": "0",
+    "custo": "12,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1000326",
+    "descricao": "1000326 ALCA ESPORTIVA RHOWERT",
+    "fabricante_id": "065",
+    "fabricante_nome": "RHOWERT",
+    "estoque": "0",
+    "custo": "56,15",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1000405",
+    "descricao": "1000405 GUID\u00c3O CARGO CROMADO",
+    "fabricante_id": "065",
+    "fabricante_nome": "RHOWERT",
+    "estoque": "0",
+    "custo": "87,98",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1000406",
+    "descricao": "1000406 ALCA BAIXA RHOWERT",
+    "fabricante_id": "065",
+    "fabricante_nome": "RHOWERT",
+    "estoque": "0",
+    "custo": "84,26",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1000411",
+    "descricao": "1000411 BARRA ESTABILIZADORA",
+    "fabricante_id": "065",
+    "fabricante_nome": "RHOWERT",
+    "estoque": "0",
+    "custo": "48,15",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "71827",
+    "descricao": "KIT RELACAO RIFEL 71827",
+    "fabricante_id": "154",
+    "fabricante_nome": "RIFFEL",
+    "estoque": "0",
+    "custo": "137,02",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "15286",
+    "descricao": "152286 CAPA DE CHUVA RM CAPAS",
+    "fabricante_id": "089",
+    "fabricante_nome": "RM CAPAS",
+    "estoque": "0",
+    "custo": "126,97",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "15288",
+    "descricao": "15288 CAPA CHUVA RM CAPAS",
+    "fabricante_id": "089",
+    "fabricante_nome": "RM CAPAS",
+    "estoque": "0",
+    "custo": "175,98",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RM367",
+    "descricao": "KIT CAPA CORREIA DENTADA RM367",
+    "fabricante_id": "089",
+    "fabricante_nome": "RM CAPAS",
+    "estoque": "0",
+    "custo": "79,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CA0031",
+    "descricao": "CA0031 CABO DO ACELERADOR B RT RT MOTOS",
+    "fabricante_id": "079",
+    "fabricante_nome": "RT MOTOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CE0013",
+    "descricao": "CE0013 CABO DE EMBREAGEM RT",
+    "fabricante_id": "079",
+    "fabricante_nome": "RT MOTOS",
+    "estoque": "0",
+    "custo": "16,83",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CE0023",
+    "descricao": "CE0023 CABO EMBREAGEM RT MOTOS RT MOTOS",
+    "fabricante_id": "079",
+    "fabricante_nome": "RT MOTOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CF0001",
+    "descricao": "CABO FREIO RT MOTOS CF0001",
+    "fabricante_id": "079",
+    "fabricante_nome": "RT MOTOS",
+    "estoque": "0",
+    "custo": "14,96",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CF0010",
+    "descricao": "CABO DE FREIO RT MOTOS CF0010",
+    "fabricante_id": "079",
+    "fabricante_nome": "RT MOTOS",
+    "estoque": "0",
+    "custo": "16,83",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "CM0001",
+    "descricao": "CM0001 CAMARA DE AR 18 RT",
+    "fabricante_id": "079",
+    "fabricante_nome": "RT MOTOS",
+    "estoque": "0",
+    "custo": "33,68",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PP0007",
+    "descricao": "PP007 RT MOTOS PEDAL DE PARTIDA RT MOTOS",
+    "fabricante_id": "079",
+    "fabricante_nome": "RT MOTOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PT0002 RT",
+    "descricao": "PASTILHA DE FREIO DIANTEIRO PT0002RT MOTOS",
+    "fabricante_id": "079",
+    "fabricante_nome": "RT MOTOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PT0005 RT",
+    "descricao": "PASTILHA DE FREIO DIANTEIRA PT0005RT MOTOS",
+    "fabricante_id": "079",
+    "fabricante_nome": "RT MOTOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RO0008",
+    "descricao": "RO0008 RT MOTOS ROLAMETO 6201 RT MOTOS",
+    "fabricante_id": "079",
+    "fabricante_nome": "RT MOTOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TT0001",
+    "descricao": "TT0001 TAMPA DE TANQUE RT MOTOS RT MOTOS",
+    "fabricante_id": "079",
+    "fabricante_nome": "RT MOTOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "079",
+    "fabricante_nome": "RT MOTOS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "02006BAG",
+    "descricao": "02006BAG RETENTOR DO COMANDO DESABO",
+    "fabricante_id": "023",
+    "fabricante_nome": "SABO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "02312BRGE",
+    "descricao": "RETENTOR DA BENGALA SABO",
+    "fabricante_id": "023",
+    "fabricante_nome": "SABO",
+    "estoque": "0",
+    "custo": "12,86",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "09203BREF",
+    "descricao": "09203BREF RETENTOR DE HASTE DE SABO",
+    "fabricante_id": "023",
+    "fabricante_nome": "SABO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "51022 F",
+    "descricao": "JUNTA ESCAPAMENTO 51022 F",
+    "fabricante_id": "023",
+    "fabricante_nome": "SABO",
+    "estoque": "0",
+    "custo": "19,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "51026EF",
+    "descricao": "JUNTA DA TAMPA DE VALVULA",
+    "fabricante_id": "023",
+    "fabricante_nome": "SABO",
+    "estoque": "0",
+    "custo": "19,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "75305",
+    "descricao": "JUNTA DA TAMPA DE VALVULAS",
+    "fabricante_id": "023",
+    "fabricante_nome": "SABO",
+    "estoque": "0",
+    "custo": "79,42",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "75613 SABO",
+    "descricao": "JUNTA DA TAMPA DE VALVULA 75613 SABO",
+    "fabricante_id": "023",
+    "fabricante_nome": "SABO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "78552 SABO",
+    "descricao": "KIT COIFA LADO RODA 78552",
+    "fabricante_id": "023",
+    "fabricante_nome": "SABO",
+    "estoque": "0",
+    "custo": "25,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "78809",
+    "descricao": "COXIM DO AMORTECEDOR DIANTEIRO SABO",
+    "fabricante_id": "023",
+    "fabricante_nome": "SABO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "78960 SABO",
+    "descricao": "78960 SABO COXIM DO MOTOR",
+    "fabricante_id": "023",
+    "fabricante_nome": "SABO",
+    "estoque": "0",
+    "custo": "55,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "84615",
+    "descricao": "JUNTA COLETOR ADMISS\u00c3O / ESCAP SABO",
+    "fabricante_id": "023",
+    "fabricante_nome": "SABO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "96015",
+    "descricao": "JUNTA TAMPA VALVULA PAPEL 96015 SABO",
+    "fabricante_id": "023",
+    "fabricante_nome": "SABO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1002A",
+    "descricao": "BUCHA DA BANDEJA TRASEIRA 1002A SAMPEL",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1005 SAMPEL",
+    "descricao": "1005 SAMPEL BUCHA DO BRACO",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "24,08",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1015",
+    "descricao": "1015 COXIM DO AMORTECEDOR",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "49,57",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1070 SAMPEL",
+    "descricao": "COXIM CAMBIO LADO ESQUERDO 1070 SAMPEL",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1074 SAMPEL",
+    "descricao": "COXIM TRASEIRO DO MOTOR",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "142,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1097 SAMPEL",
+    "descricao": "COXIM CAMBIO ESQUERDO 1097",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "195,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1324 SAMPEL",
+    "descricao": "1324 BUCHA DA BANDEJA",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "98,32",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "2838 SAMPEL",
+    "descricao": "2838 BUCHA DA BARRA",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "39,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "3008",
+    "descricao": "3008 COXIM DO AMORTECEDOR SAMPELSAMPEL",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "3204 SAMPEL",
+    "descricao": "BUCHA BANDEJA DIANTEIRA 3204",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "57,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "4868",
+    "descricao": "BUCHA DA BANDEJA FERRO",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "36,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "4876",
+    "descricao": "BUCHA BARRA DIRE\u00c7AO 4876",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "16,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "4885",
+    "descricao": "4885 COXIM DO AMORTECEDOR SAMPELSAMPEL",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "4955 SAMPEL",
+    "descricao": "COXIM TRASEIRO DO MOTOR 4955",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "235,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SK1103A",
+    "descricao": "KIT BARRA ESTABILIZADORA EXTERNOSAMPEL",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SK138S",
+    "descricao": "SK138S KIT DO AMORTECEDOR",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "270,78",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SK315S",
+    "descricao": "KIT AMORTECEDOR DIANTEIRO S/COXIN",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SK325S",
+    "descricao": "KIT AMORTECEDOR TRASEIRO SK325S SAMPEL",
+    "fabricante_id": "032",
+    "fabricante_nome": "SAMPEL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10013438",
+    "descricao": "10013438 CAPACETE SAN MARINO",
+    "fabricante_id": "055",
+    "fabricante_nome": "SAN MARINO",
+    "estoque": "0",
+    "custo": "268,50",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "10014933",
+    "descricao": "CAPACETE SAN MARINO BRANCO 58 - SAN",
+    "fabricante_id": "055",
+    "fabricante_nome": "SAN MARINO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "20145 SHADECK BOMBA DE AGUA SCHADEK 20145",
+    "descricao": "SCHADEK",
+    "fabricante_id": "018",
+    "fabricante_nome": "SCHADEK",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "30198 SHADECK TENSOR DA CORREIA DENTADA 30198 SCHADEK",
+    "descricao": "1,00",
+    "fabricante_id": "018",
+    "fabricante_nome": "SCHADEK",
+    "estoque": "80,57",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "30229 SHADECK TENSOR DA CORREIA DENTADA 30229 SCHADEK",
+    "descricao": "1,00",
+    "fabricante_id": "018",
+    "fabricante_nome": "SCHADEK",
+    "estoque": "63,71",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "35039",
+    "descricao": "KIT CORRENTE 35039",
+    "fabricante_id": "018",
+    "fabricante_nome": "SCHADEK",
+    "estoque": "0",
+    "custo": "148,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "018",
+    "fabricante_nome": "SCHADEK",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "BAH0036",
+    "descricao": "BAH0036 ROLAMENTO DE RODA",
+    "fabricante_id": "034",
+    "fabricante_nome": "SKF",
+    "estoque": "0",
+    "custo": "120,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VKBC4222",
+    "descricao": "VKBC4222 ROLAMENTO DE RODA",
+    "fabricante_id": "034",
+    "fabricante_nome": "SKF",
+    "estoque": "0",
+    "custo": "257,73",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VKG2K05A",
+    "descricao": "GRAXA AZUL SKF VKG2K05A",
+    "fabricante_id": "034",
+    "fabricante_nome": "SKF",
+    "estoque": "0",
+    "custo": "44,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VKM12299",
+    "descricao": "TENSOR DA CORREIA DENTADA - SKF SKF",
+    "fabricante_id": "034",
+    "fabricante_nome": "SKF",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "41300DF1",
+    "descricao": "41300DF1 SMART FOX KIT RELACAO C/ SMART",
+    "fabricante_id": "069",
+    "fabricante_nome": "SMART FOX",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "80358",
+    "descricao": "KIT RELACAO 80358",
+    "fabricante_id": "069",
+    "fabricante_nome": "SMART FOX",
+    "estoque": "0",
+    "custo": "84,26",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "213659G1",
+    "descricao": "KIT COIFA LADO CAMBIO 2",
+    "fabricante_id": "176",
+    "fabricante_nome": "SPICER",
+    "estoque": "0",
+    "custo": "34,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "7140001",
+    "descricao": "7140001 CARENAGEM FAROL LATERAL SPORTIVE",
+    "fabricante_id": "077",
+    "fabricante_nome": "SPORTIVE",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "7140003",
+    "descricao": "714003 CARENAGEM FAROL LATERAL SPORTIVE",
+    "fabricante_id": "077",
+    "fabricante_nome": "SPORTIVE",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "7140009",
+    "descricao": "7140009 CARENAGEM FAROL LATERAL SPORTIVE",
+    "fabricante_id": "077",
+    "fabricante_nome": "SPORTIVE",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "7140017",
+    "descricao": "7140017 CARENAGEM DO FAROL",
+    "fabricante_id": "077",
+    "fabricante_nome": "SPORTIVE",
+    "estoque": "0",
+    "custo": "84,26",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "7140019",
+    "descricao": "7140019 CARENAGEM FAROL LATERAL SPORTIVE",
+    "fabricante_id": "077",
+    "fabricante_nome": "SPORTIVE",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "7250001",
+    "descricao": "COMPLEMENTO PROTETOR DO",
+    "fabricante_id": "077",
+    "fabricante_nome": "SPORTIVE",
+    "estoque": "0",
+    "custo": "64,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "8290001",
+    "descricao": "8290001 CARENAGEM DO FAROL",
+    "fabricante_id": "077",
+    "fabricante_nome": "SPORTIVE",
+    "estoque": "0",
+    "custo": "84,26",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "8290002",
+    "descricao": "8290002 CARENAGEM FAROL LATERAL SPORTIVE",
+    "fabricante_id": "077",
+    "fabricante_nome": "SPORTIVE",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "8290003",
+    "descricao": "8290003 CARENAGEM FAROL LATERAL SPORTIVE",
+    "fabricante_id": "077",
+    "fabricante_nome": "SPORTIVE",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "8290005",
+    "descricao": "8290005 CARENAGEM FAROL LATERAL SPORTIVE",
+    "fabricante_id": "077",
+    "fabricante_nome": "SPORTIVE",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "8690001",
+    "descricao": "COMPLEMENTO PROTETOR DO",
+    "fabricante_id": "077",
+    "fabricante_nome": "SPORTIVE",
+    "estoque": "0",
+    "custo": "46,81",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "ECO500",
+    "descricao": "LAMPADA H4 FAROL MOTO - STALLION STALLION",
+    "fabricante_id": "071",
+    "fabricante_nome": "STALLION",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL1042",
+    "descricao": "PASTILHA DE FREIO SYL1042",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "98,66",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL1097",
+    "descricao": "PASTILHA DE FREIO SYL1097",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "53,83",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL1101",
+    "descricao": "PASTILHA DE FREIO - SYL1101",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "152,50",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL1104",
+    "descricao": "PASTILHA FREIO SYL1104",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "116,60",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL1105",
+    "descricao": "PASTILHA DE FREIO SYL1105",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "67,96",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL1185",
+    "descricao": "PASTILHA DE FREIO SYL1185",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "56,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL1195",
+    "descricao": "PASTILHA DE FREIO SYL1195",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "52,91",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL1196",
+    "descricao": "PASTILHA DE FREIO SYL1196",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "64,45",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL1229",
+    "descricao": "PASTILHA DE FREIO SYL1229",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "50,64",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL1250",
+    "descricao": "PASTILHA DE FREIO - SYL 1250",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "105,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL1254",
+    "descricao": "PASTILHA DE FREIO SYL1254",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "93,29",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL1327",
+    "descricao": "PASTILHA DE FREIO DIANTEIRA SYL1327SYL",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL1357",
+    "descricao": "PASTILHA DE FREIO - SYL1357",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "68,17",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL1405",
+    "descricao": "PASTILHA DE FREIO SYL1405 (SOLIDO) SYL",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL1407",
+    "descricao": "PASTILHA DE FREIO SYL1407",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "62,78",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL1410",
+    "descricao": "PASTILHA DE FREIO SYL1410",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "104,74",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL201705",
+    "descricao": "SYL201705 SAPATA DE FREIO",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "73,83",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL203001",
+    "descricao": "LONA COM SAPATA DE FREIO",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "68,52",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL2099",
+    "descricao": "PASTILHA DE FREIO SYL2099",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "68,17",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL2114",
+    "descricao": "PASTILHA DE FREIO SYL2114",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "107,64",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL2182",
+    "descricao": "PASTILHA DE FREIO SYL2182",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "85,84",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL2183",
+    "descricao": "PASTILHA DE FREIO SYL2183",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "67,46",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL2186",
+    "descricao": "PASTILHA DE FREIO SYL2186",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "73,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL2187",
+    "descricao": "PASTILHA DE FREIO - SYL SYL2187",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "109,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL2235",
+    "descricao": "PASTILHA DE FREIO SYL2235",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "113,02",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL4217",
+    "descricao": "PASTILHA DE FREIO SYL4217",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "133,87",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "SYL6261",
+    "descricao": "PASTILHA DE FREIO - SYL SYL6261",
+    "fabricante_id": "019",
+    "fabricante_nome": "SYL",
+    "estoque": "0",
+    "custo": "105,83",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "240517 TARANTOJUNTA COLETOR ADMISSAO",
+    "descricao": "TARANTO",
+    "fabricante_id": "042",
+    "fabricante_nome": "TARANTO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "240905",
+    "descricao": "JUNTA CABE\u00c7OTE 240905",
+    "fabricante_id": "042",
+    "fabricante_nome": "TARANTO",
+    "estoque": "0",
+    "custo": "65,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "241417 TARANTOJUNTA COLETOR DE ADMISSAO 241417 TARANTO",
+    "descricao": "1,00",
+    "fabricante_id": "042",
+    "fabricante_nome": "TARANTO",
+    "estoque": "8,00",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "260905",
+    "descricao": "260905 TARANTO JUNTA DE CABECOTETARANTO",
+    "fabricante_id": "042",
+    "fabricante_nome": "TARANTO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "270216",
+    "descricao": "JUNTA COLETOR ADMISS\u00c3O / ESCAP. TARANTO",
+    "fabricante_id": "042",
+    "fabricante_nome": "TARANTO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "270508",
+    "descricao": "JUNTA DE CABE\u00c7OTE METALICA 270508TARANTO",
+    "fabricante_id": "042",
+    "fabricante_nome": "TARANTO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "ARL4150",
+    "descricao": "FILTRO DE AR ARL4150",
+    "fabricante_id": "156",
+    "fabricante_nome": "TECFIL",
+    "estoque": "0",
+    "custo": "23,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PSL34M",
+    "descricao": "FILTRO DE OLEO PSL3M",
+    "fabricante_id": "156",
+    "fabricante_nome": "TECFIL",
+    "estoque": "0",
+    "custo": "24,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PSL47",
+    "descricao": "FILTRO DE OLEO PSL47",
+    "fabricante_id": "156",
+    "fabricante_nome": "TECFIL",
+    "estoque": "0",
+    "custo": "32,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TL020",
+    "descricao": "LAMPADA EM LED LANTERNA DE FREIOTMAC",
+    "fabricante_id": "082",
+    "fabricante_nome": "TMAC",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "082",
+    "fabricante_nome": "TMAC",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TM0211",
+    "descricao": "TM0211 INTERRUPTOR DA PARTIDA",
+    "fabricante_id": "082",
+    "fabricante_nome": "TMAC",
+    "estoque": "0",
+    "custo": "102,99",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TM531",
+    "descricao": "TM531 DISCO DE EMBREAGEM TMAC",
+    "fabricante_id": "082",
+    "fabricante_nome": "TMAC",
+    "estoque": "0",
+    "custo": "65,54",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TM840",
+    "descricao": "TM840 TAMPA TANQUE",
+    "fabricante_id": "082",
+    "fabricante_nome": "TMAC",
+    "estoque": "0",
+    "custo": "59,92",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TM980",
+    "descricao": "TM980 ROLAMENTO DE RODA",
+    "fabricante_id": "082",
+    "fabricante_nome": "TMAC",
+    "estoque": "0",
+    "custo": "9,36",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TM9952",
+    "descricao": "SUPORTE DE CELULAR COM ARANHA",
+    "fabricante_id": "082",
+    "fabricante_nome": "TMAC",
+    "estoque": "0",
+    "custo": "52,48",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "44128406",
+    "descricao": "JOGO 6 CHAVES 2 FENDA (5X100",
+    "fabricante_id": "179",
+    "fabricante_nome": "TRAMONTINA",
+    "estoque": "0",
+    "custo": "121,22",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "44130505",
+    "descricao": "JOGO 5 CHAVES 3 FENDA (3X75 5X100 TRAMONTI",
+    "fabricante_id": "179",
+    "fabricante_nome": "TRAMONTINA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "44135505",
+    "descricao": "JOGO 5 CHAVES PHILLIPS (3X75 5X100 TRAMONTI",
+    "fabricante_id": "179",
+    "fabricante_nome": "TRAMONTINA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "44421214",
+    "descricao": "JOGO 14 CHAVES ALLEN LONGA 1,5MM TRAMONTI",
+    "fabricante_id": "179",
+    "fabricante_nome": "TRAMONTINA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "44650210",
+    "descricao": "JOGO 10 CHAVES COMBINADAS - PRO TRAMONTI",
+    "fabricante_id": "179",
+    "fabricante_nome": "TRAMONTINA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RCCD00680",
+    "descricao": "CILINDRO MESTRE DUPLO RCCD00680 TRW",
+    "fabricante_id": "024",
+    "fabricante_nome": "TRW",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RCCR01305",
+    "descricao": "CILINDRO DE RODA - TRW RCCR01305 TRW",
+    "fabricante_id": "024",
+    "fabricante_nome": "TRW",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RCCR02120",
+    "descricao": "CILINDRO DE RODA TRAS - TRW",
+    "fabricante_id": "024",
+    "fabricante_nome": "TRW",
+    "estoque": "0",
+    "custo": "81,03",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RCCR03510",
+    "descricao": "CILINDRO DE RODA TRASEIRO - TRW TRW",
+    "fabricante_id": "024",
+    "fabricante_nome": "TRW",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RCPT02930",
+    "descricao": "PASTILHA DE FREIO TRW RCPT02930 TRW",
+    "fabricante_id": "024",
+    "fabricante_nome": "TRW",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RCPT12550",
+    "descricao": "PASTILHA DE FREIO RCPT12550",
+    "fabricante_id": "024",
+    "fabricante_nome": "TRW",
+    "estoque": "0",
+    "custo": "77,40",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RCPT13680",
+    "descricao": "PASTILHA DE FREIO TRW RCPT13680 TRW",
+    "fabricante_id": "024",
+    "fabricante_nome": "TRW",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "5023 TUBA",
+    "descricao": "CABO DE EMBREAGEM 5023 TUBA",
+    "fabricante_id": "149",
+    "fabricante_nome": "TUBA",
+    "estoque": "0",
+    "custo": "64,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "6418 TUBA",
+    "descricao": "CABO DE EMBREAGEM 6418 TUBA",
+    "fabricante_id": "149",
+    "fabricante_nome": "TUBA",
+    "estoque": "0",
+    "custo": "78,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "7032 TUBA",
+    "descricao": "CABO DE EMBREAGEM 7032",
+    "fabricante_id": "149",
+    "fabricante_nome": "TUBA",
+    "estoque": "0",
+    "custo": "51,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "12437E",
+    "descricao": "RETENTOR DE ENGALA",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "6,36",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "23304",
+    "descricao": "CABO DE VELOCIMETRO",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "26,07",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "23574",
+    "descricao": "CABO DE VELOCIMETRO",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "30,67",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "8076",
+    "descricao": "CABO DE ACELERADOR",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "17,42",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "8121",
+    "descricao": "CABO DE ACELELADOR",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "23,89",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "8142",
+    "descricao": "CABO DE ACELERADOR",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "21,76",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "8177",
+    "descricao": "CABO DDE ACELERADOR",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "19,23",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "8311",
+    "descricao": "CABO DE FREIO",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "19,73",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "8312",
+    "descricao": "CABO DE FREIO",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "26,09",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "8313",
+    "descricao": "CABO DE FREIO",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "28,42",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "8518",
+    "descricao": "CABO DE VELOCIMETRO",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "19,51",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FT0177",
+    "descricao": "CABO DE ACELARADOR",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "25,83",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FT0185",
+    "descricao": "CABO DE ACELARADOR",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "17,56",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FT0254",
+    "descricao": "CABO DE EMBREAGEM",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "19,78",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FT0260",
+    "descricao": "CABO DE EMBREAGEM",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "17,29",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "UH2001",
+    "descricao": "PATIM DE FREIO DIANTEIRA",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "28,56",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "UH2001A",
+    "descricao": "PATIM DE FREIO TRASEIRO DIANTEIRO UNIVERSA",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "UH2001B",
+    "descricao": "PATIM DE FREIO TRASEIRO DIANTEIRO UNIVERSA",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VT949",
+    "descricao": "PASTILHA DE FREIO DIANTEIRA",
+    "fabricante_id": "173",
+    "fabricante_nome": "UNIVERSAL",
+    "estoque": "0",
+    "custo": "17,58",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "UB162",
+    "descricao": "BOMBA DE AGUA UB162",
+    "fabricante_id": "056",
+    "fabricante_nome": "URBA",
+    "estoque": "0",
+    "custo": "151,24",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "UB766",
+    "descricao": "BOMBA DE AGUA UB766",
+    "fabricante_id": "056",
+    "fabricante_nome": "URBA",
+    "estoque": "0",
+    "custo": "153,10",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "1514 DOFAB",
+    "descricao": "COTOVELO DA VALVULA",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "12,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC106A",
+    "descricao": "TUBO REFRIGERA\u00c7\u00c3O FERRO S/AR",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "54,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC111",
+    "descricao": "TUBO REFRIGERA\u00c7\u00c3O FERRO S/AR",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "44,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC112",
+    "descricao": "TUBO REFRIGERA\u00c7\u00c3O FERRO C/AR",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "47,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC113",
+    "descricao": "TUBO REFRIGERA\u00c7\u00c3O FERRO C/AR",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "47,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC114",
+    "descricao": "TUBO REFRIGERA\u00c7\u00c3O FERRO C/AR 2 VALCLEI",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC126",
+    "descricao": "TUBO REFRIGERA\u00c7\u00c3O FERRO S/AR",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "56,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC162",
+    "descricao": "VC162 CONECTOR DA FLANGE",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "30,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC162A",
+    "descricao": "CONECTOR FLANGE DA VALVULA",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "34,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC172A",
+    "descricao": "CARCACA DA VALVULA TERMOSTATICAVALCLEI",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC210",
+    "descricao": "TUBO REFRIGERA\u00c7\u00c3O FERRO S/AR",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "48,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC211",
+    "descricao": "TUBO REFRIGERA\u00c7\u00c3O FERRO C/AR",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "48,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC216A",
+    "descricao": "TUBO REFRIGERA\u00c7\u00c3O FERRO S/AR",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "43,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC232",
+    "descricao": "TUBO DE REFRIGERA\u00c7\u00c3O VC232",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "46,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC312",
+    "descricao": "COTOVELO VALVULA TERMOSTATICA VALCLEI",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC312H",
+    "descricao": "CONECTOR FLANGE CABE\u00c7OTE - VC- VALCLEI",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC408",
+    "descricao": "TUBO DE REFRIGERACAO VC408",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "13,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VC411",
+    "descricao": "TUBO DE REFRIGERACAO VC411",
+    "fabricante_id": "010",
+    "fabricante_nome": "VALCLEI",
+    "estoque": "0",
+    "custo": "35,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "228091",
+    "descricao": "KIT DE EMBREAGEM 228091",
+    "fabricante_id": "041",
+    "fabricante_nome": "VALEO",
+    "estoque": "0",
+    "custo": "409,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "V509",
+    "descricao": "PALHETA LIMPADOR PARABRISA V509 VALEO",
+    "fabricante_id": "041",
+    "fabricante_nome": "VALEO",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "RM366",
+    "descricao": "KIT CAPA CORREIA DENTADA RM366",
+    "fabricante_id": "137",
+    "fabricante_nome": "VBL",
+    "estoque": "0",
+    "custo": "74,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "5017402",
+    "descricao": "SUPORTE E ESCOVAS VEDAMOTORS VEDAMOT",
+    "fabricante_id": "090",
+    "fabricante_nome": "VEDAMOTORS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "73296",
+    "descricao": "73296 JUNTA SUPERIOR",
+    "fabricante_id": "090",
+    "fabricante_nome": "VEDAMOTORS",
+    "estoque": "0",
+    "custo": "31,83",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "78680",
+    "descricao": "78680 JOGO DE JUNTA VEDAMOTORS VEDAMOT",
+    "fabricante_id": "090",
+    "fabricante_nome": "VEDAMOTORS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "090",
+    "fabricante_nome": "VEDAMOTORS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "9020880033",
+    "descricao": "TORNEIRA DE COMBUSTIVEL CONTROLVEDAMOT",
+    "fabricante_id": "090",
+    "fabricante_nome": "VEDAMOTORS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "9050",
+    "descricao": "9050 JOGO DE JUNTA VEDAMOTORS VEDAMOT",
+    "fabricante_id": "090",
+    "fabricante_nome": "VEDAMOTORS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "VE99016010009 JUNTA DA TAMPA DE VALVULA",
+    "descricao": "VEDAMOT",
+    "fabricante_id": "090",
+    "fabricante_nome": "VEDAMOTORS",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "960191 VELTH",
+    "descricao": "960191 VELTH CABO ACELERADOR",
+    "fabricante_id": "064",
+    "fabricante_nome": "VELTH",
+    "estoque": "0",
+    "custo": "16,85",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "960208",
+    "descricao": "960208 CABO EMBREAGEM VELTH",
+    "fabricante_id": "064",
+    "fabricante_nome": "VELTH",
+    "estoque": "0",
+    "custo": "14,05",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "960222 VELTH",
+    "descricao": "960222 VELTH CABO FREIO",
+    "fabricante_id": "064",
+    "fabricante_nome": "VELTH",
+    "estoque": "0",
+    "custo": "16,85",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "960430",
+    "descricao": "960430 DISCO DE EMBREAGEM KIT 5",
+    "fabricante_id": "064",
+    "fabricante_nome": "VELTH",
+    "estoque": "0",
+    "custo": "25,28",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "960445",
+    "descricao": "960445 ESTICADOR DE CORRENTE",
+    "fabricante_id": "064",
+    "fabricante_nome": "VELTH",
+    "estoque": "0",
+    "custo": "7,47",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "V1305",
+    "descricao": "BUCHA BARRA DIRE\u00c7AO VIBRASIL",
+    "fabricante_id": "106",
+    "fabricante_nome": "VIBRASIL",
+    "estoque": "0",
+    "custo": "9,31",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "503252",
+    "descricao": "PIVO SUPERIOR 503252",
+    "fabricante_id": "094",
+    "fabricante_nome": "VIEMAR",
+    "estoque": "0",
+    "custo": "212,50",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "680017",
+    "descricao": "BARRA AXIAL DE DIRE\u00c7AO",
+    "fabricante_id": "094",
+    "fabricante_nome": "VIEMAR",
+    "estoque": "0",
+    "custo": "73,57",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "68027",
+    "descricao": "68027 BARRA AXIAL VIEMAR",
+    "fabricante_id": "094",
+    "fabricante_nome": "VIEMAR",
+    "estoque": "0",
+    "custo": "70,31",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "17951",
+    "descricao": "17951 REPARO VISION NEW LIBERTY 3 VISION",
+    "fabricante_id": "081",
+    "fabricante_nome": "VISION",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FF358 VISION",
+    "descricao": "RAPARO DA VISEIRA VISION LS2 FF358VISION",
+    "fabricante_id": "081",
+    "fabricante_nome": "VISION",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PI005",
+    "descricao": "PIVO DE SUSPENS\u00c3O PI005",
+    "fabricante_id": "167",
+    "fabricante_nome": "VOLDA",
+    "estoque": "0",
+    "custo": "37,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PI010",
+    "descricao": "PIVO L.E (DIRE\u00c7\u00c3O HIDRAULICA) PI010 VOLDA",
+    "fabricante_id": "167",
+    "fabricante_nome": "VOLDA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PI013",
+    "descricao": "PIVO L.D (DIRE\u00c7\u00c3O HIDRAULICA) PI013 VOLDA",
+    "fabricante_id": "167",
+    "fabricante_nome": "VOLDA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "PI050",
+    "descricao": "PIVO DE SUSPENS\u00c3O PI050",
+    "fabricante_id": "167",
+    "fabricante_nome": "VOLDA",
+    "estoque": "0",
+    "custo": "55,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TD020",
+    "descricao": "TERMINAL DE DIRECAO DIREITO TD020 VOLDA",
+    "fabricante_id": "167",
+    "fabricante_nome": "VOLDA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TD021",
+    "descricao": "TERMINAL DE DIRE\u00c7\u00c3O TD021",
+    "fabricante_id": "167",
+    "fabricante_nome": "VOLDA",
+    "estoque": "0",
+    "custo": "45,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "TD028",
+    "descricao": "TERMINAL DE DIRECAO TD028",
+    "fabricante_id": "167",
+    "fabricante_nome": "VOLDA",
+    "estoque": "0",
+    "custo": "74,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "Hora Impress\u00e3o:13:16",
+    "descricao": "RUA ESTEVAO, 286 - JOAO DE SOUZA",
+    "fabricante_id": "170",
+    "fabricante_nome": "VR LUB",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "0W20VR",
+    "descricao": "OLEO DE MOTOR 0W20 VR LUB",
+    "fabricante_id": "170",
+    "fabricante_nome": "VR LUB",
+    "estoque": "0",
+    "custo": "46,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "15W40VR",
+    "descricao": "OLEO DE MOTOR 15W40 VR LUB",
+    "fabricante_id": "170",
+    "fabricante_nome": "VR LUB",
+    "estoque": "0",
+    "custo": "33,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "20W50VR",
+    "descricao": "OLEO DE MOTOR 20W50 VR LUB",
+    "fabricante_id": "170",
+    "fabricante_nome": "VR LUB",
+    "estoque": "0",
+    "custo": "27,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "5W30VR",
+    "descricao": "OLEO DE MOTOR 5W30 VR LUB",
+    "fabricante_id": "170",
+    "fabricante_nome": "VR LUB",
+    "estoque": "0",
+    "custo": "38,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "411280 WAHLER SENSOR DE TEMPERATURA AZUL",
+    "descricao": "WAHLER",
+    "fabricante_id": "146",
+    "fabricante_nome": "WAHLER",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "WD40",
+    "descricao": "DESENGRIPANTE WD40",
+    "fabricante_id": "029",
+    "fabricante_nome": "WD40",
+    "estoque": "0",
+    "custo": "60,56",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "AKX35163",
+    "descricao": "FILTRO CABINE AR CONDICONADO",
+    "fabricante_id": "008",
+    "fabricante_nome": "WEGA",
+    "estoque": "0",
+    "custo": "22,36",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FAP4034",
+    "descricao": "FILTRO DE AR FAP4034",
+    "fabricante_id": "008",
+    "fabricante_nome": "WEGA",
+    "estoque": "0",
+    "custo": "32,67",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FAP7007",
+    "descricao": "FILTRO DE AR FAP7007",
+    "fabricante_id": "008",
+    "fabricante_nome": "WEGA",
+    "estoque": "0",
+    "custo": "33,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FAP9054",
+    "descricao": "FILTRO DE AR FAP9054",
+    "fabricante_id": "008",
+    "fabricante_nome": "WEGA",
+    "estoque": "0",
+    "custo": "35,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FAP9054 1",
+    "descricao": "FILTRO DE AR FAP9054 1",
+    "fabricante_id": "008",
+    "fabricante_nome": "WEGA",
+    "estoque": "0",
+    "custo": "44,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FAP9286",
+    "descricao": "FILTRO DE AR FAP9286",
+    "fabricante_id": "008",
+    "fabricante_nome": "WEGA",
+    "estoque": "0",
+    "custo": "42,14",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FCC2160",
+    "descricao": "FILTRO DE COMBUSTIVEL CARBURADOWEGA",
+    "fabricante_id": "008",
+    "fabricante_nome": "WEGA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FCC225",
+    "descricao": "FILTRO DE COMBUSTIVEL CARBURADOWEGA",
+    "fabricante_id": "008",
+    "fabricante_nome": "WEGA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FCI1101A",
+    "descricao": "FILTRO DE COMBUSTIVEL FCI1101A",
+    "fabricante_id": "008",
+    "fabricante_nome": "WEGA",
+    "estoque": "0",
+    "custo": "28,78",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "FCI1650",
+    "descricao": "FILTRO INJE\u00c7\u00c3O GRANDE PONTA",
+    "fabricante_id": "008",
+    "fabricante_nome": "WEGA",
+    "estoque": "0",
+    "custo": "40,24",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "WO130",
+    "descricao": "WO130 FILTRO DE OLEO LUBRIFICANTEWEGA",
+    "fabricante_id": "008",
+    "fabricante_nome": "WEGA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "WO340",
+    "descricao": "FILTRO DE OLEO MOTOR - WO-340",
+    "fabricante_id": "008",
+    "fabricante_nome": "WEGA",
+    "estoque": "0",
+    "custo": "24,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "WO460",
+    "descricao": "WO460 FILTRO DE OLEO LUBRIFICANTEWEGA",
+    "fabricante_id": "008",
+    "fabricante_nome": "WEGA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "WR201",
+    "descricao": "WR201-FILTRO DE AR - WEGA WR201 WEGA",
+    "fabricante_id": "008",
+    "fabricante_nome": "WEGA",
+    "estoque": "0",
+    "custo": "0",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "WUNI0002",
+    "descricao": "FILTRO DE OLEO WUNI0002",
+    "fabricante_id": "008",
+    "fabricante_nome": "WEGA",
+    "estoque": "0",
+    "custo": "25,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "WUNI0004",
+    "descricao": "WUNI0004 FILTRO DE OLEO",
+    "fabricante_id": "008",
+    "fabricante_nome": "WEGA",
+    "estoque": "0",
+    "custo": "23,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "7032 WISA",
+    "descricao": "KIT CARCA\u00c7A DA VALVULA",
+    "fabricante_id": "047",
+    "fabricante_nome": "WISA",
+    "estoque": "0",
+    "custo": "87,00",
+    "venda": "0",
+    "aplicacoes": []
+  },
+  {
+    "codigo": "ZAP1059",
+    "descricao": "COXIM MOTOR LADO ESQUERDO",
+    "fabricante_id": "123",
+    "fabricante_nome": "ZAP",
+    "estoque": "0",
+    "custo": "123,00",
+    "venda": "0",
+    "aplicacoes": []
+  }
+]

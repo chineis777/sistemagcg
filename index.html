@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Luxnox MVP</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { max-width: 400px; margin: 50px auto; background: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #333; }
+        label { display: block; margin-bottom: 5px; color: #555; }
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        button { background-color: #337ab7; color: white; padding: 10px 15px; border: none; border-radius: 3px; cursor: pointer; width: 100%; font-size: 16px; }
+        button:hover { background-color: #286090; }
+        #message { margin-top: 15px; padding: 10px; border-radius: 3px; text-align: center; }
+        .success { background-color: #dff0d8; color: #3c763d; border: 1px solid #d6e9c6; }
+        .error { background-color: #f2dede; color: #a94442; border: 1px solid #ebccd1; }
+        .info { background-color: #d9edf7; color: #31708f; border: 1px solid #bce8f1; }
+        .register-link { text-align: center; margin-top: 15px; }
+        .register-link a { color: #337ab7; text-decoration: none; }
+        .register-link a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+        <div id="message" style="display: none;"></div>
+        <div class="register-link">
+            <p>Não tem uma conta? <a href="/register.html">Cadastre-se</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", async function(event) {
+            event.preventDefault();
+
+            const form = event.target;
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            const messageDiv = document.getElementById("message");
+
+            messageDiv.style.display = "none";
+            messageDiv.className = "";
+
+            try {
+                const response = await fetch("/api/login", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(data),
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    messageDiv.textContent = `Login bem-sucedido! Bem-vindo, ${result.name || result.email}! Tipo: ${result.user_type}`;
+                    messageDiv.className = "success";
+                    // !!! IMPORTANT: No real redirection or session management in this basic prototype !!!
+                    // In a real app, we would store the JWT token and redirect based on user_type.
+                    // For now, just show success message.
+                    // Example redirection logic (needs proper implementation):
+                    // if (result.user_type === 'Admin') { window.location.href = '/admin_dashboard.html'; }
+                    // else if (result.user_type === 'Autopeça') { window.location.href = '/autpeca_dashboard.html'; }
+                    // else { window.location.href = '/'; // Or client dashboard }
+                } else {
+                    messageDiv.textContent = `Erro: ${result.error || response.statusText}`;
+                    messageDiv.className = "error";
+                }
+            } catch (error) {
+                console.error("Error during login:", error);
+                messageDiv.textContent = "Erro ao conectar com o servidor.";
+                messageDiv.className = "error";
+            }
+            messageDiv.style.display = "block";
+        });
+    </script>
+</body>
+</html>
+

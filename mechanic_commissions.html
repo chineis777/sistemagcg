@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Comissões - Painel do Mecânico - Luxnox</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/mechanic_style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">Luxnox</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" id="mechanic-name">Nome do Mecânico</a></li>
+                    <li><a href="/api/logout">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside class="sidebar">
+            <h2>Menu Mecânico</h2>
+            <ul>
+                <li><a href="/mechanic/dashboard">Dashboard</a></li>
+                <li><a href="/mechanic/checklists">Checklists</a></li>
+                <li><a href="/mechanic/quotes">Orçamentos</a></li>
+                <li><a href="/mechanic/service-history">Histórico de Serviços</a></li>
+                <li><a href="/mechanic/wallet">Minha Carteira</a></li>
+                <li><a href="/mechanic/commissions" class="active">Comissões</a></li>
+            </ul>
+        </aside>
+
+        <section class="content" id="main-content">
+            <div class="content-header">
+                <h1>Minhas Comissões</h1>
+            </div>
+
+            <div class="wallet-summary">
+                <div class="summary-card info-card">
+                    <h3>Total de Comissões Recebidas (Este Mês)</h3>
+                    <p id="commissions-month-total">R$ 0,00</p>
+                </div>
+                <div class="summary-card info-card">
+                    <h3>Comissões Pendentes de Pagamento</h3>
+                    <p id="commissions-pending-total">R$ 0,00</p>
+                </div>
+            </div>
+
+            <h2>Detalhes das Comissões</h2>
+            <div class="filter-bar">
+                <input type="month" id="filter-commissions-month">
+                <select id="filter-commissions-status">
+                    <option value="all">Todos os Status</option>
+                    <option value="paid">Pagas</option>
+                    <option value="pending">Pendentes</option>
+                </select>
+            </div>
+
+            <table id="commissions-table">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Origem (Orçamento/Peça)</th>
+                        <th>Valor (R$)</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas da tabela serão populadas via JavaScript -->
+                    <tr>
+                        <td colspan="4" style="text-align:center;">Carregando comissões... (Endpoint de comissões a ser implementado)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Luxnox. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            loadCommissionsData();
+            // Simular login - buscar nome do mecânico
+            // fetch("/api/user/profile").then(res => res.json()).then(data => {
+            //     if(data.name) document.getElementById("mechanic-name").textContent = data.name;
+            // });
+        });
+
+        async function loadCommissionsData() {
+            try {
+                // O endpoint /api/mechanic/commissions é um placeholder no backend atual.
+                const response = await fetch("/api/mechanic/commissions"); 
+                if (!response.ok) {
+                    if (response.status === 501 || response.status === 404) { // Not Implemented or Not Found
+                         document.getElementById("commissions-month-total").textContent = "R$ --,-- (Indisponível)";
+                         document.getElementById("commissions-pending-total").textContent = "R$ --,-- (Indisponível)";
+                         const tbody = document.getElementById("commissions-table").getElementsByTagName("tbody")[0];
+                         tbody.innerHTML = "<tr><td colspan=\"4\" style=\"text-align:center; color:orange;\">Funcionalidade de comissões em desenvolvimento.</td></tr>";
+                        return;
+                    }
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const commissionsData = await response.json();
+                
+                // Exemplo de como seria se o endpoint retornasse dados reais:
+                // document.getElementById("commissions-month-total").textContent = `R$ ${parseFloat(commissionsData.month_total || 0).toFixed(2)}`;
+                // document.getElementById("commissions-pending-total").textContent = `R$ ${parseFloat(commissionsData.pending_total || 0).toFixed(2)}`;
+                // const tbody = document.getElementById("commissions-table").getElementsByTagName("tbody")[0];
+                // tbody.innerHTML = ""; 
+                // if (commissionsData.details && commissionsData.details.length > 0) {
+                //     commissionsData.details.forEach(com => {
+                //         let row = tbody.insertRow();
+                //         row.insertCell().textContent = new Date(com.date).toLocaleDateString(\'pt-BR\');
+                //         row.insertCell().textContent = com.origin;
+                //         row.insertCell().textContent = parseFloat(com.amount).toFixed(2);
+                //         row.insertCell().innerHTML = `<span class="status-${com.status === \'paid\'
+                //                                     ? \'approved\' : (com.status === \'pending\'
+                //                                     ? \'pending\' : \'cancelled\')}">${com.status.charAt(0).toUpperCase() + com.status.slice(1)}</span>`;
+                //     });
+                // } else {
+                //     tbody.innerHTML = "<tr><td colspan=\"4\" style=\"text-align:center;\">Nenhuma comissão encontrada.</td></tr>";
+                // }
+
+                // Como o endpoint é placeholder, vamos manter a mensagem de desenvolvimento:
+                document.getElementById("commissions-month-total").textContent = "R$ --,-- (Indisponível)";
+                document.getElementById("commissions-pending-total").textContent = "R$ --,-- (Indisponível)";
+                const tbody = document.getElementById("commissions-table").getElementsByTagName("tbody")[0];
+                tbody.innerHTML = "<tr><td colspan=\"4\" style=\"text-align:center; color:orange;\">Funcionalidade de comissões em desenvolvimento. (Dados de exemplo abaixo)</td></tr>";
+
+                // Adicionando dados de exemplo para visualização do layout
+                const exampleCommissions = [
+                    { date: new Date(), origin: "Venda Peça ABC - Orçamento #123", amount: 55.70, status: "paid"},
+                    { date: new Date(Date.now() - 86400000), origin: "Serviço XYZ - Orçamento #122", amount: 30.00, status: "pending"},
+                    { date: new Date(Date.now() - 172800000), origin: "Venda Peça DEF - Orçamento #120", amount: 25.00, status: "paid"}
+                ];
+                exampleCommissions.forEach(com => {
+                    let row = tbody.insertRow();
+                    row.insertCell().textContent = new Date(com.date).toLocaleDateString(\'pt-BR\');
+                    row.insertCell().textContent = com.origin;
+                    row.insertCell().textContent = parseFloat(com.amount).toFixed(2);
+                    row.insertCell().innerHTML = `<span class="status-${com.status === \'paid\' ? \'approved\' : (com.status === \'pending\' ? \'pending\' : \'cancelled\')}">${com.status.charAt(0).toUpperCase() + com.status.slice(1)}</span>`;
+                });
+
+            } catch (error) {
+                console.error("Falha ao carregar dados de comissões:", error);
+                document.getElementById("commissions-month-total").textContent = "R$ --,-- (Erro)";
+                document.getElementById("commissions-pending-total").textContent = "R$ --,-- (Erro)";
+                const tbody = document.getElementById("commissions-table").getElementsByTagName("tbody")[0];
+                tbody.innerHTML = "<tr><td colspan=\"4\" style=\"text-align:center; color:red;\">Não foi possível carregar os dados de comissões.</td></tr>";
+            }
+        }
+
+        // Adicionar funcionalidade de filtro se necessário
+        // document.getElementById("filter-commissions-month").addEventListener("change", function() { /* ... */ });
+        // document.getElementById("filter-commissions-status").addEventListener("change", function() { /* ... */ });
+
+    </script>
+</body>
+</html>
+

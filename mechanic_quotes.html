@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamentos - Painel do Mecânico - Luxnox</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/mechanic_style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">Luxnox</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" id="mechanic-name">Nome do Mecânico</a></li>
+                    <li><a href="/api/logout">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside class="sidebar">
+            <h2>Menu Mecânico</h2>
+            <ul>
+                <li><a href="/mechanic/dashboard">Dashboard</a></li>
+                <li><a href="/mechanic/checklists">Checklists</a></li>
+                <li><a href="/mechanic/quotes" class="active">Orçamentos</a></li>
+                <li><a href="/mechanic/service-history">Histórico de Serviços</a></li>
+                <li><a href="/mechanic/wallet">Minha Carteira</a></li>
+                <li><a href="/mechanic/commissions">Comissões</a></li>
+            </ul>
+        </aside>
+
+        <section class="content" id="main-content">
+            <div class="content-header">
+                <h1>Meus Orçamentos</h1>
+                <button id="btn-new-quote" class="btn-primary">Novo Orçamento</button>
+            </div>
+
+            <div class="filter-bar">
+                <input type="text" id="search-quote" placeholder="Buscar por cliente, placa, status...">
+                <select id="filter-quote-status">
+                    <option value="all">Todos os Status</option>
+                    <option value="Pendente Aprovação Cliente">Pendente Aprovação Cliente</option>
+                    <option value="Aprovado">Aprovado</option>
+                    <option value="Reprovado">Reprovado</option>
+                    <option value="Em Serviço">Em Serviço</option>
+                    <option value="Serviço Concluído">Serviço Concluído</option>
+                    <option value="Cancelado">Cancelado</option>
+                </select>
+            </div>
+
+            <table id="quotes-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Cliente ID</th>
+                        <th>Data</th>
+                        <th>Valor Total</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas da tabela serão populadas via JavaScript -->
+                </tbody>
+            </table>
+
+            <!-- Modal ou formulário para Novo/Editar Orçamento -->
+            <div id="quote-form-modal" class="modal" style="display:none;">
+                <div class="modal-content large">
+                    <span class="close-button" onclick="closeModal(\'quote-form-modal\')">&times;</span>
+                    <h2 id="quote-form-title">Novo Orçamento</h2>
+                    <form id="form-quote">
+                        <input type="hidden" id="quote-id">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="quote-customer-id">ID Cliente:</label>
+                                <input type="number" id="quote-customer-id" name="customer_id" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="quote-checklist-id">ID Checklist (Opcional):</label>
+                                <input type="number" id="quote-checklist-id" name="checklist_id">
+                            </div>
+                             <div class="form-group">
+                                <label for="quote-plate-no-checklist">Placa (se sem checklist):</label>
+                                <input type="text" id="quote-plate-no-checklist" name="plate_number_if_no_checklist">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="quote-observations">Observações Gerais:</label>
+                            <textarea id="quote-observations" name="observations"></textarea>
+                        </div>
+
+                        <h3>Itens do Orçamento</h3>
+                        <div id="quote-items-container">
+                            <!-- Itens serão adicionados aqui dinamicamente -->
+                        </div>
+                        <button type="button" id="btn-add-quote-item" class="btn-secondary">Adicionar Item</button>
+                        
+                        <div class="form-row" style="margin-top: 20px;">
+                            <div class="form-group">
+                                <label for="quote-discount">Desconto (R$):</label>
+                                <input type="number" step="0.01" id="quote-discount" name="discount_value" value="0">
+                            </div>
+                            <div class="form-group">
+                                <label for="quote-status-form">Status:</label>
+                                <select id="quote-status-form" name="status">
+                                    <option value="Pendente Aprovação Cliente">Pendente Aprovação Cliente</option>
+                                    <option value="Aprovado">Aprovado</option>
+                                    <option value="Reprovado">Reprovado</option>
+                                    <option value="Em Serviço">Em Serviço</option>
+                                    <option value="Serviço Concluído">Serviço Concluído</option>
+                                    <option value="Cancelado">Cancelado</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <h4>Total Estimado: <span id="quote-total-value-display">R$ 0,00</span></h4>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Salvar Orçamento</button>
+                        <button type="button" id="btn-send-quote-customer" class="btn-secondary" style="display:none;">Enviar ao Cliente</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Luxnox. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        let quoteItems = []; // Array para manter os itens do orçamento atual no formulário
+
+        document.addEventListener("DOMContentLoaded", function() {
+            loadQuotes();
+
+            document.getElementById("btn-new-quote").addEventListener("click", function() {
+                document.getElementById("form-quote").reset();
+                document.getElementById("quote-id").value = "";
+                document.getElementById("quote-form-title").textContent = "Novo Orçamento";
+                quoteItems = [];
+                renderQuoteItems();
+                updateQuoteTotalDisplay();
+                document.getElementById("btn-send-quote-customer").style.display = "none";
+                document.getElementById("quote-form-modal").style.display = "block";
+            });
+
+            document.getElementById("form-quote").addEventListener("submit", function(event) {
+                event.preventDefault();
+                saveQuote();
+            });
+
+            document.getElementById("btn-add-quote-item").addEventListener("click", addQuoteItemForm);
+            document.getElementById("btn-send-quote-customer").addEventListener("click", sendQuoteToCustomer);
+        });
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        function addQuoteItemForm(item = null) {
+            const container = document.getElementById("quote-items-container");
+            const itemIndex = quoteItems.length;
+            const newItem = {
+                id: item ? item.id : null, // Para itens existentes ao editar
+                item_type: item ? item.item_type : "part",
+                product_id: item ? item.product_id : "",
+                description: item ? item.description : "",
+                quantity: item ? item.quantity : 1,
+                unit_price: item ? item.unit_price : 0,
+                subject_to_change_after_disassembly: item ? item.subject_to_change_after_disassembly : false
+            };
+            quoteItems.push(newItem);
+            renderQuoteItems(); 
+        }
+
+        function removeQuoteItem(index) {
+            quoteItems.splice(index, 1);
+            renderQuoteItems();
+            updateQuoteTotalDisplay();
+        }
+
+        function renderQuoteItems() {
+            const container = document.getElementById("quote-items-container");
+            container.innerHTML = ""; // Limpa itens existentes
+            quoteItems.forEach((item, index) => {
+                const itemDiv = document.createElement("div");
+                itemDiv.classList.add("quote-item-form");
+                itemDiv.innerHTML = `
+                    <hr>
+                    <div class="form-row">
+                        <div class="form-group small">
+                            <label>Tipo:</label>
+                            <select data-index="${index}" class="item-type" value="${item.item_type}">
+                                <option value="part" ${item.item_type === 'part' ? 'selected' : ''}>Peça</option>
+                                <option value="labor" ${item.item_type === 'labor' ? 'selected' : ''}>Mão de Obra</option>
+                            </select>
+                        </div>
+                        <div class="form-group large">
+                            <label>Descrição:</label>
+                            <input type="text" data-index="${index}" class="item-description" value="${item.description}" placeholder="Descrição da peça ou serviço">
+                        </div> 
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group small">
+                            <label>Prod. ID (Peça):</label>
+                            <input type="number" data-index="${index}" class="item-product-id" value="${item.product_id || ''}" ${item.item_type === 'labor' ? 'disabled' : ''}>
+                        </div>
+                        <div class="form-group small">
+                            <label>Qtd:</label>
+                            <input type="number" data-index="${index}" class="item-quantity" value="${item.quantity}" min="1">
+                        </div>
+                        <div class="form-group small">
+                            <label>Preço Unit.:</label>
+                            <input type="number" step="0.01" data-index="${index}" class="item-unit-price" value="${item.unit_price}">
+                        </div>
+                        <div class="form-group small">
+                            <label>Subtotal:</label>
+                            <span class="item-subtotal-display">R$ ${(item.quantity * item.unit_price).toFixed(2)}</span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                         <div class="form-group checkbox-group">
+                            <input type="checkbox" data-index="${index}" class="item-subject-to-change" ${item.subject_to_change_after_disassembly ? 'checked' : ''} ${item.item_type === 'labor' ? 'disabled' : ''}>
+                            <label>Sujeito a alteração após desmontagem</label>
+                        </div>
+                        <button type="button" class="btn-danger btn-remove-item" data-index="${index}">Remover</button>
+                    </div>
+                `;
+                container.appendChild(itemDiv);
+            });
+
+            // Adiciona event listeners para os campos dos itens e botões de remover
+            document.querySelectorAll(".quote-item-form input, .quote-item-form select").forEach(input => {
+                input.addEventListener("change", (e) => handleItemInputChange(e.target));
+            });
+            document.querySelectorAll(".btn-remove-item").forEach(button => {
+                button.addEventListener("click", (e) => removeQuoteItem(parseInt(e.target.dataset.index)));
+            });
+        }
+        
+        function handleItemInputChange(target) {
+            const index = parseInt(target.dataset.index);
+            const property = target.classList.contains('item-type') ? 'item_type' :
+                           target.classList.contains('item-description') ? 'description' :
+                           target.classList.contains('item-product-id') ? 'product_id' :
+                           target.classList.contains('item-quantity') ? 'quantity' :
+                           target.classList.contains('item-unit-price') ? 'unit_price' :
+                           target.classList.contains('item-subject-to-change') ? 'subject_to_change_after_disassembly' : null;
+
+            if (property) {
+                let value = target.type === 'checkbox' ? target.checked : target.value;
+                if (target.type === 'number' && property !== 'product_id') value = parseFloat(value) || 0;
+                if (property === 'product_id') value = parseInt(value) || null;
+                
+                quoteItems[index][property] = value;
+
+                // Atualiza subtotal do item e total do orçamento
+                const itemDiv = target.closest('.quote-item-form');
+                const qty = quoteItems[index].quantity;
+                const price = quoteItems[index].unit_price;
+                itemDiv.querySelector('.item-subtotal-display').textContent = `R$ ${(qty * price).toFixed(2)}`;
+                
+                // Habilita/desabilita product_id e subject_to_change baseado no tipo
+                if (property === 'item_type') {
+                    const productIdInput = itemDiv.querySelector('.item-product-id');
+                    const subjectToChangeCheckbox = itemDiv.querySelector('.item-subject-to-change');
+                    if (value === 'labor') {
+                        productIdInput.disabled = true;
+                        productIdInput.value = '';
+                        quoteItems[index].product_id = null;
+                        subjectToChangeCheckbox.disabled = true;
+                        subjectToChangeCheckbox.checked = false;
+                        quoteItems[index].subject_to_change_after_disassembly = false;
+                    } else {
+                        productIdInput.disabled = false;
+                        subjectToChangeCheckbox.disabled = false;
+                    }
+                }
+                updateQuoteTotalDisplay();
+            }
+        }
+
+        function updateQuoteTotalDisplay() {
+            let totalParts = 0;
+            let totalLabor = 0;
+            quoteItems.forEach(item => {
+                const subtotal = (item.quantity || 0) * (item.unit_price || 0);
+                if (item.item_type === 'part') {
+                    totalParts += subtotal;
+                } else if (item.item_type === 'labor') {
+                    totalLabor += subtotal;
+                }
+            });
+            const discount = parseFloat(document.getElementById("quote-discount").value) || 0;
+            const grandTotal = totalParts + totalLabor - discount;
+            document.getElementById("quote-total-value-display").textContent = `R$ ${grandTotal.toFixed(2)}`;
+        }
+        document.getElementById("quote-discount").addEventListener("input", updateQuoteTotalDisplay);
+
+
+        async function loadQuotes() {
+            try {
+                const response = await fetch("/api/mechanic/quotes");
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                const quotes = await response.json();
+                const tbody = document.getElementById("quotes-table").getElementsByTagName("tbody")[0];
+                tbody.innerHTML = ""; 
+                quotes.forEach(quote => {
+                    let row = tbody.insertRow();
+                    row.insertCell().textContent = quote.id;
+                    row.insertCell().textContent = quote.customer_id;
+                    row.insertCell().textContent = new Date(quote.quote_date).toLocaleDateString(\'pt-BR\');
+                    row.insertCell().textContent = `R$ ${parseFloat(quote.total_quote_value).toFixed(2)}`;
+                    row.insertCell().textContent = quote.status;
+                    let actionsCell = row.insertCell();
+                    actionsCell.innerHTML = `<button class="btn-action" onclick="viewQuote(${quote.id})">Ver</button> 
+                                           <button class="btn-action" onclick="editQuote(${quote.id})">Editar</button>`;
+                });
+            } catch (error) {
+                console.error("Falha ao carregar orçamentos:", error);
+                alert("Não foi possível carregar os orçamentos.");
+            }
+        }
+
+        async function saveQuote() {
+            const quoteId = document.getElementById("quote-id").value;
+            const isNew = !quoteId;
+            const url = isNew ? "/api/mechanic/quotes" : `/api/mechanic/quotes/${quoteId}`;
+            const method = isNew ? "POST" : "PUT";
+
+            // Validar itens
+            for(let item of quoteItems) {
+                if (!item.description || item.unit_price === undefined) {
+                    alert("Todos os itens devem ter descrição e preço unitário.");
+                    return;
+                }
+            }
+
+            const formData = {
+                customer_id: parseInt(document.getElementById("quote-customer-id").value),
+                checklist_id: parseInt(document.getElementById("quote-checklist-id").value) || null,
+                plate_number_if_no_checklist: document.getElementById("quote-plate-no-checklist").value || null,
+                observations: document.getElementById("quote-observations").value,
+                discount_value: parseFloat(document.getElementById("quote-discount").value) || 0,
+                status: document.getElementById("quote-status-form").value,
+                items: quoteItems.map(item => ({
+                    item_type: item.item_type,
+                    product_id: item.item_type === 'part' ? (parseInt(item.product_id) || null) : null,
+                    description: item.description,
+                    quantity: parseInt(item.quantity) || 1,
+                    unit_price: parseFloat(item.unit_price) || 0,
+                    subject_to_change_after_disassembly: item.item_type === 'part' ? item.subject_to_change_after_disassembly : false
+                }))
+            };
+
+            try {
+                const response = await fetch(url, {
+                    method: method,
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(formData)
+                });
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || `HTTP error! status: ${response.status}`);
+                }
+                const result = await response.json();
+                alert(result.message || "Orçamento salvo com sucesso!");
+                closeModal(\'quote-form-modal\');
+                loadQuotes();
+            } catch (error) {
+                console.error("Falha ao salvar orçamento:", error);
+                alert(`Não foi possível salvar o orçamento: ${error.message}`);
+            }
+        }
+
+        async function viewQuote(id) {
+            // Similar a editQuote, mas campos desabilitados ou modal de visualização
+            await editQuote(id, true); // Passa true para modo visualização
+        }
+
+        async function editQuote(id, viewMode = false) {
+            try {
+                const response = await fetch(`/api/mechanic/quotes/${id}`);
+                if (!response.ok) throw new Error(\'Falha ao buscar dados do orçamento\');
+                const quote = await response.json();
+
+                document.getElementById("form-quote").reset();
+                document.getElementById("quote-form-title").textContent = viewMode ? `Detalhes Orçamento #${id}` : "Editar Orçamento";
+                document.getElementById("quote-id").value = quote.id;
+                document.getElementById("quote-customer-id").value = quote.customer_id;
+                document.getElementById("quote-checklist-id").value = quote.checklist_id || "";
+                document.getElementById("quote-plate-no-checklist").value = quote.plate_number_if_no_checklist || "";
+                document.getElementById("quote-observations").value = quote.observations;
+                document.getElementById("quote-discount").value = quote.discount_value || 0;
+                document.getElementById("quote-status-form").value = quote.status;
+                
+                quoteItems = quote.items.map(item => ({
+                    id: item.id, // Se a API retornar ID do item
+                    item_type: item.item_type,
+                    product_id: item.product_id,
+                    description: item.description,
+                    quantity: item.quantity,
+                    unit_price: item.unit_price,
+                    subject_to_change_after_disassembly: item.subject_to_change_after_disassembly
+                }));
+                renderQuoteItems();
+                updateQuoteTotalDisplay();
+
+                if (viewMode) {
+                    // Desabilitar campos do formulário se for modo visualização
+                    document.querySelectorAll("#form-quote input, #form-quote select, #form-quote textarea, #form-quote button[type='button']").forEach(el => el.disabled = true);
+                    document.querySelector("#form-quote button[type='submit']").style.display = 'none';
+                } else {
+                    document.querySelectorAll("#form-quote input, #form-quote select, #form-quote textarea, #form-quote button[type='button']").forEach(el => el.disabled = false);
+                    document.querySelector("#form-quote button[type='submit']").style.display = 'inline-block';
+                }
+                document.getElementById("btn-send-quote-customer").style.display = quote.status === 'Pendente Aprovação Cliente' && !viewMode ? 'inline-block' : 'none';
+                document.getElementById("quote-form-modal").style.display = "block";
+            } catch (error) {
+                console.error("Erro ao carregar orçamento:", error);
+                alert("Não foi possível carregar o orçamento.");
+            }
+        }
+
+        async function sendQuoteToCustomer() {
+            const quoteId = document.getElementById("quote-id").value;
+            if (!quoteId) {
+                alert("Nenhum orçamento selecionado para envio.");
+                return;
+            }
+            if (!confirm("Tem certeza que deseja marcar este orçamento como enviado ao cliente?")) return;
+
+            try {
+                const response = await fetch(`/api/mechanic/quotes/${quoteId}/send_to_customer`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" }
+                });
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || `HTTP error! status: ${response.status}`);
+                }
+                const result = await response.json();
+                alert(result.message || "Orçamento enviado ao cliente!");
+                closeModal(\'quote-form-modal\');
+                loadQuotes(); // Recarrega para atualizar status ou info
+            } catch (error) {
+                console.error("Falha ao enviar orçamento:", error);
+                alert(`Não foi possível enviar o orçamento: ${error.message}`);
+            }
+        }
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Financeiro - Luxnox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Luxnox - Dashboard Financeiro</h1>
+        <!-- Add navigation, user info, logout button -->
+    </header>
+
+    <main>
+        <section id="overview">
+            <h2>Visão Geral</h2>
+            <div class="card">
+                <h3>Saldo Atual (BRL)</h3>
+                <p id="current-brl-balance">Carregando...</p>
+            </div>
+            <div class="card">
+                <h3>Saldo Cripto</h3>
+                <pre id="current-crypto-balance">Carregando...</pre>
+            </div>
+            <div class="card">
+                <h3>Previsão de Fluxo (30 dias)</h3>
+                <p id="forecast-balance">Carregando...</p>
+                <ul id="finance-alerts"></ul>
+            </div>
+            <!-- Add charts here later using Chart.js -->
+        </section>
+
+        <section id="quick-actions">
+            <h2>Ações Rápidas</h2>
+            <button onclick="location.href=\'wallet.html\'">Minha Carteira</button>
+            <button onclick="location.href=\'cash_control.html\'">Controle de Caixa</button>
+            <button onclick="location.href=\'accounts.html\'">Contas Pagar/Receber</button>
+            <!-- Add more actions like create account payable/receivable -->
+        </section>
+
+        <section id="recent-transactions">
+            <h2>Transações Recentes</h2>
+            <table id="transactions-table">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Tipo</th>
+                        <th>Descrição</th>
+                        <th>Valor (BRL)</th>
+                        <th>Valor (Cripto)</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Transaction rows will be loaded here -->
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Luxnox</p>
+    </footer>
+
+    <script>
+        // Basic JS to fetch data (needs proper error handling and user context)
+        const API_BASE = "."; // Relative path for static files served by Flask
+        const USER_ID_PARAM = "?user_id=1"; // Placeholder for user context
+
+        async function loadDashboardData() {
+            try {
+                // Fetch Wallet Info
+                const walletRes = await fetch(`${API_BASE}/api/finance/wallets/my${USER_ID_PARAM}`);
+                if (!walletRes.ok) throw new Error(\'Failed to load wallet info\');
+                const walletData = await walletRes.json();
+                document.getElementById(\'current-brl-balance\').textContent = `R$ ${walletData.balance_brl}`;
+                document.getElementById(\'current-crypto-balance\').textContent = JSON.stringify(walletData.balance_crypto || {}, null, 2);
+
+                // Populate transactions table
+                const tableBody = document.getElementById(\'transactions-table\').querySelector(\'tbody\');
+                tableBody.innerHTML = \'\'; // Clear existing rows
+                walletData.recent_transactions.forEach(tx => {
+                    const row = tableBody.insertRow();
+                    row.innerHTML = `
+                        <td>${new Date(tx.created_at).toLocaleString(\'pt-BR\')}</td>
+                        <td>${tx.type}</td>
+                        <td>${tx.description || \'-\'}</td>
+                        <td>${tx.amount_brl !== null ? tx.amount_brl : \'-\'}</td>
+                        <td>${tx.amount_crypto !== null ? `${tx.amount_crypto} ${tx.crypto_asset}` : \'-\'}</td>
+                        <td>${tx.status}</td>
+                    `;
+                });
+
+                // Fetch Forecast
+                const forecastRes = await fetch(`${API_BASE}/api/finance/ai/forecast${USER_ID_PARAM}`);
+                if (!forecastRes.ok) throw new Error(\'Failed to load forecast\');
+                const forecastData = await forecastRes.json();
+                document.getElementById(\'forecast-balance\').textContent = `R$ ${forecastData.projected_final_balance_brl}`;
+                
+                const alertsList = document.getElementById(\'finance-alerts\');
+                alertsList.innerHTML = \'\';
+                forecastData.alerts.forEach(alert => {
+                    const li = document.createElement(\'li\');
+                    li.textContent = alert.message;
+                    li.style.color = \'orange\'; // Basic styling for alerts
+                    alertsList.appendChild(li);
+                });
+
+            } catch (error) {
+                console.error(\'Error loading dashboard data:\', error);
+                // Display error messages to the user
+            }
+        }
+
+        document.addEventListener(\'DOMContentLoaded\', loadDashboardData);
+    </script>
+</body>
+</html>
+

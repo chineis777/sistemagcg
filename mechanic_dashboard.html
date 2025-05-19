@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxnox - Painel do Mecânico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/modern-theme.css">
+    <style>
+        /* Animações específicas para o dashboard do mecânico */
+        .stat-card {
+            opacity: 0;
+            animation: fadeIn 0.5s forwards;
+        }
+        
+        .stat-card:nth-child(1) { animation-delay: 0.1s; }
+        .stat-card:nth-child(2) { animation-delay: 0.2s; }
+        .stat-card:nth-child(3) { animation-delay: 0.3s; }
+        .stat-card:nth-child(4) { animation-delay: 0.4s; }
+        
+        .card {
+            opacity: 0;
+            animation: fadeIn 0.8s forwards;
+            animation-delay: 0.5s;
+        }
+        
+        .table-container {
+            opacity: 0;
+            animation: fadeIn 0.8s forwards;
+            animation-delay: 0.7s;
+        }
+        
+        /* Gradientes personalizados para cards */
+        .stat-card.quotes {
+            background: linear-gradient(145deg, var(--color-card-bg), rgba(62, 123, 250, 0.1));
+        }
+        
+        .stat-card.services {
+            background: linear-gradient(145deg, var(--color-card-bg), rgba(54, 214, 176, 0.1));
+        }
+        
+        .stat-card.commission {
+            background: linear-gradient(145deg, var(--color-card-bg), rgba(155, 109, 255, 0.1));
+        }
+        
+        .stat-card.wallet {
+            background: linear-gradient(145deg, var(--color-card-bg), rgba(255, 203, 71, 0.1));
+        }
+        
+        /* Estilos para a busca de peças */
+        .search-container {
+            position: relative;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .search-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: var(--color-card-bg);
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-dropdown);
+            z-index: 100;
+            max-height: 300px;
+            overflow-y: auto;
+            display: none;
+        }
+        
+        .search-result-item {
+            padding: var(--spacing-md);
+            border-bottom: 1px solid var(--color-border);
+            cursor: pointer;
+            transition: background-color var(--transition-fast);
+        }
+        
+        .search-result-item:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+        
+        /* Estilos para os cards de ação rápida */
+        .action-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .action-card {
+            background-color: var(--color-card-bg);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-lg);
+            text-align: center;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            border: 1px solid var(--color-border);
+        }
+        
+        .action-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-color: var(--color-accent-primary);
+        }
+        
+        .action-icon {
+            font-size: 32px;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-accent-primary);
+        }
+        
+        .action-title {
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .action-desc {
+            font-size: var(--font-size-small);
+            color: var(--color-text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-layout">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">Luxnox</div>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="sidebar-item active">
+                    <i class="fas fa-tachometer-alt sidebar-icon"></i>
+                    <span class="sidebar-text">Dashboard</span>
+                </li>
+                <li class="sidebar-item">
+                    <i class="fas fa-search sidebar-icon"></i>
+                    <span class="sidebar-text">Buscar Peças</span>
+                </li>
+                <li class="sidebar-item">
+                    <i class="fas fa-clipboard-list sidebar-icon"></i>
+                    <span class="sidebar-text">Checklists</span>
+                </li>
+                <li class="sidebar-item">
+                    <i class="fas fa-file-invoice-dollar sidebar-icon"></i>
+                    <span class="sidebar-text">Orçamentos</span>
+                </li>
+                <li class="sidebar-item">
+                    <i class="fas fa-history sidebar-icon"></i>
+                    <span class="sidebar-text">Histórico</span>
+                </li>
+                <li class="sidebar-item">
+                    <i class="fas fa-wallet sidebar-icon"></i>
+                    <span class="sidebar-text">Carteira</span>
+                </li>
+                <li class="sidebar-item">
+                    <i class="fas fa-percentage sidebar-icon"></i>
+                    <span class="sidebar-text">Comissões</span>
+                </li>
+                <li class="sidebar-item">
+                    <i class="fas fa-cog sidebar-icon"></i>
+                    <span class="sidebar-text">Configurações</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div class="main-content">
+            <!-- Navbar Superior -->
+            <div class="navbar">
+                <div class="d-flex align-center">
+                    <button class="btn btn-icon mr-2" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1 class="m-0">Painel do Mecânico</h1>
+                </div>
+                <div class="navbar-nav">
+                    <div class="nav-item">
+                        <button class="btn btn-icon">
+                            <i class="fas fa-bell"></i>
+                            <span class="badge badge-error" style="position: absolute; top: -5px; right: -5px; font-size: 10px; padding: 2px 5px;">2</span>
+                        </button>
+                    </div>
+                    <div class="nav-item">
+                        <div class="d-flex align-center">
+                            <div class="avatar" style="width: 36px; height: 36px; border-radius: 50%; background-color: var(--color-accent-secondary); display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                                <span>M</span>
+                            </div>
+                            <span>Mecânico</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards de Estatísticas -->
+            <div class="dashboard-stats">
+                <div class="stat-card quotes">
+                    <div class="stat-title">Orçamentos Pendentes</div>
+                    <div class="stat-value">8</div>
+                    <div class="stat-change positive">
+                        <i class="fas fa-arrow-up mr-1"></i> 2 novos hoje
+                    </div>
+                </div>
+                <div class="stat-card services">
+                    <div class="stat-title">Serviços em Andamento</div>
+                    <div class="stat-value">5</div>
+                    <div class="stat-change negative">
+                        <i class="fas fa-arrow-down mr-1"></i> 1 concluído hoje
+                    </div>
+                </div>
+                <div class="stat-card commission">
+                    <div class="stat-title">Comissões Pendentes</div>
+                    <div class="stat-value">R$ 1.250</div>
+                    <div class="stat-change positive">
+                        <i class="fas fa-arrow-up mr-1"></i> R$ 350 esta semana
+                    </div>
+                </div>
+                <div class="stat-card wallet">
+                    <div class="stat-title">Saldo na Carteira</div>
+                    <div class="stat-value">R$ 3.780</div>
+                    <div class="stat-change positive">
+                        <i class="fas fa-arrow-up mr-1"></i> R$ 780 este mês
+                    </div>
+                </div>
+            </div>
+
+            <!-- Busca Inteligente de Peças -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Busca Inteligente de Peças</h2>
+                </div>
+                <div class="card-body">
+                    <div class="search-container">
+                        <div class="form-group">
+                            <div class="d-flex">
+                                <input type="text" class="form-control" id="searchParts" placeholder="Digite o código, nome da peça ou modelo do veículo..." style="flex: 1; margin-right: var(--spacing-sm);">
+                                <button class="btn btn-primary">
+                                    <i class="fas fa-search mr-1"></i> Buscar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="search-results" id="searchResults">
+                            <!-- Resultados da busca aparecerão aqui -->
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Filtros Rápidos</label>
+                        <div class="d-flex flex-wrap">
+                            <button class="btn btn-secondary mr-2 mb-2">Filtros</button>
+                            <button class="btn btn-secondary mr-2 mb-2">Pastilhas de Freio</button>
+                            <button class="btn btn-secondary mr-2 mb-2">Óleos</button>
+                            <button class="btn btn-secondary mr-2 mb-2">Correias</button>
+                            <button class="btn btn-secondary mr-2 mb-2">Mais Vendidos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards de Ação Rápida -->
+            <h2 class="mb-3">Ações Rápidas</h2>
+            <div class="action-cards">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <div class="action-title">Novo Checklist</div>
+                    <div class="action-desc">Criar checklist técnico para veículo</div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <div class="action-title">Novo Orçamento</div>
+                    <div class="action-desc">Criar orçamento para cliente</div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="action-title">Cadastrar Veículo</div>
+                    <div class="action-desc">Adicionar novo veículo ao sistema</div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="action-title">Novo Cliente</div>
+                    <div class="action-desc">Cadastrar novo cliente</div>
+                </div>
+            </div>
+
+            <!-- Orçamentos Recentes -->
+            <div class="table-container">
+                <div class="d-flex justify-between align-center mb-3">
+                    <h2 class="m-0">Orçamentos Recentes</h2>
+                    <button class="btn btn-tertiary">Ver Todos <i class="fas fa-arrow-right ml-1"></i></button>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Cliente</th>
+                            <th>Veículo</th>
+                            <th>Data</th>
+                            <th>Valor</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#ORC-1234</td>
+                            <td>João Silva</td>
+                            <td>Honda Civic 2020</td>
+                            <td>16/05/2025</td>
+                            <td>R$ 1.250,00</td>
+                            <td><span class="badge badge-warning">Aguardando</span></td>
+                            <td>
+                                <button class="btn btn-icon">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="btn btn-icon">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn btn-icon">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#ORC-1233</td>
+                            <td>Maria Oliveira</td>
+                            <td>Toyota Corolla 2019</td>
+                            <td>15/05/2025</td>
+                            <td>R$ 780,50</td>
+                            <td><span class="badge badge-success">Aprovado</span></td>
+                            <td>
+                                <button class="btn btn-icon">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="btn btn-icon">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn btn-icon">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#ORC-1232</td>
+                            <td>Carlos Santos</td>
+                            <td>Volkswagen Golf 2021</td>
+                            <td>14/05/2025</td>
+                            <td>R$ 2.340,00</td>
+                            <td><span class="badge badge-error">Recusado</span></td>
+                            <td>
+                                <button class="btn btn-icon">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="btn btn-icon">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn btn-icon">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#ORC-1231</td>
+                            <td>Ana Pereira</td>
+                            <td>Fiat Argo 2022</td>
+                            <td>13/05/2025</td>
+                            <td>R$ 450,75</td>
+                            <td><span class="badge badge-success">Aprovado</span></td>
+                            <td>
+                                <button class="btn btn-icon">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="btn btn-icon">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn btn-icon">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#ORC-1230</td>
+                            <td>Roberto Almeida</td>
+                            <td>Hyundai HB20 2020</td>
+                            <td>12/05/2025</td>
+                            <td>R$ 1.875,25</td>
+                            <td><span class="badge badge-info">Em Análise</span></td>
+                            <td>
+                                <button class="btn btn-icon">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="btn btn-icon">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn btn-icon">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Toggle Sidebar
+        document.getElementById('sidebarToggle').addEventListener('click', function() {
+            document.body.classList.toggle('sidebar-collapsed');
+        });
+        
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuToggle').addEventListener('click', function() {
+            document.body.classList.toggle('sidebar-open');
+        });
+        
+        // Simulação de busca de peças
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchParts');
+            const searchResults = document.getElementById('searchResults');
+            
+            // Dados de exemplo para peças
+            const parts = [
+                { code: 'FAR4150', name: 'Filtro de Ar Premium', vehicle: 'Honda Civic, Toyota Corolla, Hyundai HB20', price: 'R$ 45,90', stock: 45 },
+                { code: 'FCO0086', name: 'Filtro de Combustível', vehicle: 'Volkswagen Golf, Fiat Argo, Chevrolet Onix', price: 'R$ 38,50', stock: 32 },
+                { code: 'PFD2234', name: 'Pastilha de Freio Dianteira', vehicle: 'Honda Civic, Toyota Corolla', price: 'R$ 129,90', stock: 12 },
+                { code: 'OMS5W30', name: 'Óleo Motor Sintético 5W30', vehicle: 'Múltiplos veículos', price: 'R$ 35,90', stock: 0 },
+                { code: 'KCD1050', name: 'Kit Correia Dentada', vehicle: 'Volkswagen Golf, Audi A3', price: 'R$ 245,00', stock: 23 }
+            ];
+            
+            searchInput.addEventListener('focus', function() {
+                // Mostrar resultados ao focar no campo
+                showResults();
+            });
+            
+            searchInput.addEventListener('input', function() {
+                // Filtrar resultados com base no input
+                const query = this.value.toLowerCase();
+                if (query.length > 2) {
+                    showResults(query);
+                } else if (query.length === 0) {
+                    showResults();
+                }
+            });
+            
+            document.addEventListener('click', function(e) {
+                // Fechar resultados ao clicar fora
+                if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                    searchResults.style.display = 'none';
+                }
+            });
+            
+            function showResults(query = '') {
+                searchResults.innerHTML = '';
+                
+                let filteredParts = parts;
+                if (query) {
+                    filteredParts = parts.filter(part => 
+                        part.code.toLowerCase().includes(query) || 
+                        part.name.toLowerCase().includes(query) || 
+                        part.vehicle.toLowerCase().includes(query)
+                    );
+                }
+                
+                if (filteredParts.length === 0) {
+                    searchResults.innerHTML = `
+                        <div class="search-result-item">
+                            <div class="text-center p-3">
+                                <div class="mb-2">Nenhuma peça encontrada</div>
+                                <button class="btn btn-secondary">Solicitar Cadastro</button>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    filteredParts.forEach(part => {
+                        const item = document.createElement('div');
+                        item.className = 'search-result-item';
+                        
+                        const stockStatus = part.stock > 0 
+                            ? `<span class="badge badge-success">Em Estoque: ${part.stock}</span>`
+                            : `<span class="badge badge-error">Sem Estoque</span>`;
+                        
+                        item.innerHTML = `
+                            <div class="d-flex justify-between">
+                                <div>
+                                    <div class="font-bold">${part.name}</div>
+                                    <div class="text-secondary text-small">Código: ${part.code}</div>
+                                    <div class="text-secondary text-small">Aplicação: ${part.vehicle}</div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="font-bold">${part.price}</div>
+                                    <div>${stockStatus}</div>
+                                </div>
+                            </div>
+                        `;
+                        
+                        item.addEventListener('click', function() {
+                            // Simulação de adição ao orçamento
+                            alert(`Peça ${part.name} adicionada ao orçamento!`);
+                            searchResults.style.display = 'none';
+                        });
+                        
+                        searchResults.appendChild(item);
+                    });
+                }
+                
+                searchResults.style.display = 'block';
+            }
+            
+            // Simulação de IA adaptativa
+            setTimeout(() => {
+                const mainContent = document.querySelector('.main-content');
+                
+                const aiAlert = document.createElement('div');
+                aiAlert.className = 'alert alert-info fade-in';
+                
+                aiAlert.innerHTML = `
+                    <i class="fas fa-robot alert-icon"></i>
+                    <div>
+                        <strong>Sugestão da IA</strong>
+                        <div>Com base no histórico de serviços para Honda Civic 2020, recomendamos verificar também a correia dentada. Este item costuma ser substituído junto com o filtro de óleo em 78% dos casos.</div>
+                    </div>
+                    <button class="btn btn-icon ml-auto" onclick="this.parentElement.remove()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                `;
+                
+                mainContent.insertBefore(aiAlert, mainContent.firstChild.nextSibling);
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

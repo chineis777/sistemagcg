@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Serviços - Painel do Mecânico - Luxnox</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/mechanic_style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">Luxnox</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" id="mechanic-name">Nome do Mecânico</a></li>
+                    <li><a href="/api/logout">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside class="sidebar">
+            <h2>Menu Mecânico</h2>
+            <ul>
+                <li><a href="/mechanic/dashboard">Dashboard</a></li>
+                <li><a href="/mechanic/checklists">Checklists</a></li>
+                <li><a href="/mechanic/quotes">Orçamentos</a></li>
+                <li><a href="/mechanic/service-history" class="active">Histórico de Serviços</a></li>
+                <li><a href="/mechanic/wallet">Minha Carteira</a></li>
+                <li><a href="/mechanic/commissions">Comissões</a></li>
+            </ul>
+        </aside>
+
+        <section class="content" id="main-content">
+            <div class="content-header">
+                <h1>Histórico de Serviços Concluídos</h1>
+            </div>
+
+            <div class="filter-bar">
+                <input type="text" id="search-history" placeholder="Buscar por cliente, placa...">
+                <!-- Adicionar mais filtros se necessário, como período -->
+            </div>
+
+            <table id="history-table">
+                <thead>
+                    <tr>
+                        <th>ID Orçamento</th>
+                        <th>Cliente ID</th>
+                        <th>Data Conclusão (Orçamento)</th>
+                        <th>Valor Total</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas da tabela serão populadas via JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Luxnox. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            loadServiceHistory();
+            // Simular login - buscar nome do mecânico
+            // fetch("/api/user/profile").then(res => res.json()).then(data => {
+            //     if(data.name) document.getElementById("mechanic-name").textContent = data.name;
+            // });
+        });
+
+        async function loadServiceHistory() {
+            try {
+                const response = await fetch("/api/mechanic/service_history"); 
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const services = await response.json();
+                const tbody = document.getElementById("history-table").getElementsByTagName("tbody")[0];
+                tbody.innerHTML = ""; // Limpa a tabela
+                
+                if (services.length === 0) {
+                    let row = tbody.insertRow();
+                    let cell = row.insertCell();
+                    cell.colSpan = 6;
+                    cell.textContent = "Nenhum serviço concluído encontrado.";
+                    cell.style.textAlign = "center";
+                    return;
+                }
+
+                services.forEach(service => {
+                    let row = tbody.insertRow();
+                    row.insertCell().textContent = service.id; // ID do Orçamento
+                    row.insertCell().textContent = service.customer_id;
+                    // A API retorna quote_date, que é a data de criação do orçamento.
+                    // Para "Data Conclusão", precisaríamos de um campo específico no modelo Quote ou inferir.
+                    // Por ora, usaremos a quote_date como placeholder.
+                    row.insertCell().textContent = new Date(service.quote_date).toLocaleDateString(\'pt-BR\');
+                    row.insertCell().textContent = `R$ ${parseFloat(service.total_quote_value).toFixed(2)}`;
+                    row.insertCell().textContent = service.status;
+                    let actionsCell = row.insertCell();
+                    // O botão "Ver" poderia levar para uma visualização detalhada do orçamento/serviço.
+                    actionsCell.innerHTML = `<button class="btn-action" onclick="viewServiceDetails(${service.id})">Ver Detalhes</button>`;
+                });
+            } catch (error) {
+                console.error("Falha ao carregar histórico de serviços:", error);
+                const tbody = document.getElementById("history-table").getElementsByTagName("tbody")[0];
+                tbody.innerHTML = "<tr><td colspan=\"6\" style=\"text-align:center; color:red;\">Não foi possível carregar o histórico de serviços.</td></tr>";
+            }
+        }
+
+        function viewServiceDetails(quoteId) {
+            // Redireciona para a visualização do orçamento, que já tem a lógica de "viewMode"
+            // Supondo que a página de orçamentos possa lidar com um parâmetro de ID para carregar e exibir.
+            // Ou, idealmente, ter uma página dedicada /mechanic/quotes/view/<id>
+            // Por simplicidade, vamos alertar por enquanto e o usuário pode ir na tela de orçamentos e buscar pelo ID.
+            alert(`Visualizar detalhes do serviço (Orçamento ID: ${quoteId}). Esta funcionalidade pode ser integrada com a tela de edição/visualização de orçamentos.`);
+            // window.location.href = `/mechanic/quotes?view_id=${quoteId}`; // Exemplo de como poderia ser
+        }
+
+        // Adicionar funcionalidade de busca/filtro se necessário
+        // document.getElementById("search-history").addEventListener("input", function() { /* ... */ });
+
+    </script>
+</body>
+</html>
+

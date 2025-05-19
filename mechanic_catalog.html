@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Inteligente - Luxnox</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #ff6b00;
+            --dark-bg: #121212;
+            --card-bg: #1e1e1e;
+            --text-light: #f8f9fa;
+            --text-muted: #adb5bd;
+            --border-color: #343a40;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .navbar {
+            background-color: var(--dark-bg);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .card-header {
+            background-color: rgba(0,0,0,0.2);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #152a66;
+            border-color: #152a66;
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .btn-secondary:hover {
+            background-color: #e05e00;
+            border-color: #e05e00;
+        }
+        
+        .form-control {
+            background-color: #2c2c2c;
+            border: 1px solid var(--border-color);
+            color: var(--text-light);
+        }
+        
+        .form-control:focus {
+            background-color: #2c2c2c;
+            color: var(--text-light);
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(30, 58, 138, 0.25);
+        }
+        
+        .table {
+            color: var(--text-light);
+        }
+        
+        .table thead th {
+            border-bottom: 2px solid var(--border-color);
+            background-color: rgba(0,0,0,0.2);
+        }
+        
+        .table td, .table th {
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .badge-primary {
+            background-color: var(--primary-color);
+        }
+        
+        .badge-secondary {
+            background-color: var(--secondary-color);
+        }
+        
+        .search-container {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .results-container {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .application-tag {
+            display: inline-block;
+            background-color: rgba(30, 58, 138, 0.2);
+            border: 1px solid var(--primary-color);
+            border-radius: 4px;
+            padding: 2px 6px;
+            margin: 2px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Luxnox" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="mechanic_dashboard.html">
+                            <i class="fas fa-tachometer-alt"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mechanic_checklists.html">
+                            <i class="fas fa-clipboard-check"></i> Checklists
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mechanic_quotes.html">
+                            <i class="fas fa-file-invoice-dollar"></i> Orçamentos
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="mechanic_catalog.html">
+                            <i class="fas fa-search"></i> Catálogo
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mechanic_service_history.html">
+                            <i class="fas fa-history"></i> Histórico
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mechanic_wallet.html">
+                            <i class="fas fa-wallet"></i> Carteira
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mechanic_commissions.html">
+                            <i class="fas fa-percentage"></i> Comissões
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            <i class="fas fa-user-circle"></i> João Silva
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#"><i class="fas fa-user-cog"></i> Perfil</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-cog"></i> Configurações</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="login.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>Catálogo Inteligente</h1>
+            <div>
+                <button class="btn btn-secondary" id="view-quote-btn">
+                    <i class="fas fa-shopping-cart"></i> Ver Orçamento
+                    <span class="badge badge-light ml-1" id="quote-item-count">0</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Search Form -->
+        <div class="search-container">
+            <h4 class="mb-3"><i class="fas fa-search"></i> Buscar Peças</h4>
+            <form id="product-search-form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="product-search">Código ou Descrição da Peça</label>
+                            <input type="text" class="form-control" id="product-search" placeholder="Ex: Filtro de ar, FAR4150, Pastilha de freio...">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="vehicle-brand">Marca do Veículo</label>
+                            <select class="form-control" id="vehicle-brand">
+                                <option value="">Selecione a marca</option>
+                                <option value="FIAT">FIAT</option>
+                                <option value="CHEVROLET">CHEVROLET</option>
+                                <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                                <option value="FORD">FORD</option>
+                                <option value="TOYOTA">TOYOTA</option>
+                                <option value="HONDA">HONDA</option>
+                                <option value="HYUNDAI">HYUNDAI</option>
+                                <option value="RENAULT">RENAULT</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="vehicle-model">Modelo do Veículo</label>
+                            <select class="form-control" id="vehicle-model" disabled>
+                                <option value="">Selecione a marca primeiro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="vehicle-year">Ano do Veículo</label>
+                            <input type="number" class="form-control" id="vehicle-year" placeholder="Ex: 2020">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <button type="reset" class="btn btn-outline-secondary">
+                        <i class="fas fa-redo"></i> Limpar
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-search"></i> Buscar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Results -->
+        <div class="results-container">
+            <h4 class="mb-3"><i class="fas fa-list"></i> Resultados da Busca</h4>
+            <div class="table-responsive">
+                <table class="table" id="search-results-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 15%">Código</th>
+                            <th style="width: 25%">Descrição</th>
+                            <th style="width: 30%">Aplicações</th>
+                            <th style="width: 15%">Preço</th>
+                            <th style="width: 15%">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="5" class="text-center">Use o formulário acima para buscar peças</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quote Modal -->
+    <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="quoteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quoteModalLabel">Orçamento Atual</h5>
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table" id="quote-items-table">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Descrição</th>
+                                    <th>Preço Unit.</th>
+                                    <th>Qtd</th>
+                                    <th>Subtotal</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="6" class="text-center">Nenhum item adicionado ao orçamento</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4" class="text-right"><strong>Total:</strong></td>
+                                    <td><strong id="quote-total">R$ 0,00</strong></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Continuar Buscando</button>
+                    <button type="button" class="btn btn-primary" id="save-quote-btn">Salvar Orçamento</button>
+                    <button type="button" class="btn btn-secondary" id="complete-quote-btn">Finalizar Orçamento</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/product_search.js"></script>
+    <script>
+        // Exemplo de dados para demonstração
+        const sampleProducts = [
+            {
+                id: 1,
+                code: "FAR4150",
+                name: "Filtro de Ar",
+                description: "FILTRO DE AR FIAT IDEA/PALIO/SIENA/STRADA",
+                manufacturer: "AUTHOMIX",
+                price: 19.00,
+                stock: 2,
+                applications_summary: [
+                    "FIAT IDEA 1.4 8V (2005-2015)",
+                    "FIAT PALIO 1.0 8V EL/ELX (TODOS)",
+                    "FIAT STRADA CE TREK RST III FIRE 1.4 L 8V (2008-ATUAL)"
+                ],
+                has_more_applications: true
+            },
+            {
+                id: 2,
+                code: "FAR4152",
+                name: "Filtro de Ar",
+                description: "FILTRO DE AR FIAT MOBI/PALIO/STRADA/UNO/FIORINO",
+                manufacturer: "AUTHOMIX",
+                price: 19.00,
+                stock: 2,
+                applications_summary: [
+                    "FIAT MOBI (TODOS OS MOTORES)",
+                    "FIAT UNO (TODOS OS MOTORES)",
+                    "FIAT FIORINO FURGÃO 1.4 L 8V SOHC L4 (2016-2021)"
+                ],
+                has_more_applications: true
+            },
+            {
+                id: 3,
+                code: "FCO0086",
+                name: "Filtro de Combustível",
+                description: "FILTRO DE COMBUSTÍVEL CHEVROLET/VOLKSWAGEN/FORD/FIAT",
+                manufacturer: "AUTHOMIX",
+                price: 10.00,
+                stock: 5,
+                applications_summary: [
+                    "CHEVROLET BONANZA 4.1 L 12V SOHC L6 (1989-1995)",
+                    "VOLKSWAGEN KOMBI 1.6 (1983-1996)",
+                    "ALFA ROMEO AR 2300 BERLINA 2.3 8V (1974-1987)"
+                ],
+                has_more_applications: true
+            },
+            {
+                id: 4,
+                code: "FCO1068",
+                name: "Filtro de Combustível",
+                description: "FILTRO DE COMBUSTÍVEL MONZA/VOYAGE/SAVEIRO/SANTANA",
+                manufacturer: "AUTHOMIX",
+                price: 12.00,
+                stock: 3,
+                applications_summary: [
+                    "CHEVROLET MONZA (1986-1995)",
+                    "VOLKSWAGEN VOYAGE (TODOS OS MOTORES)",
+                    "FIAT FIORINO 1.5 SEVEL (1988-1993)"
+                ],
+                has_more_applications: true
+            }
+        ];
+
+        // Inicialização
+        $(document).ready(function() {
+            // Carregar marcas de veículos
+            // Em produção, usar: window.catalogSearch.loadVehicleBrands('vehicle-brand');
+            
+            // Evento de mudança na marca do veículo
+            $('#vehicle-brand').change(function() {
+                const brand = $(this).val();
+                const modelSelect = $('#vehicle-model');
+                
+                if (!brand) {
+                    modelSelect.html('<option value="">Selecione a marca primeiro</option>');
+                    modelSelect.prop('disabled', true);
+                    return;
+                }
+                
+                // Em produção, usar: window.catalogSearch.loadVehicleModels('vehicle-brand', 'vehicle-model');
+                
+                // Simulação para demonstração
+                modelSelect.prop('disabled', false);
+                modelSelect.html('<option value="">Selecione o modelo</option>');
+                
+                if (brand === 'FIAT') {
+                    const models = ['MOBI', 'PALIO', 'SIENA', 'STRADA', 'UNO', 'FIORINO', 'IDEA'];
+                    models.forEach(model => {
+                        modelSelect.append(`<option value="${model}">${model}</option>`);
+                    });
+                } else if (brand === 'CHEVROLET') {
+                    const models = ['MONZA', 'BONANZA', 'C-10', 'CUSTOM LUXE'];
+                    models.forEach(model => {
+                        modelSelect.append(`<option value="${model}">${model}</option>`);
+                    });
+                } else if (brand === 'VOLKSWAGEN') {
+                    const models = ['KOMBI', 'APOLO', 'VOYAGE', 'SAVEIRO', 'SANTANA'];
+                    models.forEach(model => {
+                        modelSelect.append(`<option value="${model}">${model}</option>`);
+                    });
+                }
+            });
+            
+            // Evento de envio do formulário de busca
+            $('#product-search-form').submit(function(e) {
+                e.preventDefault();
+                
+                const search = $('#product-search').val();
+                const brand = $('#vehicle-brand').val();
+                const model = $('#vehicle-model').val();
+                const year = $('#vehicle-year').val();
+                
+                // Em produção, usar:
+                /*
+                window.catalogSearch.searchProducts({
+                    search: search,
+                    vehicle_brand: brand,
+                    vehicle_model: model,
+                    vehicle_year: year,
+                    page: 1,
+                    per_page: 20
+                }, function(err, results) {
+                    if (!err) {
+                        window.catalogSearch.renderSearchResults('search-results-table', results);
+                    }
+                });
+                */
+                
+                // Simulação para demonstração
+                let filteredProducts = [...sampleProducts];
+                
+                if (search) {
+                    const searchLower = search.toLowerCase();
+                    filteredProducts = filteredProducts.filter(p => 
+                        p.code.toLowerCase().includes(searchLower) || 
+                        p.name.toLowerCase().includes(searchLower) || 
+                        p.description.toLowerCase().includes(searchLower)
+                    );
+                }
+                
+                if (brand) {
+                    filteredProducts = filteredProducts.filter(p => 
+                        p.applications_summary.some(app => app.includes(brand))
+                    );
+                    
+                    if (model) {
+                        filteredProducts = filteredProducts.filter(p => 
+                            p.applications_summary.some(app => app.includes(model))
+                        );
+                    }
+                }
+                
+                const results = {
+                    total: filteredProducts.length,
+                    page: 1,
+                    per_page: 20,
+                    pages: 1,
+                    products: filteredProducts
+                };
+                
+                renderSearchResults(results);
+            });
+            
+            // Função para renderizar resultados
+            function renderSearchResults(results) {
+                const tableBody = $('#search-results-table tbody');
+                tableBody.empty();
+                
+                if (!results.products || results.products.length === 0) {
+                    tableBody.html('<tr><td colspan="5" class="text-center">Nenhum produto encontrado</td></tr>');
+                    return;
+                }
+                
+                results.products.forEach(product => {
+                    let applicationsHtml = '';
+                    if (product.applications_summary && product.applications_summary.length > 0) {
+                        applicationsHtml = product.applications_summary.map(app => 
+                            `<span class="application-tag">${app}</span>`
+                        ).join(' ');
+                        
+                        if (product.has_more_applications) {
+                            applicationsHtml += '<br><small class="text-muted">E mais...</small>';
+                        }
+                    } else {
+                        applicationsHtml = '<small class="text-muted">Sem aplicações cadastradas</small>';
+                    }
+                    
+                    const stockClass = product.stock > 0 ? 'text-success' : 'text-danger';
+                    const stockText = product.stock > 0 ? 'Em estoque' : 'Indisponível';
+                    
+                    const row = `
+                        <tr>
+                            <td>${product.code}</td>
+                            <td>
+                                <strong>${product.name}</strong>
+                                <div class="small text-muted">${product.description || ''}</div>
+                                <div class="small">${product.manufacturer || ''}</div>
+                            </td>
+                            <td>${applicationsHtml}</td>
+                            <td class="text-right">R$ ${product.price.toFixed(2)}</td>
+                            <td>
+                                <span class="${stockClass}">${stockText}</span>
+                                <button class="btn btn-sm btn-primary add-to-quote" data-product-id="${product.id}">
+                                    <i class="fas fa-plus"></i> Adicionar
+                                </button>
+                            </td>
+                        </tr>
+                    `;
+                    
+                    tableBody.append(row);
+                });
+                
+                // Adicionar eventos aos botões
+                $('.add-to-quote').click(function() {
+                    const productId = $(this).data('product-id');
+                    const product = results.products.find(p => p.id === productId);
+                    
+                    if (product) {
+                        addProductToQuote(product);
+                        
+                        // Feedback visual
+                        const button = $(this);
+                        button.removeClass('btn-primary').addClass('btn-success');
+                        button.html('<i class="fas fa-check"></i> Adicionado');
+                        
+                        setTimeout(() => {
+                            button.removeClass('btn-success').addClass('btn-primary');
+                            button.html('<i class="fas fa-plus"></i> Adicionar');
+                        }, 2000);
+                    }
+                });
+            }
+            
+            // Gerenciamento do orçamento
+            let currentQuote = {
+                items: [],
+                total: 0
+            };
+            
+            // Carregar orçamento do localStorage se existir
+            const savedQuote = localStorage.getItem('currentQuote');
+            if (savedQuote) {
+                try {
+                    currentQuote = JSON.parse(savedQuote);
+                    updateQuoteCounter();
+                } catch (e) {
+                    console.error('Erro ao carregar orçamento salvo:', e);
+                }
+            }
+            
+            function addProductToQuote(product) {
+                // Verificar se o produto já está no orçamento
+                const existingItemIndex = currentQuote.items.findIndex(item => item.productId === product.id);
+                
+                if (existingItemIndex >= 0) {
+                    // Incrementar quantidade se já existir
+                    currentQuote.items[existingItemIndex].quantity += 1;
+                    currentQuote.items[existingItemIndex].subtotal = 
+                        currentQuote.items[existingItemIndex].quantity * currentQuote.items[existingItemIndex].price;
+                } else {
+                    // Adicionar novo item
+                    currentQuote.items.push({
+                        productId: product.id,
+                        code: product.code,
+                        name: product.name,
+                        description: product.description,
+                        price: product.price,
+                        quantity: 1,
+                        subtotal: product.price
+                    });
+                }
+                
+                // Recalcular total
+                currentQuote.total = currentQuote.items.reduce((sum, item) => sum + item.subtotal, 0);
+                
+                // Salvar orçamento atualizado
+                localStorage.setItem('currentQuote', JSON.stringify(currentQuote));
+                
+                // Atualizar contador
+                updateQuoteCounter();
+            }
+            
+            function updateQuoteCounter() {
+                const itemCount = currentQuote.items.reduce((sum, item) => sum + item.quantity, 0);
+                $('#quote-item-count').text(itemCount);
+            }
+            
+            // Abrir modal do orçamento
+            $('#view-quote-btn').click(function() {
+                renderQuoteItems();
+                $('#quoteModal').modal('show');
+            });
+            
+            function renderQuoteItems() {
+                const tableBody = $('#quote-items-table tbody');
+                tableBody.empty();
+                
+                if (currentQuote.items.length === 0) {
+                    tableBody.html('<tr><td colspan="6" class="text-center">Nenhum item adicionado ao orçamento</td></tr>');
+                } else {
+                    currentQuote.items.forEach((item, index) => {
+                        const row = `
+                            <tr>
+                                <td>${item.code}</td>
+                                <td>
+                                    <strong>${item.name}</strong>
+                                    <div class="small text-muted">${item.description || ''}</div>
+                                </td>
+                                <td>R$ ${item.price.toFixed(2)}</td>
+                                <td>
+                                    <div class="input-group input-group-sm">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary decrease-qty" data-index="${index}">-</button>
+                                        </div>
+                                        <input type="text" class="form-control text-center item-qty" value="${item.quantity}" data-index="${index}">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary increase-qty" data-index="${index}">+</button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>R$ ${item.subtotal.toFixed(2)}</td>
+                                <td>
+                                    <button class="btn btn-sm btn-danger remove-item" data-index="${index}">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        `;
+                        tableBody.append(row);
+                    });
+                }
+                
+                // Atualizar total
+                $('#quote-total').text(`R$ ${currentQuote.total.toFixed(2)}`);
+                
+                // Adicionar eventos aos botões
+                $('.decrease-qty').click(function() {
+                    const index = $(this).data('index');
+                    if (currentQuote.items[index].quantity > 1) {
+                        currentQuote.items[index].quantity -= 1;
+                        currentQuote.items[index].subtotal = 
+                            currentQuote.items[index].quantity * currentQuote.items[index].price;
+                        updateQuote();
+                        renderQuoteItems();
+                    }
+                });
+                
+                $('.increase-qty').click(function() {
+                    const index = $(this).data('index');
+                    currentQuote.items[index].quantity += 1;
+                    currentQuote.items[index].subtotal = 
+                        currentQuote.items[index].quantity * currentQuote.items[index].price;
+                    updateQuote();
+                    renderQuoteItems();
+                });
+                
+                $('.item-qty').change(function() {
+                    const index = $(this).data('index');
+                    const qty = parseInt($(this).val());
+                    
+                    if (!isNaN(qty) && qty > 0) {
+                        currentQuote.items[index].quantity = qty;
+                        currentQuote.items[index].subtotal = 
+                            currentQuote.items[index].quantity * currentQuote.items[index].price;
+                        updateQuote();
+                        renderQuoteItems();
+                    }
+                });
+                
+                $('.remove-item').click(function() {
+                    const index = $(this).data('index');
+                    currentQuote.items.splice(index, 1);
+                    updateQuote();
+                    renderQuoteItems();
+                });
+            }
+            
+            function updateQuote() {
+                // Recalcular total
+                currentQuote.total = currentQuote.items.reduce((sum, item) => sum + item.subtotal, 0);
+                
+                // Salvar orçamento atualizado
+                localStorage.setItem('currentQuote', JSON.stringify(currentQuote));
+                
+                // Atualizar contador
+                updateQuoteCounter();
+            }
+            
+            // Salvar orçamento
+            $('#save-quote-btn').click(function() {
+                if (currentQuote.items.length === 0) {
+                    alert('Adicione pelo menos um item ao orçamento antes de salvar.');
+                    return;
+                }
+                
+                // Em produção, enviar para o servidor
+                alert('Orçamento salvo com sucesso!');
+                $('#quoteModal').modal('hide');
+            });
+            
+            // Finalizar orçamento
+            $('#complete-quote-btn').click(function() {
+                if (currentQuote.items.length === 0) {
+                    alert('Adicione pelo menos um item ao orçamento antes de finalizar.');
+                    return;
+                }
+                
+                // Em produção, redirecionar para a página de finalização
+                window.location.href = 'mechanic_quotes.html';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Luxnox MVP</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { max-width: 400px; margin: 50px auto; background: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #333; }
+        label { display: block; margin-bottom: 5px; color: #555; }
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        button { background-color: #337ab7; color: white; padding: 10px 15px; border: none; border-radius: 3px; cursor: pointer; width: 100%; font-size: 16px; }
+        button:hover { background-color: #286090; }
+        #message { margin-top: 15px; padding: 10px; border-radius: 3px; text-align: center; }
+        .success { background-color: #dff0d8; color: #3c763d; border: 1px solid #d6e9c6; }
+        .error { background-color: #f2dede; color: #a94442; border: 1px solid #ebccd1; }
+        .info { background-color: #d9edf7; color: #31708f; border: 1px solid #bce8f1; }
+        .register-link { text-align: center; margin-top: 15px; }
+        .register-link a { color: #337ab7; text-decoration: none; }
+        .register-link a:hover { text-decoration: underline; }
+        
+        /* Credenciais de demonstração */
+        .demo-credentials {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        .demo-credentials h3 {
+            margin-top: 0;
+            font-size: 16px;
+            color: #555;
+        }
+        .demo-credentials p {
+            margin: 5px 0;
+        }
+        .demo-credentials code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        /* Botões de acesso direto para teste */
+        .direct-access {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .direct-access button {
+            margin: 5px;
+            width: auto;
+            padding: 8px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+        <div id="message" style="display: none;"></div>
+        <div class="register-link">
+            <p>Não tem uma conta? <a href="/register.html">Cadastre-se</a></p>
+        </div>
+        
+        <!-- Credenciais de demonstração -->
+        <div class="demo-credentials">
+            <h3>Credenciais para teste:</h3>
+            <p><strong>Administrador:</strong> <code>admin@luxnox.com</code> / <code>123456</code></p>
+            <p><strong>Mecânico:</strong> <code>mecanico@luxnox.com</code> / <code>123456</code></p>
+            <p><strong>Cliente:</strong> <code>cliente@exemplo.com</code> / <code>123456</code></p>
+        </div>
+        
+        <!-- Botões de acesso direto para teste -->
+        <div class="direct-access">
+            <h3>Acesso direto para teste:</h3>
+            <button onclick="window.location.href='/admin_dashboard.html'">Painel Admin</button>
+            <button onclick="window.location.href='/mechanic_dashboard.html'">Painel Mecânico</button>
+            <button onclick="window.location.href='/client_dashboard.html'">Painel Cliente</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", async function(event) {
+            event.preventDefault();
+            console.log("Form submitted");
+
+            const form = event.target;
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            const messageDiv = document.getElementById("message");
+
+            messageDiv.style.display = "none";
+            messageDiv.className = "";
+            
+            console.log("Sending login request for:", data.email);
+
+            try {
+                const response = await fetch("/api/login", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(data),
+                });
+
+                const result = await response.json();
+                console.log("Login response:", result);
+
+                if (response.ok) {
+                    messageDiv.textContent = `Login bem-sucedido! Bem-vindo, ${result.user_type === 'Admin' ? 'Administrador' : result.user_type}!`;
+                    messageDiv.className = "success";
+                    messageDiv.style.display = "block";
+                    
+                    // Armazenar informações do usuário no localStorage
+                    localStorage.setItem('user', JSON.stringify({
+                        id: result.user_id,
+                        name: result.name || data.email,
+                        email: data.email,
+                        user_type: result.user_type
+                    }));
+                    
+                    console.log("User stored in localStorage, redirecting in 1.5 seconds");
+                    
+                    // Redirecionar com base no tipo de usuário após um breve delay
+                    let redirectUrl = '/client_dashboard.html'; // Default
+                    
+                    if (data.email === 'admin@luxnox.com') {
+                        redirectUrl = '/admin_dashboard.html';
+                    } else if (data.email === 'mecanico@luxnox.com') {
+                        redirectUrl = '/mechanic_dashboard.html';
+                    }
+                    
+                    console.log("Will redirect to:", redirectUrl);
+                    
+                    // Usar um link clicável como fallback
+                    const redirectLink = document.createElement('a');
+                    redirectLink.href = redirectUrl;
+                    redirectLink.textContent = 'Clique aqui para acessar seu painel';
+                    redirectLink.style.display = 'block';
+                    redirectLink.style.marginTop = '10px';
+                    redirectLink.style.textAlign = 'center';
+                    messageDiv.appendChild(redirectLink);
+                    
+                    // Tentar redirecionamento automático
+                    setTimeout(function() {
+                        console.log("Executing redirect now");
+                        window.location.href = redirectUrl;
+                    }, 1500);
+                } else {
+                    messageDiv.textContent = `Erro: ${result.error || response.statusText}`;
+                    messageDiv.className = "error";
+                    messageDiv.style.display = "block";
+                }
+            } catch (error) {
+                console.error("Error during login:", error);
+                messageDiv.textContent = "Erro ao conectar com o servidor.";
+                messageDiv.className = "error";
+                messageDiv.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>

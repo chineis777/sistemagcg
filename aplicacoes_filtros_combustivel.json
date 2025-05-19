@@ -1,0 +1,135 @@
+{
+  "aplicacoes_veiculos": [
+    {
+      "codigo_filtro": "FCO0086",
+      "fabricante": "AUTHOMIX",
+      "tipo": "Filtro de Combustível",
+      "aplicacoes": [
+        {
+          "marca": "CHEVROLET",
+          "modelos": [
+            {
+              "nome": "BONANZA",
+              "versoes": ["250", "4.1 L 12V SOHC L6"],
+              "anos": "1989-1995"
+            },
+            {
+              "nome": "C-10",
+              "versoes": ["250", "4.1 L 12V SOHC L6"],
+              "anos": "1978-1984"
+            },
+            {
+              "nome": "CUSTOM LUXE",
+              "versoes": ["250", "4.1 L 12V SOHC L6"],
+              "anos": "1989-1995"
+            }
+          ]
+        },
+        {
+          "marca": "VOLKSWAGEN",
+          "modelos": [
+            {
+              "nome": "KOMBI",
+              "versoes": ["1.6"],
+              "anos": "1983-1996"
+            },
+            {
+              "nome": "APOLO",
+              "versoes": ["GL", "GLS", "AP 1.8"],
+              "anos": "1990-1992"
+            }
+          ]
+        },
+        {
+          "marca": "ALFA ROMEO",
+          "modelos": [
+            {
+              "nome": "AR 2300 BERLINA",
+              "versoes": ["2.3 8V"],
+              "anos": "1974-1987"
+            }
+          ]
+        },
+        {
+          "marca": "ASIA MOTORS",
+          "modelos": [
+            {
+              "nome": "TOWNER TRUCK",
+              "versoes": ["0.8"],
+              "anos": "1993-1998"
+            }
+          ]
+        }
+      ],
+      "fonte": "Autotem, Auto Peças Molina, Nível Red, Auto Peças Jr"
+    },
+    {
+      "codigo_filtro": "FCO1068",
+      "fabricante": "AUTHOMIX",
+      "tipo": "Filtro de Combustível",
+      "aplicacoes": [
+        {
+          "marca": "CHEVROLET",
+          "modelos": [
+            {
+              "nome": "MONZA",
+              "versoes": ["TODOS OS MOTORES"],
+              "anos": "1986-1995"
+            }
+          ]
+        },
+        {
+          "marca": "VOLKSWAGEN",
+          "modelos": [
+            {
+              "nome": "VOYAGE",
+              "versoes": ["TODOS OS MOTORES"],
+              "anos": "TODOS"
+            },
+            {
+              "nome": "SAVEIRO",
+              "versoes": ["TODOS OS MOTORES"],
+              "anos": "TODOS"
+            },
+            {
+              "nome": "SANTANA",
+              "versoes": ["TODOS OS MOTORES"],
+              "anos": "TODOS"
+            }
+          ]
+        },
+        {
+          "marca": "FIAT",
+          "modelos": [
+            {
+              "nome": "FIORINO",
+              "versoes": ["1.5 SEVEL", "1.5 L 8V SOHC L4"],
+              "anos": "1988-1993"
+            }
+          ]
+        },
+        {
+          "marca": "FORD",
+          "modelos": [
+            {
+              "nome": "RURAL",
+              "versoes": ["GEORGIA", "2.3 L 12V SOHC L6"],
+              "anos": "1970-1983"
+            }
+          ]
+        },
+        {
+          "marca": "AGRALE",
+          "modelos": [
+            {
+              "nome": "1600 D",
+              "versoes": ["SERIE 229", "3.9 L"],
+              "anos": "TODOS"
+            }
+          ]
+        }
+      ],
+      "fonte": "PitStop, Magazine Luiza"
+    }
+  ]
+}

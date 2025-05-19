@@ -1,0 +1,175 @@
+/* style.css - Estilos para o Dashboard Financeiro Luxnox */
+
+:root {
+    --bg-color: #121212; /* Fundo escuro principal */
+    --surface-color: #1e1e1e; /* Cor de superfície para cards, etc. */
+    --primary-color: #007bff; /* Azul primário (pode ajustar) */
+    --secondary-color: #6c757d; /* Cinza secundário */
+    --text-color: #e0e0e0; /* Cor de texto principal */
+    --text-secondary-color: #a0a0a0; /* Cor de texto secundária */
+    --border-color: #333; /* Cor das bordas */
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --error-color: #dc3545;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--surface-color);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--surface-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.card p, .card pre {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.card pre {
+    font-size: 1rem; /* Smaller font for JSON */
+    white-space: pre-wrap; /* Wrap long JSON */
+}
+
+#finance-alerts li {
+    color: var(--warning-color);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+#quick-actions button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#quick-actions button:hover {
+    background-color: #0056b3;
+}
+
+#recent-transactions table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+#recent-transactions th,
+#recent-transactions td {
+    padding: 0.8rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#recent-transactions th {
+    background-color: var(--surface-color);
+    color: var(--text-secondary-color);
+    font-weight: bold;
+}
+
+#recent-transactions tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+#recent-transactions tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    color: var(--text-secondary-color);
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+    main {
+        padding: 1rem;
+    }
+    #overview {
+        grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    }
+    #quick-actions button {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        margin-right: 0;
+    }
+    #recent-transactions table {
+        font-size: 0.9rem;
+    }
+    #recent-transactions th,
+    #recent-transactions td {
+        padding: 0.5rem;
+    }
+}
+

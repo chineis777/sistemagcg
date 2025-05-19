@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Carteira - Painel do Mecânico - Luxnox</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/mechanic_style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">Luxnox</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" id="mechanic-name">Nome do Mecânico</a></li>
+                    <li><a href="/api/logout">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside class="sidebar">
+            <h2>Menu Mecânico</h2>
+            <ul>
+                <li><a href="/mechanic/dashboard">Dashboard</a></li>
+                <li><a href="/mechanic/checklists">Checklists</a></li>
+                <li><a href="/mechanic/quotes">Orçamentos</a></li>
+                <li><a href="/mechanic/service-history">Histórico de Serviços</a></li>
+                <li><a href="/mechanic/wallet" class="active">Minha Carteira</a></li>
+                <li><a href="/mechanic/commissions">Comissões</a></li>
+            </ul>
+        </aside>
+
+        <section class="content" id="main-content">
+            <div class="content-header">
+                <h1>Minha Carteira</h1>
+            </div>
+
+            <div class="wallet-summary">
+                <div class="summary-card main-balance">
+                    <h3>Saldo Disponível</h3>
+                    <p id="wallet-current-balance">R$ 0,00</p>
+                    <button class="btn-primary" onclick="requestWithdrawal()">Solicitar Saque</button>
+                </div>
+            </div>
+
+            <h2>Extrato de Movimentações</h2>
+            <div class="filter-bar">
+                <input type="month" id="filter-wallet-month">
+                <select id="filter-wallet-type">
+                    <option value="all">Todas as Transações</option>
+                    <option value="credit">Créditos (Comissões)</option>
+                    <option value="debit">Débitos (Saques)</option>
+                </select>
+            </div>
+
+            <table id="wallet-transactions-table">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Valor (R$)</th>
+                        <th>Tipo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas da tabela serão populadas via JavaScript -->
+                    <tr>
+                        <td colspan="4" style="text-align:center;">Carregando extrato... (Endpoint da carteira a ser implementado)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Luxnox. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            loadWalletData();
+            // Simular login - buscar nome do mecânico
+            // fetch("/api/user/profile").then(res => res.json()).then(data => {
+            //     if(data.name) document.getElementById("mechanic-name").textContent = data.name;
+            // });
+        });
+
+        async function loadWalletData() {
+            try {
+                // O endpoint /api/mechanic/wallet é um placeholder no backend atual.
+                // Esta função irá simular dados ou mostrar mensagem de "a implementar".
+                const response = await fetch("/api/mechanic/wallet"); 
+                if (!response.ok) {
+                    // Se o endpoint retornar erro por não estar implementado, tratamos aqui.
+                    if (response.status === 501 || response.status === 404) { // Not Implemented or Not Found
+                         document.getElementById("wallet-current-balance").textContent = "R$ --,-- (Indisponível)";
+                         const tbody = document.getElementById("wallet-transactions-table").getElementsByTagName("tbody")[0];
+                         tbody.innerHTML = "<tr><td colspan=\"4\" style=\"text-align:center; color:orange;\">Funcionalidade de carteira em desenvolvimento.</td></tr>";
+                        return;
+                    }
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const walletData = await response.json();
+                
+                // Exemplo de como seria se o endpoint retornasse dados reais:
+                // document.getElementById("wallet-current-balance").textContent = `R$ ${parseFloat(walletData.balance || 0).toFixed(2)}`;
+                // const tbody = document.getElementById("wallet-transactions-table").getElementsByTagName("tbody")[0];
+                // tbody.innerHTML = ""; 
+                // if (walletData.transactions && walletData.transactions.length > 0) {
+                //     walletData.transactions.forEach(tx => {
+                //         let row = tbody.insertRow();
+                //         row.insertCell().textContent = new Date(tx.date).toLocaleString(\'pt-BR\');
+                //         row.insertCell().textContent = tx.description;
+                //         row.insertCell().textContent = parseFloat(tx.amount).toFixed(2);
+                //         row.insertCell().textContent = tx.type === \'credit\' ? \'Crédito\' : \'Débito\';
+                //     });
+                // } else {
+                //     tbody.innerHTML = "<tr><td colspan=\"4\" style=\"text-align:center;\">Nenhuma transação encontrada.</td></tr>";
+                // }
+
+                // Como o endpoint é placeholder, vamos manter a mensagem de desenvolvimento:
+                document.getElementById("wallet-current-balance").textContent = "R$ --,-- (Indisponível)";
+                const tbody = document.getElementById("wallet-transactions-table").getElementsByTagName("tbody")[0];
+                tbody.innerHTML = "<tr><td colspan=\"4\" style=\"text-align:center; color:orange;\">Funcionalidade de carteira em desenvolvimento. (Dados de exemplo abaixo)</td></tr>";
+                
+                // Adicionando dados de exemplo para visualização do layout
+                const exampleTransactions = [
+                    { date: new Date(), description: "Comissão Orçamento #123", amount: 55.70, type: "credit"},
+                    { date: new Date(Date.now() - 86400000), description: "Saque via PIX", amount: -100.00, type: "debit"},
+                    { date: new Date(Date.now() - 172800000), description: "Comissão Peça XYZ", amount: 25.00, type: "credit"}
+                ];
+                exampleTransactions.forEach(tx => {
+                    let row = tbody.insertRow();
+                    row.insertCell().textContent = new Date(tx.date).toLocaleString(\'pt-BR\');
+                    row.insertCell().textContent = tx.description;
+                    row.insertCell().textContent = parseFloat(tx.amount).toFixed(2);
+                    row.insertCell().innerHTML = `<span class="status-${tx.type === 'credit' ? 'approved' : 'cancelled'}">${tx.type === 'credit' ? 'Crédito' : 'Débito'}</span>`;
+                });
+
+
+            } catch (error) {
+                console.error("Falha ao carregar dados da carteira:", error);
+                document.getElementById("wallet-current-balance").textContent = "R$ --,-- (Erro)";
+                const tbody = document.getElementById("wallet-transactions-table").getElementsByTagName("tbody")[0];
+                tbody.innerHTML = "<tr><td colspan=\"4\" style=\"text-align:center; color:red;\">Não foi possível carregar os dados da carteira.</td></tr>";
+            }
+        }
+
+        function requestWithdrawal() {
+            alert("Funcionalidade de solicitação de saque em desenvolvimento.");
+            // Aqui iria a lógica para abrir um modal de saque, interagir com API, etc.
+        }
+
+        // Adicionar funcionalidade de filtro se necessário
+        // document.getElementById("filter-wallet-month").addEventListener("change", function() { /* ... */ });
+        // document.getElementById("filter-wallet-type").addEventListener("change", function() { /* ... */ });
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Cliente - Luxnox</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #ff6b00;
+            --dark-bg: #121212;
+            --card-bg: #1e1e1e;
+            --text-light: #f8f9fa;
+            --text-muted: #adb5bd;
+            --border-color: #343a40;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .navbar {
+            background-color: var(--dark-bg);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .sidebar {
+            position: fixed;
+            top: 56px;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            padding: 0;
+            box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+            background-color: var(--card-bg);
+            width: 250px;
+        }
+        
+        .sidebar-sticky {
+            position: relative;
+            top: 0;
+            height: calc(100vh - 56px);
+            padding-top: 1rem;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        
+        .sidebar .nav-link {
+            font-weight: 500;
+            color: var(--text-light);
+            padding: 0.75rem 1rem;
+            border-left: 3px solid transparent;
+        }
+        
+        .sidebar .nav-link:hover {
+            color: var(--secondary-color);
+            background-color: rgba(255, 107, 0, 0.1);
+            border-left: 3px solid var(--secondary-color);
+        }
+        
+        .sidebar .nav-link.active {
+            color: var(--secondary-color);
+            background-color: rgba(255, 107, 0, 0.1);
+            border-left: 3px solid var(--secondary-color);
+        }
+        
+        .sidebar .nav-link i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .sidebar-heading {
+            font-size: .75rem;
+            text-transform: uppercase;
+            padding: 1rem;
+            color: var(--text-muted);
+        }
+        
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .card-header {
+            background-color: rgba(0,0,0,0.2);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .product-card {
+            height: 100%;
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-img {
+            height: 150px;
+            object-fit: contain;
+            padding: 10px;
+            background-color: #2a2a2a;
+        }
+        
+        .product-title {
+            font-size: 1rem;
+            font-weight: 500;
+            height: 48px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        
+        .product-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+        
+        .product-original-price {
+            text-decoration: line-through;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .badge-primary {
+            background-color: var(--primary-color);
+        }
+        
+        .badge-secondary {
+            background-color: var(--secondary-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #152a66;
+            border-color: #152a66;
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .btn-secondary:hover {
+            background-color: #e05e00;
+            border-color: #e05e00;
+        }
+        
+        .search-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .vehicle-search {
+            background-color: rgba(30, 58, 138, 0.1);
+            border: 1px solid var(--primary-color);
+            border-radius: 8px;
+            padding: 15px;
+        }
+        
+        .table {
+            color: var(--text-light);
+        }
+        
+        .table thead th {
+            border-bottom: 2px solid var(--border-color);
+            background-color: rgba(0,0,0,0.2);
+        }
+        
+        .table td, .table th {
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="https://via.placeholder.com/40x40" alt="Luxnox" width="30" height="30" class="d-inline-block align-top">
+            Luxnox
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="cartDropdown" role="button" data-toggle="dropdown">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge badge-danger">2</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Filtro de Óleo - R$ 35,90</a>
+                        <a class="dropdown-item" href="#">Pastilha de Freio - R$ 89,90</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Ver carrinho completo</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="notificationsDropdown" role="button" data-toggle="dropdown">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge badge-danger">1</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Orçamento recebido</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Ver todas notificações</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown">
+                        <i class="fas fa-user-circle"></i> Maria Cliente
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="fas fa-user-cog"></i> Meu Perfil</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-car"></i> Meus Veículos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="login.html" id="logout"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="client_dashboard.html">
+                        <i class="fas fa-home"></i> Página Inicial
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-search"></i> Buscar Peças
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-list"></i> Catálogo de Produtos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-shopping-cart"></i> Carrinho
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-file-invoice-dollar"></i> Orçamentos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-history"></i> Histórico de Compras
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-credit-card"></i> Pagamentos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-truck"></i> Status do Pedido
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-user-circle"></i> Área do Cliente
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-comments"></i> Chat com a Loja
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-heart"></i> Favoritos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-star"></i> Avaliações
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-user-plus"></i> Indicar Amigos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-bolt"></i> Ofertas Relâmpago
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-question-circle"></i> Ajuda / FAQ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-shield-alt"></i> Garantia e Trocas
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Search Box -->
+        <div class="search-box">
+            <h4 class="mb-3">Encontre peças para seu veículo</h4>
+            <div class="vehicle-search">
+                <form>
+                    <div class="row">
+                        <div class="col-md-3 mb-2">
+                            <label for="brand">Marca</label>
+                            <select class="form-control" id="brand">
+                                <option value="">Selecione</option>
+                                <option>Chevrolet</option>
+                                <option>Fiat</option>
+                                <option>Ford</option>
+                                <option>Honda</option>
+                                <option>Hyundai</option>
+                                <option>Toyota</option>
+                                <option>Volkswagen</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <label for="model">Modelo</label>
+                            <select class="form-control" id="model" disabled>
+                                <option value="">Selecione a marca</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <label for="year">Ano</label>
+                            <select class="form-control" id="year" disabled>
+                                <option value="">Selecione o modelo</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <label for="engine">Motor</label>
+                            <select class="form-control" id="engine" disabled>
+                                <option value="">Selecione o ano</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 mb-2 d-flex align-items-end">
+                            <button type="submit" class="btn btn-secondary btn-block">
+                                <i class="fas fa-search"></i> Buscar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="mt-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar por código, nome ou descrição da peça...">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Products -->
+        <div class="mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2>Ofertas em Destaque</h2>
+                <a href="#" class="btn btn-outline-secondary btn-sm">Ver Todas</a>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card product-card">
+                        <img src="https://via.placeholder.com/300x300" class="card-img-top product-img" alt="Filtro de Óleo">
+                        <div class="card-body">
+                            <span class="badge badge-danger mb-2">-15%</span>
+                            <h5 class="product-title">Filtro de Óleo para Motores 1.0 a 1.6</h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="product-original-price mb-0">R$ 42,90</p>
+                                    <p class="product-price mb-0">R$ 35,90</p>
+                                </div>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card product-card">
+                        <img src="https://via.placeholder.com/300x300" class="card-img-top product-img" alt="Pastilha de Freio">
+                        <div class="card-body">
+                            <span class="badge badge-danger mb-2">-20%</span>
+                            <h5 class="product-title">Pastilha de Freio Dianteira para Carros Populares</h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="product-original-price mb-0">R$ 112,90</p>
+                                    <p class="product-price mb-0">R$ 89,90</p>
+                                </div>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card product-card">
+                        <img src="https://via.placeholder.com/300x300" class="card-img-top product-img" alt="Óleo Motor">
+                        <div class="card-body">
+                            <span class="badge badge-danger mb-2">-10%</span>
+                            <h5 class="product-title">Óleo Motor 5W30 Sintético 1L</h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="product-original-price mb-0">R$ 39,90</p>
+                                    <p class="product-price mb-0">R$ 35,90</p>
+                                </div>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card product-card">
+                        <img src="https://via.placeholder.com/300x300" class="card-img-top product-img" alt="Filtro de Ar">
+                        <div class="card-body">
+                            <span class="badge badge-danger mb-2">-25%</span>
+                            <h5 class="product-title">Filtro de Ar para Motores 1.0 a 2.0</h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="product-original-price mb-0">R$ 45,90</p>
+                                    <p class="product-price mb-0">R$ 34,90</p>
+                                </div>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Orders -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Seus Orçamentos Recentes</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nº</th>
+                                <th>Data</th>
+                                <th>Veículo</th>
+                                <th>Valor</th>
+                                <th>Status</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#ORÇ-1258</td>
+                                <td>16/05/2025</td>
+                                <td>Fiat Palio 2018</td>
+                                <td>R$ 450,00</td>
+                                <td><span class="badge badge-warning">Aguardando Aprovação</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#ORÇ-1245</td>
+                                <td>10/05/2025</td>
+                                <td>Fiat Palio 2018</td>
+                                <td>R$ 780,00</td>
+                                <td><span class="badge badge-success">Aprovado</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#ORÇ-1232</td>
+                                <td>02/05/2025</td>
+                                <td>Fiat Palio 2018</td>
+                                <td>R$ 320,00</td>
+                                <td><span class="badge badge-info">Concluído</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Verificar se o usuário está logado
+        document.addEventListener('DOMContentLoaded', function() {
+            const user = JSON.parse(localStorage.getItem('user') || '{}');
+            if (!user.email) {
+                window.location.href = 'login.html';
+            }
+            
+            // Logout
+            document.getElementById('logout').addEventListener('click', function(e) {
+                e.preventDefault();
+                localStorage.removeItem('user');
+                window.location.href = 'login.html';
+            });
+        });
+    </script>
+</body>
+</html>

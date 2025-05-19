@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklists - Painel do Mecânico - Luxnox</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/mechanic_style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">Luxnox</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" id="mechanic-name">Nome do Mecânico</a></li>
+                    <li><a href="/api/logout">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside class="sidebar">
+            <h2>Menu Mecânico</h2>
+            <ul>
+                <li><a href="/mechanic/dashboard">Dashboard</a></li>
+                <li><a href="/mechanic/checklists" class="active">Checklists</a></li>
+                <li><a href="/mechanic/quotes">Orçamentos</a></li>
+                <li><a href="/mechanic/service-history">Histórico de Serviços</a></li>
+                <li><a href="/mechanic/wallet">Minha Carteira</a></li>
+                <li><a href="/mechanic/commissions">Comissões</a></li>
+            </ul>
+        </aside>
+
+        <section class="content" id="main-content">
+            <div class="content-header">
+                <h1>Meus Checklists</h1>
+                <button id="btn-new-checklist" class="btn-primary">Novo Checklist</button>
+            </div>
+
+            <div class="filter-bar">
+                <input type="text" id="search-checklist" placeholder="Buscar por placa, cliente...">
+                <select id="filter-checklist-status">
+                    <option value="all">Todos os Status</option>
+                    <option value="Aberto">Aberto</option>
+                    <option value="Em Orçamento">Em Orçamento</option>
+                    <option value="Finalizado">Finalizado</option>
+                </select>
+            </div>
+
+            <table id="checklists-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Placa</th>
+                        <th>Cliente ID</th>
+                        <th>Data Entrada</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas da tabela serão populadas via JavaScript -->
+                    <tr>
+                        <td>1</td>
+                        <td>BRA2E19</td>
+                        <td>2</td>
+                        <td>2025-05-10 10:00</td>
+                        <td>Aberto</td>
+                        <td><button class="btn-action" onclick="viewChecklist(1)">Ver</button> <button class="btn-action" onclick="editChecklist(1)">Editar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Modal ou formulário para Novo/Editar Checklist -->
+            <div id="checklist-form-modal" class="modal" style="display:none;">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal(\'checklist-form-modal\')">&times;</span>
+                    <h2 id="checklist-form-title">Novo Checklist</h2>
+                    <form id="form-checklist">
+                        <input type="hidden" id="checklist-id">
+                        <div>
+                            <label for="checklist-plate">Placa:</label>
+                            <input type="text" id="checklist-plate" name="plate_number" required>
+                        </div>
+                        <div>
+                            <label for="checklist-customer-id">ID Cliente:</label>
+                            <input type="number" id="checklist-customer-id" name="customer_id" required>
+                        </div>
+                        <div>
+                            <label for="checklist-brand">Marca:</label>
+                            <input type="text" id="checklist-brand" name="brand">
+                        </div>
+                        <div>
+                            <label for="checklist-model">Modelo:</label>
+                            <input type="text" id="checklist-model" name="model">
+                        </div>
+                        <div>
+                            <label for="checklist-year">Ano:</label>
+                            <input type="number" id="checklist-year" name="year">
+                        </div>
+                        <div>
+                            <label for="checklist-color">Cor:</label>
+                            <input type="text" id="checklist-color" name="color">
+                        </div>
+                        <div>
+                            <label for="checklist-km">KM Atual:</label>
+                            <input type="number" id="checklist-km" name="current_km">
+                        </div>
+                        <div>
+                            <label for="checklist-fuel">Nível Combustível:</label>
+                            <select id="checklist-fuel" name="fuel_level">
+                                <option value="Reserva">Reserva</option>
+                                <option value="1/4">1/4</option>
+                                <option value="1/2">1/2</option>
+                                <option value="3/4">3/4</option>
+                                <option value="Cheio">Cheio</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="checklist-customer-notes">Observações Cliente:</label>
+                            <textarea id="checklist-customer-notes" name="customer_notes"></textarea>
+                        </div>
+                        <div>
+                            <label for="checklist-inspection-items">Itens de Inspeção (JSON):</label>
+                            <textarea id="checklist-inspection-items" name="inspection_items" placeholder=\'{"exterior_farois": "ok"}\'></textarea>
+                        </div>
+                        <div>
+                            <label for="checklist-belongings">Pertences Cliente:</label>
+                            <textarea id="checklist-belongings" name="customer_belongings"></textarea>
+                        </div>
+                        <div>
+                            <label for="checklist-status-form">Status:</label>
+                            <select id="checklist-status-form" name="status">
+                                <option value="Aberto">Aberto</option>
+                                <option value="Em Orçamento">Em Orçamento</option>
+                                <option value="Finalizado">Finalizado</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-primary">Salvar Checklist</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Luxnox. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            loadChecklists();
+
+            document.getElementById("btn-new-checklist").addEventListener("click", function() {
+                document.getElementById("form-checklist").reset();
+                document.getElementById("checklist-id").value = "";
+                document.getElementById("checklist-form-title").textContent = "Novo Checklist";
+                document.getElementById("checklist-form-modal").style.display = "block";
+            });
+
+            document.getElementById("form-checklist").addEventListener("submit", function(event) {
+                event.preventDefault();
+                saveChecklist();
+            });
+        });
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        async function loadChecklists() {
+            try {
+                const response = await fetch("/api/mechanic/checklists"); // Assumindo que o usuário está logado
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const checklists = await response.json();
+                const tbody = document.getElementById("checklists-table").getElementsByTagName("tbody")[0];
+                tbody.innerHTML = ""; // Limpa a tabela
+                checklists.forEach(checklist => {
+                    let row = tbody.insertRow();
+                    row.insertCell().textContent = checklist.id;
+                    row.insertCell().textContent = checklist.plate_number;
+                    row.insertCell().textContent = checklist.customer_id;
+                    row.insertCell().textContent = new Date(checklist.entry_datetime).toLocaleString(\'pt-BR\');
+                    row.insertCell().textContent = checklist.status;
+                    let actionsCell = row.insertCell();
+                    actionsCell.innerHTML = `<button class="btn-action" onclick="viewChecklist(${checklist.id})">Ver</button> 
+                                           <button class="btn-action" onclick="editChecklist(${checklist.id})">Editar</button>`;
+                });
+            } catch (error) {
+                console.error("Falha ao carregar checklists:", error);
+                alert("Não foi possível carregar os checklists.");
+            }
+        }
+
+        async function saveChecklist() {
+            const checklistId = document.getElementById("checklist-id").value;
+            const isNew = !checklistId;
+            const url = isNew ? "/api/mechanic/checklists" : `/api/mechanic/checklists/${checklistId}`;
+            const method = isNew ? "POST" : "PUT";
+
+            const formData = {
+                plate_number: document.getElementById("checklist-plate").value,
+                customer_id: parseInt(document.getElementById("checklist-customer-id").value),
+                brand: document.getElementById("checklist-brand").value,
+                model: document.getElementById("checklist-model").value,
+                year: parseInt(document.getElementById("checklist-year").value) || null,
+                color: document.getElementById("checklist-color").value,
+                current_km: parseInt(document.getElementById("checklist-km").value) || null,
+                fuel_level: document.getElementById("checklist-fuel").value,
+                customer_notes: document.getElementById("checklist-customer-notes").value,
+                inspection_items: JSON.parse(document.getElementById("checklist-inspection-items").value || "{}"),
+                customer_belongings: document.getElementById("checklist-belongings").value,
+                status: document.getElementById("checklist-status-form").value
+            };
+
+            try {
+                const response = await fetch(url, {
+                    method: method,
+                    headers: {
+                        "Content-Type": "application/json",
+                        // Adicionar token de autenticação se necessário
+                    },
+                    body: JSON.stringify(formData)
+                });
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || `HTTP error! status: ${response.status}`);
+                }
+                const result = await response.json();
+                alert(result.message || "Checklist salvo com sucesso!");
+                closeModal(\'checklist-form-modal\');
+                loadChecklists(); // Recarrega a lista
+            } catch (error) {
+                console.error("Falha ao salvar checklist:", error);
+                alert(`Não foi possível salvar o checklist: ${error.message}`);
+            }
+        }
+
+        async function viewChecklist(id) {
+            // Implementar visualização detalhada, talvez em outro modal ou página
+            alert("Visualizar checklist ID: " + id);
+            // Exemplo: window.location.href = `/mechanic/checklists/view/${id}`;
+            // Ou carregar dados em um modal:
+            try {
+                const response = await fetch(`/api/mechanic/checklists/${id}`);
+                if (!response.ok) throw new Error('Falha ao buscar dados do checklist');
+                const checklist = await response.json();
+                
+                // Preencher um modal de visualização (não implementado no HTML ainda)
+                // alert(JSON.stringify(checklist, null, 2));
+                // Por ora, apenas logar no console
+                console.log("Detalhes do Checklist:", checklist);
+                // Aqui você poderia popular um modal de visualização mais elaborado
+                document.getElementById("checklist-form-title").textContent = `Detalhes Checklist #${id}`;
+                document.getElementById("checklist-id").value = checklist.id;
+                document.getElementById("checklist-plate").value = checklist.plate_number;
+                document.getElementById("checklist-customer-id").value = checklist.customer_id;
+                document.getElementById("checklist-brand").value = checklist.brand;
+                document.getElementById("checklist-model").value = checklist.model;
+                document.getElementById("checklist-year").value = checklist.year;
+                document.getElementById("checklist-color").value = checklist.color;
+                document.getElementById("checklist-km").value = checklist.current_km;
+                document.getElementById("checklist-fuel").value = checklist.fuel_level;
+                document.getElementById("checklist-customer-notes").value = checklist.customer_notes;
+                document.getElementById("checklist-inspection-items").value = JSON.stringify(checklist.inspection_items || {});
+                document.getElementById("checklist-belongings").value = checklist.customer_belongings;
+                document.getElementById("checklist-status-form").value = checklist.status;
+                document.getElementById("checklist-form-modal").style.display = "block";
+                // Desabilitar campos para visualização ou ter um modal separado
+
+            } catch (error) {
+                console.error("Erro ao visualizar checklist:", error);
+                alert("Erro ao carregar detalhes do checklist.");
+            }
+        }
+
+        async function editChecklist(id) {
+            try {
+                const response = await fetch(`/api/mechanic/checklists/${id}`);
+                if (!response.ok) throw new Error('Falha ao buscar dados do checklist para edição');
+                const checklist = await response.json();
+
+                document.getElementById("form-checklist").reset();
+                document.getElementById("checklist-form-title").textContent = "Editar Checklist";
+                document.getElementById("checklist-id").value = checklist.id;
+                document.getElementById("checklist-plate").value = checklist.plate_number;
+                document.getElementById("checklist-customer-id").value = checklist.customer_id;
+                document.getElementById("checklist-brand").value = checklist.brand;
+                document.getElementById("checklist-model").value = checklist.model;
+                document.getElementById("checklist-year").value = checklist.year;
+                document.getElementById("checklist-color").value = checklist.color;
+                document.getElementById("checklist-km").value = checklist.current_km;
+                document.getElementById("checklist-fuel").value = checklist.fuel_level;
+                document.getElementById("checklist-customer-notes").value = checklist.customer_notes;
+                document.getElementById("checklist-inspection-items").value = JSON.stringify(checklist.inspection_items || {});
+                document.getElementById("checklist-belongings").value = checklist.customer_belongings;
+                document.getElementById("checklist-status-form").value = checklist.status;
+                document.getElementById("checklist-form-modal").style.display = "block";
+            } catch (error) {
+                console.error("Erro ao carregar checklist para edição:", error);
+                alert("Não foi possível carregar o checklist para edição.");
+            }
+        }
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxnox - Painel Administrativo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/modern-theme.css">
+    <style>
+        /* Animações específicas para o dashboard */
+        .stat-card {
+            opacity: 0;
+            animation: fadeIn 0.5s forwards;
+        }
+        
+        .stat-card:nth-child(1) { animation-delay: 0.1s; }
+        .stat-card:nth-child(2) { animation-delay: 0.2s; }
+        .stat-card:nth-child(3) { animation-delay: 0.3s; }
+        .stat-card:nth-child(4) { animation-delay: 0.4s; }
+        
+        .chart-container {
+            opacity: 0;
+            animation: fadeIn 0.8s forwards;
+            animation-delay: 0.5s;
+        }
+        
+        .table-container {
+            opacity: 0;
+            animation: fadeIn 0.8s forwards;
+            animation-delay: 0.7s;
+        }
+        
+        /* Gradientes personalizados para cards */
+        .stat-card.sales {
+            background: linear-gradient(145deg, var(--color-card-bg), rgba(62, 123, 250, 0.1));
+        }
+        
+        .stat-card.products {
+            background: linear-gradient(145deg, var(--color-card-bg), rgba(54, 214, 176, 0.1));
+        }
+        
+        .stat-card.users {
+            background: linear-gradient(145deg, var(--color-card-bg), rgba(155, 109, 255, 0.1));
+        }
+        
+        .stat-card.orders {
+            background: linear-gradient(145deg, var(--color-card-bg), rgba(255, 203, 71, 0.1));
+        }
+    </style>
+</head>
+<body>
+    <div class="main-layout">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">Luxnox</div>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="sidebar-item active">
+                    <i class="fas fa-tachometer-alt sidebar-icon"></i>
+                    <span class="sidebar-text">Dashboard</span>
+                </li>
+                <li class="sidebar-item">
+                    <i class="fas fa-box sidebar-icon"></i>
+                    <span class="sidebar-text">Produtos</span>
+                </li>
+                <li class="sidebar-item">
+                    <i class="fas fa-users sidebar-icon"></i>
+                    <span class="sidebar-text">Usuários</span>
+                </li>
+                <li class="sidebar-item">
+                    <i class="fas fa-file-invoice-dollar sidebar-icon"></i>
+                    <span class="sidebar-text">Financeiro</span>
+                </li>
+                <li class="sidebar-item">
+                    <i class="fas fa-wrench sidebar-icon"></i>
+                    <span class="sidebar-text">Mecânicos</span>
+                </li>
+                <li class="sidebar-item">
+                    <i class="fas fa-shopping-cart sidebar-icon"></i>
+                    <span class="sidebar-text">Pedidos</span>
+                </li>
+                <li class="sidebar-item">
+                    <i class="fas fa-chart-line sidebar-icon"></i>
+                    <span class="sidebar-text">Relatórios</span>
+                </li>
+                <li class="sidebar-item">
+                    <i class="fas fa-cog sidebar-icon"></i>
+                    <span class="sidebar-text">Configurações</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div class="main-content">
+            <!-- Navbar Superior -->
+            <div class="navbar">
+                <div class="d-flex align-center">
+                    <button class="btn btn-icon mr-2" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1 class="m-0">Dashboard</h1>
+                </div>
+                <div class="navbar-nav">
+                    <div class="nav-item">
+                        <button class="btn btn-icon">
+                            <i class="fas fa-bell"></i>
+                            <span class="badge badge-error" style="position: absolute; top: -5px; right: -5px; font-size: 10px; padding: 2px 5px;">3</span>
+                        </button>
+                    </div>
+                    <div class="nav-item">
+                        <div class="d-flex align-center">
+                            <div class="avatar" style="width: 36px; height: 36px; border-radius: 50%; background-color: var(--color-accent-primary); display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                                <span>A</span>
+                            </div>
+                            <span>Admin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards de Estatísticas -->
+            <div class="dashboard-stats">
+                <div class="stat-card sales">
+                    <div class="stat-title">Vendas Hoje</div>
+                    <div class="stat-value">R$ 12.450</div>
+                    <div class="stat-change positive">
+                        <i class="fas fa-arrow-up mr-1"></i> 12% desde ontem
+                    </div>
+                </div>
+                <div class="stat-card products">
+                    <div class="stat-title">Produtos em Estoque</div>
+                    <div class="stat-value">746</div>
+                    <div class="stat-change negative">
+                        <i class="fas fa-arrow-down mr-1"></i> 3% desde ontem
+                    </div>
+                </div>
+                <div class="stat-card users">
+                    <div class="stat-title">Novos Usuários</div>
+                    <div class="stat-value">28</div>
+                    <div class="stat-change positive">
+                        <i class="fas fa-arrow-up mr-1"></i> 8% desde ontem
+                    </div>
+                </div>
+                <div class="stat-card orders">
+                    <div class="stat-title">Pedidos Pendentes</div>
+                    <div class="stat-value">17</div>
+                    <div class="stat-change positive">
+                        <i class="fas fa-arrow-down mr-1"></i> 5% desde ontem
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráficos -->
+            <div class="row">
+                <div class="col">
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h2 class="chart-title">Vendas dos Últimos 7 Dias</h2>
+                            <div class="chart-legend">
+                                <div class="legend-item">
+                                    <div class="legend-color" style="background-color: var(--color-accent-primary);"></div>
+                                    <span>Vendas</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-color" style="background-color: var(--color-accent-secondary);"></div>
+                                    <span>Previsão</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="salesChart" height="250"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <!-- Tabela de Produtos Mais Vendidos -->
+                    <div class="table-container">
+                        <div class="d-flex justify-between align-center mb-3">
+                            <h2 class="m-0">Produtos Mais Vendidos</h2>
+                            <button class="btn btn-tertiary">Ver Todos <i class="fas fa-arrow-right ml-1"></i></button>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Produto</th>
+                                    <th>Código</th>
+                                    <th>Categoria</th>
+                                    <th>Vendas</th>
+                                    <th>Estoque</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-center">
+                                            <div style="width: 40px; height: 40px; background-color: var(--color-border); border-radius: var(--border-radius-sm); margin-right: 10px;"></div>
+                                            <div>
+                                                <div>Filtro de Óleo Premium</div>
+                                                <div class="text-secondary text-small">FAR4150</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>FAR4150</td>
+                                    <td>Filtros</td>
+                                    <td>128</td>
+                                    <td>45</td>
+                                    <td><span class="badge badge-success">Em Estoque</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-center">
+                                            <div style="width: 40px; height: 40px; background-color: var(--color-border); border-radius: var(--border-radius-sm); margin-right: 10px;"></div>
+                                            <div>
+                                                <div>Filtro de Combustível</div>
+                                                <div class="text-secondary text-small">FCO0086</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>FCO0086</td>
+                                    <td>Filtros</td>
+                                    <td>96</td>
+                                    <td>32</td>
+                                    <td><span class="badge badge-success">Em Estoque</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-center">
+                                            <div style="width: 40px; height: 40px; background-color: var(--color-border); border-radius: var(--border-radius-sm); margin-right: 10px;"></div>
+                                            <div>
+                                                <div>Pastilha de Freio Dianteira</div>
+                                                <div class="text-secondary text-small">PFD2234</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>PFD2234</td>
+                                    <td>Freios</td>
+                                    <td>87</td>
+                                    <td>12</td>
+                                    <td><span class="badge badge-warning">Baixo Estoque</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-center">
+                                            <div style="width: 40px; height: 40px; background-color: var(--color-border); border-radius: var(--border-radius-sm); margin-right: 10px;"></div>
+                                            <div>
+                                                <div>Óleo Motor Sintético 5W30</div>
+                                                <div class="text-secondary text-small">OMS5W30</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>OMS5W30</td>
+                                    <td>Lubrificantes</td>
+                                    <td>76</td>
+                                    <td>0</td>
+                                    <td><span class="badge badge-error">Sem Estoque</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-center">
+                                            <div style="width: 40px; height: 40px; background-color: var(--color-border); border-radius: var(--border-radius-sm); margin-right: 10px;"></div>
+                                            <div>
+                                                <div>Kit Correia Dentada</div>
+                                                <div class="text-secondary text-small">KCD1050</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>KCD1050</td>
+                                    <td>Motor</td>
+                                    <td>65</td>
+                                    <td>23</td>
+                                    <td><span class="badge badge-success">Em Estoque</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <!-- Tabela de Últimos Pedidos -->
+                    <div class="table-container">
+                        <div class="d-flex justify-between align-center mb-3">
+                            <h2 class="m-0">Últimos Pedidos</h2>
+                            <button class="btn btn-tertiary">Ver Todos <i class="fas fa-arrow-right ml-1"></i></button>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Cliente</th>
+                                    <th>Data</th>
+                                    <th>Valor</th>
+                                    <th>Status</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#ORD-7865</td>
+                                    <td>João Silva</td>
+                                    <td>16/05/2025</td>
+                                    <td>R$ 1.250,00</td>
+                                    <td><span class="badge badge-warning">Pendente</span></td>
+                                    <td>
+                                        <button class="btn btn-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#ORD-7864</td>
+                                    <td>Maria Oliveira</td>
+                                    <td>16/05/2025</td>
+                                    <td>R$ 780,50</td>
+                                    <td><span class="badge badge-success">Concluído</span></td>
+                                    <td>
+                                        <button class="btn btn-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#ORD-7863</td>
+                                    <td>Carlos Santos</td>
+                                    <td>15/05/2025</td>
+                                    <td>R$ 2.340,00</td>
+                                    <td><span class="badge badge-info">Em Entrega</span></td>
+                                    <td>
+                                        <button class="btn btn-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#ORD-7862</td>
+                                    <td>Ana Pereira</td>
+                                    <td>15/05/2025</td>
+                                    <td>R$ 450,75</td>
+                                    <td><span class="badge badge-success">Concluído</span></td>
+                                    <td>
+                                        <button class="btn btn-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#ORD-7861</td>
+                                    <td>Roberto Almeida</td>
+                                    <td>14/05/2025</td>
+                                    <td>R$ 1.875,25</td>
+                                    <td><span class="badge badge-error">Cancelado</span></td>
+                                    <td>
+                                        <button class="btn btn-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Toggle Sidebar
+        document.getElementById('sidebarToggle').addEventListener('click', function() {
+            document.body.classList.toggle('sidebar-collapsed');
+        });
+        
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuToggle').addEventListener('click', function() {
+            document.body.classList.toggle('sidebar-open');
+        });
+        
+        // Chart
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('salesChart').getContext('2d');
+            
+            // Configuração de cores para tema escuro
+            Chart.defaults.color = '#8A8AA3';
+            Chart.defaults.borderColor = 'rgba(45, 45, 63, 0.5)';
+            
+            const salesChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'],
+                    datasets: [
+                        {
+                            label: 'Vendas',
+                            data: [12450, 14500, 11200, 15600, 18200, 22400, 19800],
+                            borderColor: '#3E7BFA',
+                            backgroundColor: 'rgba(62, 123, 250, 0.1)',
+                            tension: 0.4,
+                            fill: true
+                        },
+                        {
+                            label: 'Previsão',
+                            data: [13000, 15000, 12000, 16000, 19000, 23000, 21000],
+                            borderColor: '#36D6B0',
+                            backgroundColor: 'transparent',
+                            borderDash: [5, 5],
+                            tension: 0.4,
+                            fill: false
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            backgroundColor: '#1E1E2E',
+                            titleColor: '#FFFFFF',
+                            bodyColor: '#FFFFFF',
+                            borderColor: '#2D2D3F',
+                            borderWidth: 1,
+                            padding: 10,
+                            displayColors: false,
+                            callbacks: {
+                                label: function(context) {
+                                    return 'R$ ' + context.raw.toLocaleString('pt-BR');
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return 'R$ ' + value.toLocaleString('pt-BR');
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Simulação de IA adaptativa
+            const aiRecommendations = [
+                {
+                    title: "Recomendação da IA",
+                    message: "Detectamos um aumento de 28% nas buscas por filtros de ar. Considere aumentar o estoque.",
+                    type: "info"
+                },
+                {
+                    title: "Alerta de Estoque",
+                    message: "Óleo Motor Sintético 5W30 está sem estoque. 15 clientes buscaram este item hoje.",
+                    type: "warning"
+                }
+            ];
+            
+            // Criar notificações de IA após 3 segundos
+            setTimeout(() => {
+                const mainContent = document.querySelector('.main-content');
+                
+                aiRecommendations.forEach((rec, index) => {
+                    const alert = document.createElement('div');
+                    alert.className = `alert alert-${rec.type} fade-in`;
+                    alert.style.animationDelay = `${index * 0.3}s`;
+                    
+                    alert.innerHTML = `
+                        <i class="fas fa-robot alert-icon"></i>
+                        <div>
+                            <strong>${rec.title}</strong>
+                            <div>${rec.message}</div>
+                        </div>
+                        <button class="btn btn-icon ml-auto" onclick="this.parentElement.remove()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    `;
+                    
+                    mainContent.insertBefore(alert, mainContent.firstChild.nextSibling);
+                });
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
